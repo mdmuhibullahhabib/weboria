@@ -1,7 +1,7 @@
 import { ExternalLink, Github } from "lucide-react";
 
 // Portfolio card component
-export default function PortfolioCard({ 
+export default function Portfolio({ 
   title, 
   description, 
   image, 

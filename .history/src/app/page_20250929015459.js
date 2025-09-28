@@ -4,9 +4,9 @@ import { Code, Smartphone, TrendingUp, Search, ArrowRight } from "lucide-react";
 import Link from "next/link";
 
 import HeroSection from "./Home/components/HeroSection";
-import Service from "./Home/components/Service";
-import Portfolio from "./Home/components/Portfolio";
-import Testimonial from "./Home/components/Testimonial";
+import ServiceCard from "./Home/components/Service";
+import PortfolioCard from "./Home/components/Portfolio";
+import TestimonialCard from "./Home/components/Testimonial";
 import CTASection from "./Home/components/CTASection";
 
 export default function Home() {
@@ -118,7 +118,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {services.map((service, index) => (
-              <Service key={index} {...service} />
+              <ServiceCard key={index} {...service} />
             ))}
           </div>
 
@@ -147,7 +147,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {portfolioItems.map((item, index) => (
-              <Portfolio key={index} {...item} />
+              <PortfolioCard key={index} {...item} />
             ))}
           </div>
 
@@ -176,7 +176,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Testimonial key={index} {...testimonial} />
+              <TestimonialCard key={index} {...testimonial} />
             ))}
           </div>
         </div>
