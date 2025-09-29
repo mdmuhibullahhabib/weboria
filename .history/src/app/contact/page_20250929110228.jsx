@@ -24,6 +24,8 @@ export default function ContactPage() {
 
     toast.success("Message sent successfully! We'll get back to you within 24 hours.");
 
+    alert("Message sent successfully! We'll get back to you within 24 hours.");
+
     e.target.reset();
     setIsSubmitting(false);
   };

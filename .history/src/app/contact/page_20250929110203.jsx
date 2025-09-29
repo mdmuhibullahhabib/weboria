@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import { Mail, Phone, MapPin, Clock, Send } from "lucide-react";
-import toast from "react-hot-toast";
 
 export default function ContactPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -22,7 +21,9 @@ export default function ContactPage() {
 
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    toast.success("Message sent successfully! We'll get back to you within 24 hours.");
+    toas
+
+    alert("Message sent successfully! We'll get back to you within 24 hours.");
 
     e.target.reset();
     setIsSubmitting(false);

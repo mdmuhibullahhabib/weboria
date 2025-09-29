@@ -22,7 +22,9 @@ export default function ContactPage() {
 
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
-    toast.success("Message sent successfully! We'll get back to you within 24 hours.");
+    toast.success
+
+    alert("Message sent successfully! We'll get back to you within 24 hours.");
 
     e.target.reset();
     setIsSubmitting(false);
