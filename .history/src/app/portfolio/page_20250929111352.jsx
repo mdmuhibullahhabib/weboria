@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import Portfolio from "../Home/components/Portfolio";
+// import PortfolioCard from "@/components/PortfolioCard";
 
 // Portfolio page with project cards and category filtering
 export default function PortfolioPage() {
@@ -161,7 +161,7 @@ export default function PortfolioPage() {
           {filteredItems.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {filteredItems.map((item) => (
-                <Portfolio key={item.id} {...item} />
+                <PortfolioCard key={item.id} {...item} />
               ))}
             </div>
           ) : (
