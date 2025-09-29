@@ -6,7 +6,7 @@ import { Menu, X } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-  const pathname = usePathname();
+  const pathname = usePathname(); // বর্তমান পাথ
 
   const navigation = [
     { name: "Home", href: "/" },
