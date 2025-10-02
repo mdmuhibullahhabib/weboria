@@ -179,9 +179,12 @@ const Home = () => {
       </section>
 
       ---
+
       {/* 4. Client Logos Section */}
 
       <ScrollingLogos />
+
+
       ---
 
       {/* 5. Featured Projects Section */}

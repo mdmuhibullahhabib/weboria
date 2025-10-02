@@ -109,7 +109,7 @@ const Service = () => {
                                 />
                                 <div className="absolute top-4 left-4 flex items-center">
                                     <service.icon className={`h-8 w-8 ${service.iconColor}`} />
-                                    <span className="text-sm font-semibold ml-2 text-gray-700">WebOria</span>
+                                    <span className="text-sm font-semibold ml-2 text-gray-700">vWeb)ria</span>
                                 </div>
                             </figure>
                             <div className="p-6">
