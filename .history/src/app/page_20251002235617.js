@@ -4,7 +4,6 @@ import Marquee from './Home/components/Marquee';
 import Service from '@/components/Service';
 import ScrollingLogos from './Home/components/ScrollingLogos';
 import SectionTitle from '@/components/SectionTitle';
-import AgencySections from '@/components/AgencySections';
 // Assuming you'll use lucide-react for the icons.
 
 // Placeholder components for images/logos to keep the code clean. 
@@ -209,7 +208,7 @@ const Home = () => {
         <h2 className="text-6xl font-extrabold text-black">
           GET FREE <span className='text-orange-500'>SEO AUDIT?</span>
         </h2>
-        <SectionTitle titleTop={"GET FREE"} titleBottom={"SEO AUDIT?"}></SectionTitle>
+        <SectionTitle ></SectionTitle>
 
         <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto mt-12">
 
@@ -269,7 +268,20 @@ const Home = () => {
       </section>
 
       {/* 7. Full Range of Services Menu (The text part only, as the menu itself is complex) */}
-      <AgencySections/>
+      <section className="py-20 px-4 lg:px-20 text-center">
+        <h2 className="text-6xl font-extrabold text-black">
+          OUR FULL RANGE
+        </h2>
+        <h2 className="text-6xl font-extrabold text-orange-500 mb-8">
+          OF SERVICES MENU
+        </h2>
+
+        <p className="max-w-3xl mx-auto text-lg text-gray-600">
+          At Visual i, a top digital marketing agency in Banani, Dhaka, we deliver a complete suite of services to elevate your brand. From high-impact SEO packages to dynamic social media strategies by our expert SMM team, plus custom website development—we handle everything your business needs to thrive online.
+        </p>
+
+        {/* This seems to be the end of the content before the footer/service menu on the main scroll page */}
+      </section>
 
     </div>
   );
