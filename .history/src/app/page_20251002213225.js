@@ -187,7 +187,7 @@ const Home = () => {
       <section className="py-16 px-4 lg:px-20 text-center">
         <div className="border-t border-b border-gray-200 py-10">
           <div className="flex flex-wrap justify-around items-center space-y-8 md:space-y-0">
-      {/* Logo items: use w-1/3 on small screens, w-1/6 on large */}
+      Logo items: use w-1/3 on small screens, w-1/6 on large
       <div className="w-1/3 md:w-1/6 p-2"><p className="text-3xl font-extrabold text-blue-700">Pico</p></div>
             <div className="w-1/3 md:w-1/6 p-2"><p className="text-3xl font-extrabold text-gray-700">frontpose</p></div>
       <div className="w-1/3 md:w-1/6 p-2"><p className="text-xl font-bold text-green-700">NORTH SOUTH GROUP</p></div>

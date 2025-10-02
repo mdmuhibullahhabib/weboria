@@ -184,19 +184,19 @@ const Home = () => {
 
       <ScrollingLogos />
 
-      <section className="py-16 px-4 lg:px-20 text-center">
+      {/* <section className="py-16 px-4 lg:px-20 text-center">
         <div className="border-t border-b border-gray-200 py-10">
-          <div className="flex flex-wrap justify-around items-center space-y-8 md:space-y-0">
+          <div className="flex flex-wrap justify-around items-center space-y-8 md:space-y-0"> */}
       {/* Logo items: use w-1/3 on small screens, w-1/6 on large */}
-      <div className="w-1/3 md:w-1/6 p-2"><p className="text-3xl font-extrabold text-blue-700">Pico</p></div>
-            <div className="w-1/3 md:w-1/6 p-2"><p className="text-3xl font-extrabold text-gray-700">frontpose</p></div>
-      <div className="w-1/3 md:w-1/6 p-2"><p className="text-xl font-bold text-green-700">NORTH SOUTH GROUP</p></div>
+      {/* <div className="w-1/3 md:w-1/6 p-2"><p className="text-3xl font-extrabold text-blue-700">Pico</p></div>
+            <div className="w-1/3 md:w-1/6 p-2"><p className="text-3xl font-extrabold text-gray-700">frontpose</p></div> */}
+      {/* <div className="w-1/3 md:w-1/6 p-2"><p className="text-xl font-bold text-green-700">NORTH SOUTH GROUP</p></div>
             <div className="w-1/3 md:w-1/6 p-2"><p className="text-3xl font-extrabold text-yellow-500">PAYLAKES</p></div>
             <div className="w-1/3 md:w-1/6 p-2"><p className="text-xl font-bold text-gray-700">RAINSTONE <span className='font-light'>MONEY</span></p></div>
             <div className="w-1/3 md:w-1/6 p-2"><p className="text-xl font-bold text-gray-700">TSG <span className='font-light'>Accountants</span></p></div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       ---
 
