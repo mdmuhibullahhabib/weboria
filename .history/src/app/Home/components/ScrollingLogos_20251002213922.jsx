@@ -35,7 +35,7 @@ const ScrollingLogos = () => {
         .animate-marquee {
           display: flex;
           width: max-content;
-          animation: marquee 30s linear infinite;
+          animation: marquee 1s linear infinite;
         }
       `}</style>
         </section>
