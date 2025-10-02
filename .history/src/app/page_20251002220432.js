@@ -127,10 +127,9 @@ const Home = () => {
 
       {/* 5. Featured Projects Section */}
       <section className="py-20 px-4 lg:px-20">
-        <h2 className="text-5xl font-semibold text-black text-center">
-          OUR FEATURED 
+        <h2 className="text-6xl font-extrabold text-black text-center">
+          OUR FEATURED <span className='text-orange-500 ml-4'>PROJECTS</span>
         </h2>
-        <h2 className='text-orange-500 text-4xl ml-[620px]'> PROJECTS</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-16">
 

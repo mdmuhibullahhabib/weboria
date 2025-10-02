@@ -58,6 +58,8 @@ const Home = () => {
         </div>
       </section>
 
+      ---
+
       {/* 2. Experience / Stats Section */}
       <section className="py-20 px-4 lg:px-20 bg-gray-50">
         <div className="flex flex-col lg:flex-row items-center justify-between">
@@ -119,18 +121,75 @@ const Home = () => {
       {/* New Marquee Component */}
       <Marquee />
 
+      ---
       {/* 3. Services Overview Section */}
+
       <Service />
 
+      ---
+
+      {/* 3. Services Overview Section */}
+      <section className="py-20 px-4 lg:px-20 text-center">
+        <div className="mb-12">
+          <div className="flex justify-center items-center mb-4">
+            <div className="w-10 h-10 border-4 border-gray-400 rounded-full flex items-center justify-center mr-2">
+              <Zap size={20} className="text-gray-700" />
+            </div>
+            <p className="text-xl font-semibold uppercase text-gray-700">Visual i Provides</p>
+          </div>
+          <h2 className="text-5xl md:text-6xl font-extrabold text-black">
+            360° <span className='text-orange-500'>DIGITAL SOLUTIONS</span>
+          </h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+          {/* Service Card 1: Digital Marketing & SEO */}
+          <div className="p-8 shadow-xl hover:shadow-2xl transition duration-300 rounded-lg border border-gray-100">
+            <div className="h-40 flex flex-col items-center justify-center">
+              <Rocket size={80} className="text-orange-500 mb-4 opacity-50" />
+            </div>
+            <h3 className="text-3xl font-bold mt-4 text-black">
+              DIGITAL MARKETING & SEO SOLUTIONS
+            </h3>
+            <p className="text-sm mt-4 text-gray-500">Our Expertise: Optimize Operations</p>
+          </div>
+
+          {/* Service Card 2: Enterprise Solutions */}
+          <div className="p-8 shadow-xl hover:shadow-2xl transition duration-300 rounded-lg border border-gray-100">
+            <div className="h-40 flex flex-col items-center justify-center">
+              <Lightbulb size={80} className="text-blue-500 mb-4 opacity-50" />
+            </div>
+            <h3 className="text-3xl font-bold mt-4 text-black">
+              ENTERPRISE SOLUTIONS
+            </h3>
+            <p className="text-sm mt-4 text-gray-500">Our Expertise: Optimize Operations</p>
+          </div>
+
+          {/* Service Card 3: Website Development Services */}
+          <div className="p-8 shadow-xl hover:shadow-2xl transition duration-300 rounded-lg border border-gray-100">
+            <div className="h-40 flex flex-col items-center justify-center">
+              <Layers size={80} className="text-green-500 mb-4 opacity-50" />
+            </div>
+            <h3 className="text-3xl font-bold mt-4 text-black">
+              WEBSITE DEVELOPMENT SERVICES
+            </h3>
+            <p className="text-sm mt-4 text-gray-500">Our Expertise: Optimize Operations</p>
+          </div>
+        </div>
+      </section>
+
+      ---
       {/* 4. Client Logos Section */}
+
       <ScrollingLogos />
+      ---
 
       {/* 5. Featured Projects Section */}
       <section className="py-20 px-4 lg:px-20">
-        <h2 className="text-5xl font-semibold text-black text-center">
-          OUR FEATURED 
+        <h2 className="text-6xl font-extrabold text-black text-center">
+          OUR FEATURED <span className='text-orange-500'>PROJECTS</span>
         </h2>
-        <h2 className='text-orange-500 text-4xl ml-[620px]'> PROJECTS</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-16">
 
