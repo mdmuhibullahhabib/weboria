@@ -268,7 +268,7 @@ const Home = () => {
       {/* 7. Full Range of Services Menu (The text part only, as the menu itself is complex) */}
       <AgencySections/>
 
-      <Testimonials/>
+      <Testimonials
 
     </div>
   );

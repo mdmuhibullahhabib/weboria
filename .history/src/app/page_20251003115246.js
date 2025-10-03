@@ -5,7 +5,6 @@ import Service from '@/components/Service';
 import ScrollingLogos from './Home/components/ScrollingLogos';
 import SectionTitle from '@/components/SectionTitle';
 import AgencySections from '@/components/AgencySections';
-import Testimonials from './Home/components/Testimonials';
 // Assuming you'll use lucide-react for the icons.
 
 // Placeholder components for images/logos to keep the code clean. 
@@ -267,8 +266,6 @@ const Home = () => {
 
       {/* 7. Full Range of Services Menu (The text part only, as the menu itself is complex) */}
       <AgencySections/>
-
-      <Testimonials/>
 
     </div>
   );

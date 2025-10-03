@@ -82,7 +82,7 @@ const SectionHeader = ({ mainText, subText, align = 'center' }) => (
 );
 
 // --- Main About Us Page ---
-const AboutPage = () => {
+const AboutUsPage = () => {
   return (
     <div className="min-h-screen bg-white font-['Inter']">
       {/* Hero */}

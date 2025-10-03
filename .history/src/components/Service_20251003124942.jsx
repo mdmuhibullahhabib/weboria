@@ -59,7 +59,7 @@ const Service = () => {
                     YOUR DIGITAL
                   </p>
                 </div>
-                <p className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
+                <p className="text-7xl md:text-6xl font-serif font-extrabold text-black leading-tight">
                   PRESENCE
                 </p>
               </div>

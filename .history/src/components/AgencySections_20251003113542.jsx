@@ -1,8 +1,8 @@
 "use client"
 
 import React, { useState } from 'react';
-import {
-  Aperture, Settings, Zap, Users, Shield, Code, Globe, ArrowRight, ChevronDown, CheckCircle, MessageSquare, BarChart, ExternalLink
+import { 
+  Aperture, Settings, Zap, Users, Shield, Code, Globe, ArrowRight, ChevronDown, CheckCircle, MessageSquare, BarChart, ExternalLink 
 } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 
@@ -133,13 +133,15 @@ const AgencySections = () => {
       <section className="py-20 lg:py-28 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <header className="text-center mb-12">
-            <SectionTitle titleTop={"OUR FULL RANGE"} titleBottom={"OF SERVICES MENU"} />
+            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600">OUR FULL RANGE</h2>
+            <p className="text-4xl md:text-5xl font-extrabold text-yellow-600 mt-1">OF SERVICES MENU</p>
+ <SectionTitle titleTop={}/>
           </header>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {mainServices.map((s, i) => <ServiceCard key={i} {...s} large />)}
+            {mainServices.map((s,i) => <ServiceCard key={i} {...s} large />)}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {subServices.map((s, i) => <ServiceCard key={i} {...s} />)}
+            {subServices.map((s,i) => <ServiceCard key={i} {...s} />)}
           </div>
         </div>
       </section>
@@ -148,10 +150,11 @@ const AgencySections = () => {
       <section className="py-20 lg:py-28 bg-gray-50">
         <div className="container mx-auto px-4 max-w-7xl">
           <header className="text-center mb-16">
-            <SectionTitle titleTop={"WORKING"} titleBottom={"PROCESS"} />
+            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600">WORKING</h2>
+            <p className="text-4xl md:text-5xl font-extrabold text-yellow-600 mt-1">PROCESS</p>
           </header>
           <div className="flex flex-col lg:flex-row justify-between relative">
-            {processSteps.map((step, i) => <ProcessStep key={i} {...step} isLast={i === processSteps.length - 1} />)}
+            {processSteps.map((step,i) => <ProcessStep key={i} {...step} isLast={i===processSteps.length-1}/>)}
           </div>
         </div>
       </section>
@@ -160,11 +163,10 @@ const AgencySections = () => {
       <section className="py-20 lg:py-28 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <header className="text-center mb-12">
-            <SectionTitle titleTop={"Got Questions?"} />
-
+            <h2 className="text-4xl md:text-5xl font-extrabold text-blue-600">Got Questions?</h2>
           </header>
           <div className="max-w-3xl mx-auto">
-            {faqItems.map((item, i) => <FAQItem key={i} item={item} isOpen={openFaqIndex === i} onClick={() => toggleFaq(i)} />)}
+            {faqItems.map((item,i) => <FAQItem key={i} item={item} isOpen={openFaqIndex===i} onClick={()=>toggleFaq(i)} />)}
           </div>
         </div>
       </section>

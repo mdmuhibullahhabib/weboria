@@ -55,11 +55,11 @@ const Service = () => {
                   <ImagePlaceholder className="w-24 h-24 object-cover rounded-md bg-gray-300">
                     <Layers size={32} />
                   </ImagePlaceholder>
-                  <p className="text-3xl md:text-4xl font-serif font-extrabold text-orange-500">
+                  <p className="text-4xl md:text-6xl font-serif font-extrabold text-orange-500">
                     YOUR DIGITAL
                   </p>
                 </div>
-                <p className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
+                <p className="text-7xl md:text-6xl font-serif font-extrabold text-black leading-tight">
                   PRESENCE
                 </p>
               </div>

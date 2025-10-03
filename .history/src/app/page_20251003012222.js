@@ -5,7 +5,6 @@ import Service from '@/components/Service';
 import ScrollingLogos from './Home/components/ScrollingLogos';
 import SectionTitle from '@/components/SectionTitle';
 import AgencySections from '@/components/AgencySections';
-import Testimonials from './Home/components/Testimonials';
 // Assuming you'll use lucide-react for the icons.
 
 // Placeholder components for images/logos to keep the code clean. 
@@ -133,7 +132,7 @@ const Home = () => {
         <h2 className="text-5xl font-semibold text-black text-center">
           OUR FEATURED 
         </h2>
-        <h2 className='text-orange-500 text-5xl lg:ml-[620px]'> PROJECTS</h2>
+        <h2 className='text-orange-500 text-5xl ml-[620px]'> PROJECTS</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-16">
 
@@ -207,7 +206,11 @@ const Home = () => {
 
       {/* 6. Get Free SEO Audit CTA Section */}
       <section className="py-20 px-4 lg:px-20 bg-gray-100 text-center">
+        <h2 className="text-6xl font-extrabold text-black">
+          GET FREE <span className='text-orange-500'>SEO AUDIT?</span>
+        </h2>
         <SectionTitle titleTop={"GET FREE"} titleBottom={"SEO AUDIT?"}></SectionTitle>
+
         <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto mt-12">
 
           {/* Left: Input Form */}
@@ -267,8 +270,6 @@ const Home = () => {
 
       {/* 7. Full Range of Services Menu (The text part only, as the menu itself is complex) */}
       <AgencySections/>
-
-      <Testimonials/>
 
     </div>
   );

@@ -48,18 +48,18 @@ const Service = () => {
             <section className="container mx-auto px-4 py-16 lg:py-24 flex flex-col lg:flex-row items-center lg:space-x-12">
                 {/* Left Column */}
               <div className="lg:w-1/2 mb-10 lg:mb-0 pr-4">
-                <p className="text-5xl md:text-7xl font-serif font-extrabold mb-4 text-black leading-tight">
+                <p className="text-4xl md:text-5xl font-serif font-extrabold mb-4 text-black leading-tight">
                   EMPOWERING
                 </p>
                 <div className="flex items-center space-x-4 mb-4">
                   <ImagePlaceholder className="w-24 h-24 object-cover rounded-md bg-gray-300">
                     <Layers size={32} />
                   </ImagePlaceholder>
-                  <p className="text-3xl md:text-4xl font-serif font-extrabold text-orange-500">
+                  <p className="text-4xl md:text-6xl font-serif font-extrabold text-orange-500">
                     YOUR DIGITAL
                   </p>
                 </div>
-                <p className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
+                <p className="text-7xl md:text-6xl font-serif font-extrabold text-black leading-tight">
                   PRESENCE
                 </p>
               </div>
