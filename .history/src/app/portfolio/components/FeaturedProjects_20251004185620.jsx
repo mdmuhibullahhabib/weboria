@@ -9,7 +9,7 @@ const FeaturedProjects = () => {
     return (
         <section className="w-full bg-white py-4 px-4 md:px-20">
             {/* Small heading */}
-            <p className="text-lg font-extrabold uppercase tracking-widest mb-6 flex items-center">
+            <p className="text-lg font-bold uppercase tracking-widest mb-6 flex items-center">
                 FRAME WORK FOR SUCCESS
                 <span className="ml-2 w-3 h-3 bg-black rounded-full"></span>
             </p>

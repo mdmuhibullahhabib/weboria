@@ -2,14 +2,12 @@
 import React from "react";
 import HandshakeImg from "../../../../public/assets/images/portfolio/team-heading-shape.png";
 import Image from "next/image";
-import { motion } from "framer-motion";
-
 
 const FeaturedProjects = () => {
     return (
         <section className="w-full bg-white py-4 px-4 md:px-20">
             {/* Small heading */}
-            <p className="text-lg font-extrabold uppercase tracking-widest mb-6 flex items-center">
+            <p className="text-lg font-semibold uppercase tracking-widest mb-6 flex items-center">
                 FRAME WORK FOR SUCCESS
                 <span className="ml-2 w-3 h-3 bg-black rounded-full"></span>
             </p>
@@ -34,7 +32,7 @@ const FeaturedProjects = () => {
 
                 {/* Text content */}
                 <div className="flex-1 text-center md:text-left">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-black mb-6 leading-tight">
+                    <h2 className="text-3xl md:text-5xl lg:text-6xl font-bold text-black mb-6 leading-tight">
                         OUR FEATURED PROJECTS IN <br />
                         DIGITAL MARKETING COMPANY
                     </h2>

@@ -117,6 +117,20 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen pt-6">
       {/* Hero Section */}
+      {/* <section className="py-24 bg-gradient-to-br from-primary/5 to-secondary/10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
+              Our <span className="text-primary">Portfolio</span>
+            </h1>
+            <p className="text-xl text-gray-600 leading-relaxed">
+              Explore our diverse collection of successful projects that
+              showcase our expertise across web development, mobile apps, and
+              digital marketing.
+            </p>
+          </div>
+        </div>
+      </section> */}
       <FeaturedProjects/>
 
       {/* Filter Buttons */}
