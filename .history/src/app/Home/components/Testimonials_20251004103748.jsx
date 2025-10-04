@@ -304,7 +304,7 @@ const BlogSection = () => (
     <div className="max-w-7xl mx-auto px-6">
       <SectionTitle titleTop={"Our Blog &"} titleBottom={"Stories"} />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {blogPosts.map((post) => (
           <BlogCard key={post.id} post={post} />
         ))}
@@ -312,6 +312,7 @@ const BlogSection = () => (
 
       <div className="text-center">
         <Button
+          className='mt-8 '
           text={"See All Blogs"}
           href='/blogs'
         />

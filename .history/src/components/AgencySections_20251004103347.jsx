@@ -131,7 +131,7 @@ const AgencySections = () => {
   return (
     <div className="font-inter bg-gray-50 min-h-screen">
       {/* Services Section */}
-      <section className="py-6 lg:py-8 bg-white">
+      <section className="py-20 lg:py-28 bg-white">
         <div className="container mx-auto px-4 max-w-7xl">
           <header className="text-center mb-12">
             <SectionTitle titleTop={"OUR FULL RANGE"} titleBottom={"OF SERVICES MENU"} />
@@ -154,7 +154,7 @@ const AgencySections = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-6 lg:py-8 bg-gray-50">
+      <section className="py-6 lg:py-28 bg-gray-50">
         <div className="container mx-auto px-4 max-w-7xl">
           <header className="text-center mb-16">
             <SectionTitle titleTop={"WORKING"} titleBottom={"PROCESS"} />

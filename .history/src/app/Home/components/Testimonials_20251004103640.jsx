@@ -1,5 +1,4 @@
 "use client";
-import Button from "@/components/Button";
 import SectionTitle from "@/components/SectionTitle";
 import React from "react";
 
@@ -173,7 +172,7 @@ const TestimonialSection = () => {
   return (
     <section className="py-5 md:py-8 bg-gradient-to-r from-gray-50 to-white font-['Inter'] relative">
       <div className="max-w-5xl mx-auto px-6">
-        <SectionTitle titleTop={"Reactions From"} titleBottom={"Delighted Clients"} />
+        <SectionTitle titleTop={"Reactions From"} titleBottom={"Delighted Clients"}/>
 
         {/* Navigation Arrows */}
         <button
@@ -236,7 +235,7 @@ const TestimonialSection = () => {
 const StatsSection = () => (
   <section className="py-5 md:py-8 bg-gray-50 font-['Inter']">
     <div className="max-w-7xl mx-auto px-6">
-      <SectionTitle titleTop={"Visual I"} titleBottom={"In Numbers"} />
+        <SectionTitle titleTop={"Visual I"} titleBottom={"In Numbers"}/>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {statsData.map((stat, i) => (
@@ -302,19 +301,24 @@ const BlogCard = ({ post }) => (
 const BlogSection = () => (
   <section className="py-5 md:py-8 bg-white font-['Inter']">
     <div className="max-w-7xl mx-auto px-6">
-      <SectionTitle titleTop={"Our Blog &"} titleBottom={"Stories"} />
+        <SectionTitle titleTop={"Our Blog &"} titleBottom={"Stories"}/>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
         {blogPosts.map((post) => (
           <BlogCard key={post.id} post={post} />
         ))}
       </div>
 
       <div className="text-center">
-        <Button
-          text={"See All Blogs"}
-          href='/blogs'
-        />
+        <button className="inline-flex items-center px-8 py-3 rounded-lg text-white bg-gray-800 hover:bg-gray-900 transition shadow-lg hover:scale-105">
+          <span className="mr-2">See All Blogs</span>
+          <ArrowRight className="w-5 h-5" />
+        </button>
+          <Button 
+                className='mt-8 '
+                text={"See a"}
+                href='/services'
+                />
       </div>
     </div>
   </section>
