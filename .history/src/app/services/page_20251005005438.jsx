@@ -65,49 +65,54 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="min-h-screen pt-8">
+    <div className="min-h-screen pt-16">
+      {/* Hero Section */}
+      // <section className="py-24 bg-gradient-to-br from-primary/5 to-secondary/10">
+      //   <div className="max-w-7xl mx-auto px-6 text-center">
+      //     <h1 className="text-4xl md:text-6xl font-bold mb-6">
+      //       Our <span className="text-primary">Services</span>
+      //     </h1>
+      //     <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+      //       Comprehensive digital solutions designed to transform your business 
+      //       and drive sustainable growth in today's competitive marketplace.
+      //     </p>
+      //   </div>
+      // </section>
+         <section className="relative py-24 bg-gradient-to-br from-white via-blue-50 to-orange-50 overflow-hidden">
+      {/* Subtle background shapes */}
+      <div className="absolute top-0 left-0 w-72 h-72 bg-orange-200 rounded-full blur-3xl opacity-30 animate-pulse"></div>
+      <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-200 rounded-full blur-3xl opacity-30 animate-pulse"></div>
 
-     <section className="py-8 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
-      {/* Decorative Background Blobs */}
-      <div className="absolute top-0 left-0 w-64 h-64 bg-orange-100 rounded-full blur-3xl opacity-40 animate-pulse"></div>
-      <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-100 rounded-full blur-3xl opacity-40 animate-pulse"></div>
-
-      {/* Main Content */}
+      {/* Content */}
       <div className="relative max-w-7xl mx-auto px-6 text-center">
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="text-orange-500 font-semibold tracking-widest uppercase mb-3"
-        >
-          WebOria
-        </motion.p>
-
         <motion.h1
+          className="text-4xl md:text-6xl font-extrabold mb-6 text-gray-900"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-4xl md:text-6xl font-extrabold text-gray-900 mb-4"
+          transition={{ duration: 0.7 }}
         >
           Our <span className="text-blue-600">Services</span>
         </motion.h1>
 
         <motion.p
+          className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.7 }}
-          className="text-gray-600 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
         >
-          Empowering your business with strategic, result-driven digital
-          solutions — from branding to AI-powered marketing. At WebOria, we
-          create experiences that inspire growth, innovation, and success.
+          At <b>WebOria</b>, we deliver end-to-end digital solutions crafted to
+          elevate your brand. From web development and digital marketing to
+          SEO, AI integration, and brand strategy — our services empower your
+          business to grow, engage audiences, and achieve measurable success in
+          today’s fast-changing world.
         </motion.p>
 
+        {/* Decorative line animation */}
         <motion.div
+          className="w-24 h-1 bg-gradient-to-r from-blue-600 to-orange-500 mx-auto mt-8 rounded-full"
           initial={{ scaleX: 0 }}
           whileInView={{ scaleX: 1 }}
           transition={{ delay: 0.4, duration: 0.8 }}
-          className="w-24 h-1 bg-gradient-to-r from-blue-600 to-orange-500 mx-auto mt-8 rounded-full origin-left"
         />
       </div>
     </section>

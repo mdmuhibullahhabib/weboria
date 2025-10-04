@@ -65,9 +65,9 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="min-h-screen pt-8">
+    <div className="min-h-screen pt-16">
 
-     <section className="py-8 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
+     <section className="py-20 bg-gradient-to-b from-white via-gray-50 to-white relative overflow-hidden">
       {/* Decorative Background Blobs */}
       <div className="absolute top-0 left-0 w-64 h-64 bg-orange-100 rounded-full blur-3xl opacity-40 animate-pulse"></div>
       <div className="absolute bottom-0 right-0 w-80 h-80 bg-blue-100 rounded-full blur-3xl opacity-40 animate-pulse"></div>
