@@ -1,7 +1,6 @@
 "use client"
 import React from "react";
 import HandshakeImg from "../../../../public/assets/images/portfolio/team-heading-shape.png";
-import Image from "next/image";
 
 const FeaturedProjects = () => {
   return (
@@ -16,7 +15,7 @@ const FeaturedProjects = () => {
       <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
         {/* Image */}
         <div className="flex-shrink-0">
-          <Image
+          <Imag
             src={HandshakeImg}
             alt="Handshake"
             className="w-40 md:w-56 lg:w-64 object-contain"

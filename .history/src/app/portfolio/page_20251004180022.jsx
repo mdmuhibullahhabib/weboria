@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Portfolio from "../Home/components/Portfolio";
-import FeaturedProjects from "./components/FeaturedProjects";
 
 // Portfolio page with project cards and category filtering
 export default function PortfolioPage() {
