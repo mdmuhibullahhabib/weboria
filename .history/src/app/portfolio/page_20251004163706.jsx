@@ -116,7 +116,7 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen pt-16">
       {/* Hero Section */}
-      {/* <section className="py-24 bg-gradient-to-br from-primary/5 to-secondary/10">
+      <section className="py-24 bg-gradient-to-br from-primary/5 to-secondary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-heading font-bold mb-6">
@@ -129,8 +129,7 @@ export default function PortfolioPage() {
             </p>
           </div>
         </div>
-      </section> */}
-      <FeaturedProjects/>
+      </section>
 
       {/* Filter Buttons */}
       <section className="py-12 bg-base-100 border-b">

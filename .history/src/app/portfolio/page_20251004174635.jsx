@@ -130,7 +130,7 @@ export default function PortfolioPage() {
           </div>
         </div>
       </section> */}
-      <FeaturedProjects/>
+      <
 
       {/* Filter Buttons */}
       <section className="py-12 bg-base-100 border-b">
