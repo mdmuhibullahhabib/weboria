@@ -29,8 +29,11 @@ const Home = () => {
               <span className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
                 AI-Powered
               </span>
-              <span className="text-5xl md:text-6xl font-serif font-extrabold text-orange-500 whitespace-nowrap">
+              <span className="text-5xl md:text-7xl font-serif font-extrabold text-orange-500 whitespace-nowrap">
                 Digital Marketing Agency
+              </span>
+              <span className="text-4xl md:text-5xl font-serif font-extrabold text-black leading-tight">
+                From Bangladesh
               </span>
             </div>
             <div className='mt-10 font-semibold space-x-3'>
@@ -46,91 +49,65 @@ const Home = () => {
       </section>
 
       {/* 2. Experience Section */}
-<section className="py-20 px-4 lg:px-20 bg-gray-50">
-  <div className="flex flex-col lg:flex-row items-center justify-between">
-    {/* Left side - Experience */}
-    <div className="lg:w-1/3 mb-10 lg:mb-0 pr-8">
-      <p className="text-8xl md:text-9xl font-extrabold text-orange-500 leading-none">
-        12+
-      </p>
-      <p className="text-5xl font-serif font-bold text-gray-800 mt-2">
-        YEARS
-      </p>
-      <p className="text-5xl font-serif font-bold text-gray-800">
-        OF EXCELLENCE
-      </p>
-      <p className="text-xl mt-6 font-light text-gray-600 border-t pt-4 border-gray-300">
-        Empowering brands with smart digital solutions that spark growth, boost
-        visibility, and deliver measurable success — crafted by WebOria.
-      </p>
-    </div>
+      <section className="py-20 px-4 lg:px-20 bg-gray-50">
+        <div className="flex flex-col lg:flex-row items-center justify-between">
+          <div className="lg:w-1/3 mb-10 lg:mb-0 pr-8">
+            <p className="text-8xl md:text-9xl font-extrabold text-orange-500 leading-none">
+              12+
+            </p>
+            <p className="text-5xl font-serif font-bold text-gray-800 mt-2">
+              YEARS
+            </p>
+            <p className="text-5xl font-serif font-bold text-gray-800">
+              EXPERIENCE
+            </p>
+            <p className="text-xl mt-6 font-light text-gray-600 border-t pt-4 border-gray-300">
+              Result-Driven Digital Marketing Service That Ignites Sales And Drives Traffic.
+            </p>
+          </div>
 
-    {/* Right side - Highlights */}
-    <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8 p-4">
-      {/* 1 */}
-      <div className="border border-orange-300 p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-all">
-        <h3 className="text-2xl font-bold mb-2 text-orange-500">
-          Growth-Driven Strategy
-        </h3>
-        <p className="text-gray-600 text-sm mb-4">
-          At WebOria, we blend creativity and data to craft strategies that
-          maximize ROI. Every campaign is built to attract, engage, and convert.
-        </p>
-        <div className="border-t border-orange-300 pt-4">
-          <h4 className="text-xl font-bold mt-2 mb-1 text-black">
-            Measurable Impact
-          </h4>
-          <p className="text-gray-600 text-sm">
-            From traffic to revenue, we track every metric that matters — helping
-            you see real growth, not just numbers.
-          </p>
+          <div className="lg:w-2/3 grid grid-cols-1 sm:grid-cols-2 gap-8 p-4">
+            <div className="border border-orange-300 p-6 rounded-lg">
+              <h3 className="text-2xl font-bold mb-2 text-orange-500">ROI-Oriented</h3>
+              <p className="text-gray-600 text-sm mb-4">
+                At Visual i, we focus on ROI-driven results—not just promotion. Every strategy is built to deliver measurable growth, real value, and business success.
+              </p>
+              <div className="border-t border-orange-300 pt-4">
+                <h4 className="text-xl font-bold mt-2 mb-1 text-black">Conversion Rate</h4>
+                <p className="text-gray-600 text-sm">
+                  At Visual i, we enhance conversion rates by optimizing strategies that turn visitors into loyal customers, driving real growth and success.
+                </p>
+              </div>
+            </div>
+
+            <div className="border border-orange-300 p-6 rounded-lg">
+              <h3 className="text-2xl font-bold mb-2 text-orange-500">Responsive Design</h3>
+              <p className="text-gray-600 text-sm mb-4">
+                At Visual i, we create responsive designs that ensure your website looks perfect on any device, delivering a seamless experience for all users.
+              </p>
+              <div className="border-t border-orange-300 pt-4">
+                <h4 className="text-xl font-bold mt-2 mb-1 text-black">Creative Design</h4>
+                <p className="text-gray-600 text-sm">
+                  At Visual i, creative design goes beyond visuals—we build bold, scroll-stopping designs that capture attention, spark emotion, and drive your audience to act.
+                </p>
+              </div>
+            </div>
+
+            <div className="border border-orange-300 p-6 rounded-lg">
+              <h3 className="text-2xl font-bold mb-2 text-orange-500">Data Protection</h3>
+              <p className="text-gray-600 text-sm mb-4">
+                At Visual i, we safeguard your data with top-tier security, ensuring protection and confidentiality while you focus on growing your business and 24/7 monitoring.
+              </p>
+              <div className="border-t border-orange-300 pt-4">
+                <h4 className="text-xl font-bold mt-2 mb-1 text-black">Business Growth</h4>
+                <p className="text-gray-600 text-sm">
+                  Boost your business growth with a powerful website, app, and SEO. Visual i optimizes every aspect to drive traffic, engagement, and conversions.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-
-      {/* 2 */}
-      <div className="border border-orange-300 p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-all">
-        <h3 className="text-2xl font-bold mb-2 text-orange-500">
-          Stunning Responsive Design
-        </h3>
-        <p className="text-gray-600 text-sm mb-4">
-          Your digital presence deserves perfection on every device. WebOria
-          builds responsive, fast, and visually striking designs that connect
-          instantly.
-        </p>
-        <div className="border-t border-orange-300 pt-4">
-          <h4 className="text-xl font-bold mt-2 mb-1 text-black">
-            Creative Excellence
-          </h4>
-          <p className="text-gray-600 text-sm">
-            Our designers turn ideas into digital art — creating interfaces that
-            inspire trust, drive emotion, and boost brand recognition.
-          </p>
-        </div>
-      </div>
-
-      {/* 3 */}
-      <div className="border border-orange-300 p-6 rounded-lg bg-white shadow-sm hover:shadow-md transition-all">
-        <h3 className="text-2xl font-bold mb-2 text-orange-500">
-          Security & Reliability
-        </h3>
-        <p className="text-gray-600 text-sm mb-4">
-          WebOria protects your brand with enterprise-grade data security and
-          24/7 monitoring — so your business runs safely and smoothly.
-        </p>
-        <div className="border-t border-orange-300 pt-4">
-          <h4 className="text-xl font-bold mt-2 mb-1 text-black">
-            Sustainable Business Growth
-          </h4>
-          <p className="text-gray-600 text-sm">
-            Through digital strategy, SEO, and modern tech, we help your business
-            rise above competition and stay ahead of the curve.
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
+      </section>
 
       <Marquee />
       <Service />
