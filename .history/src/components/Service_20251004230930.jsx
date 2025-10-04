@@ -80,7 +80,7 @@ const Service = () => {
                 </div>
             </section>
 
-            <section className="container mx-auto px-4 py-6 lg:py-8">
+            <section className="container mx-auto px-4 py-6 lg:py-24">
                 <header className="text-center mb-12">
                     <div className="mb-12">
                         <div className="flex justify-center items-center mb-4">

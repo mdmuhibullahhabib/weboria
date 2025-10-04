@@ -51,27 +51,33 @@ export default function Mission() {
                             Our goal is simple: to help your brand stand out, connect deeply, and thrive in the ever-evolving digital era.
                         </p>
                     </div>
+
                 </div>
 
                 {/* === Row 2: OUR VISION === */}
-  <div className="grid lg:grid-cols-2 gap-12 items-start">
-  {/* Left: Details */}
-  <div>
-    <p className="text-gray-700 text-lg leading-relaxed">
-      At <b>WebOria</b>, our vision is to redefine the digital future through innovation, intelligence, and impact. 
-      We aspire to be a globally trusted name in AI-driven marketing and web solutions — a creative hub where technology and strategy work hand in hand to empower businesses. 
-      By harnessing data, automation, and design excellence, we aim to help brands not only grow but lead with confidence in the digital era.  
-      Our vision is simple yet bold — to set new benchmarks in digital transformation and make every brand we work with a story of success.
-    </p>
-  </div>
+                <div className="grid lg:grid-cols-2 gap-12 items-start">
+                    {/* Left: Details */}
+                    <div>
+                        <p className="text-gray-700 text-lg leading-relaxed">
+                            Our vision is to become a globally recognized leader in
+                            AI-powered digital marketing, offering a comprehensive suite of
+                            services that cater to the diverse needs of businesses. As a
+                            Digital Marketing Agency in Banani, Dhaka, we strive to transform
+                            industries by leveraging innovation and data-driven insights,
+                            empowering companies to reach and exceed their digital potential.
+                            Through collaboration, transparency, and continuous innovation, we
+                            aim to shape the future of digital marketing and technology
+                            solutions.
+                        </p>
+                    </div>
 
-  {/* Right: Title */}
-  <div className="flex flex-col items-start lg:items-end text-left lg:text-right">
-    <h2 className="text-5xl md:text-7xl md:mt-16 md:mr-12 font-extrabold text-black uppercase">
-      OUR VISION
-    </h2>
-  </div>
-</div>
+                    {/* Right: Title */}
+                    <div className="flex flex-col items-start lg:items-end text-left lg:text-right">
+                        <h2 className="text-5xl md:text-7xl md:mt-16 md:mr-12 font-extrabold text-black uppercase">
+                            OUR VISION
+                        </h2>
+                    </div>
+                </div>
 
             </div>
         </section>

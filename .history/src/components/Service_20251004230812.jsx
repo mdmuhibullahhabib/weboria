@@ -44,7 +44,7 @@ const Service = () => {
 
     return (
         <div className="font-sans bg-gray-50 min-h-screen">
-            <section className="container mx-auto px-4 py-6 lg:py-8 flex flex-col lg:flex-row items-center lg:space-x-12">
+            <section className="container mx-auto px-4 pt-6 lg:py-24 flex flex-col lg:flex-row items-center lg:space-x-12">
                 {/* Left Column */}
                 <div className="lg:w-1/2 mb-10 lg:mb-0 pr-4">
                     <p className="text-5xl md:text-7xl font-serif font-extrabold mb-4 text-black leading-tight">
@@ -80,8 +80,8 @@ const Service = () => {
                 </div>
             </section>
 
-            <section className="container mx-auto px-4 py-6 lg:py-8">
-                <header className="text-center mb-12">
+            <section className="container mx-auto px-4 py-6 lg:py-24">
+                <header className="text-center mb-1">
                     <div className="mb-12">
                         <div className="flex justify-center items-center mb-4">
                             <div className="w-10 h-10 border-4 border-gray-400 rounded-full flex items-center justify-center mr-2">

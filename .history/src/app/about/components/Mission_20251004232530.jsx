@@ -5,7 +5,7 @@ import SectionTitle from "@/components/SectionTitle";
 
 export default function Mission() {
     return (
-        <section className="py-8 bg-white">
+        <section className="py- bg-white">
             {/* <SectionTitle titleTop={"OUR"} titleBottom={"ORIGIN STORY"} /> */}
             <div className="py-20">
                 <div className="max-w-4xl mx-auto px-6 py-10 bg-white border border-gray-200 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300">
@@ -39,39 +39,49 @@ export default function Mission() {
                         <h2 className="text-5xl md:text-7xl md:mt-16 md:ml-8 font-extrabold text-black uppercase">
                             OUR MISSION
                         </h2>
+                        {/* Yellow Dot */}
                     </div>
 
                     {/* Right: Details */}
                     <div>
                         <p className="text-gray-700 text-lg leading-relaxed">
-                            At <b>WebOria</b>, our mission is to empower brands with digital excellence.
-                            We blend creativity, strategy, and technology to help businesses grow smarter and faster in the online world.
-                            From digital marketing and SEO to web development and brand strategy — every project we take on is built to deliver impact, not just impressions.
-                            Based in Dhaka, WebOria partners with global clients to transform ideas into measurable success.
-                            Our goal is simple: to help your brand stand out, connect deeply, and thrive in the ever-evolving digital era.
+                            At <b>Visual i</b>, we aim to empower businesses worldwide by
+                            integrating advanced AI technology with innovative digital
+                            marketing strategies. As a leading digital marketing agency in
+                            Banani, Dhaka, we deliver measurable results in digital marketing,
+                            SEO, PR, cybersecurity, website development, and more. We aim to
+                            help clients achieve sustainable growth and succeed in the dynamic
+                            digital landscape. We are committed to crafting custom-tailored
+                            solutions that enhance visibility, drive engagement, and ensure
+                            long-term success for every client we serve.
                         </p>
                     </div>
                 </div>
 
                 {/* === Row 2: OUR VISION === */}
-  <div className="grid lg:grid-cols-2 gap-12 items-start">
-  {/* Left: Details */}
-  <div>
-    <p className="text-gray-700 text-lg leading-relaxed">
-      At <b>WebOria</b>, our vision is to redefine the digital future through innovation, intelligence, and impact. 
-      We aspire to be a globally trusted name in AI-driven marketing and web solutions — a creative hub where technology and strategy work hand in hand to empower businesses. 
-      By harnessing data, automation, and design excellence, we aim to help brands not only grow but lead with confidence in the digital era.  
-      Our vision is simple yet bold — to set new benchmarks in digital transformation and make every brand we work with a story of success.
-    </p>
-  </div>
+                <div className="grid lg:grid-cols-2 gap-12 items-start">
+                    {/* Left: Details */}
+                    <div>
+                        <p className="text-gray-700 text-lg leading-relaxed">
+                            Our vision is to become a globally recognized leader in
+                            AI-powered digital marketing, offering a comprehensive suite of
+                            services that cater to the diverse needs of businesses. As a
+                            Digital Marketing Agency in Banani, Dhaka, we strive to transform
+                            industries by leveraging innovation and data-driven insights,
+                            empowering companies to reach and exceed their digital potential.
+                            Through collaboration, transparency, and continuous innovation, we
+                            aim to shape the future of digital marketing and technology
+                            solutions.
+                        </p>
+                    </div>
 
-  {/* Right: Title */}
-  <div className="flex flex-col items-start lg:items-end text-left lg:text-right">
-    <h2 className="text-5xl md:text-7xl md:mt-16 md:mr-12 font-extrabold text-black uppercase">
-      OUR VISION
-    </h2>
-  </div>
-</div>
+                    {/* Right: Title */}
+                    <div className="flex flex-col items-start lg:items-end text-left lg:text-right">
+                        <h2 className="text-5xl md:text-7xl md:mt-16 md:mr-12 font-extrabold text-black uppercase">
+                            OUR VISION
+                        </h2>
+                    </div>
+                </div>
 
             </div>
         </section>

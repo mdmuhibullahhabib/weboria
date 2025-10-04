@@ -99,52 +99,6 @@ const AboutPage = () => {
           </p>
         </div>
       </div> */}
-      <div className="relative overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900 py-36">
-  {/* Background Overlay with Image */}
-  <div
-    className="absolute inset-0"
-    style={{
-      backgroundImage:
-        "url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1920&q=80')",
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-    }}
-  ></div>
-
-  {/* Dark Overlay */}
-  <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
-
-  {/* Glow Gradient at Bottom */}
-  <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-orange-500/20 via-transparent to-transparent"></div>
-
-  {/* Content */}
-  <div className="relative max-w-6xl mx-auto px-6 text-center z-10">
-    <p className="text-lg md:text-xl font-semibold text-orange-400 mb-3 tracking-wider uppercase">
-      Our Story
-    </p>
-
-    <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight drop-shadow-lg">
-      About <span className="text-orange-500">WebOria</span>
-    </h1>
-
-    <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-      Since <span className="text-orange-400 font-semibold">2012</span>, WebOria has been
-      empowering brands to rise above the noise — crafting AI-powered digital strategies
-      that drive measurable growth, ignite engagement, and transform ideas into impact.
-    </p>
-
-    {/* Call to Action */}
-    <div className="mt-10 flex justify-center">
-      <a
-        href="/contact"
-        className="px-8 py-4 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 hover:scale-105 transition-transform duration-300"
-      >
-        Let’s Build Something Great
-      </a>
-    </div>
-  </div>
-</div>
-
 
 
       <Mission/>

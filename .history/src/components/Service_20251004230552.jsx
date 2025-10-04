@@ -3,7 +3,7 @@ import React from "react";
 import { Rocket, Lightbulb, Monitor, Check, PhoneCall, Zap, Layers } from "lucide-react";
 
 const ImagePlaceholder = ({ children, className = "bg-gray-200 h-full w-full flex items-center justify-center text-gray-500" }) => (
-    <div className={className}>{children}</div>
+  <div className={className}>{children}</div>
 );
 
 const Service = () => {
@@ -41,46 +41,49 @@ const Service = () => {
             ],
         },
     ];
-
+    
     return (
         <div className="font-sans bg-gray-50 min-h-screen">
-            <section className="container mx-auto px-4 py-6 lg:py-8 flex flex-col lg:flex-row items-center lg:space-x-12">
-                {/* Left Column */}
-                <div className="lg:w-1/2 mb-10 lg:mb-0 pr-4">
-                    <p className="text-5xl md:text-7xl font-serif font-extrabold mb-4 text-black leading-tight">
-                        EMPOWERING
-                    </p>
-                    <div className="flex items-center space-x-4 mb-4">
-                        <ImagePlaceholder className="w-24 h-24 object-cover rounded-md bg-gray-300">
-                            <Layers size={32} />
-                        </ImagePlaceholder>
-                        <p className="text-3xl md:text-4xl font-serif font-extrabold text-orange-500">
-                            YOUR DIGITAL
-                        </p>
-                    </div>
-                    <p className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
-                        PRESENCE
-                    </p>
-                </div>
+            {/* Hero Section */}
+<section className="container mx-auto px-4 py-6 lg:py-24 flex flex-col lg:flex-row items-center lg:space-x-12">
+  {/* Left Column */}
+  <div className="lg:w-1/2 mb-10 lg:mb-0 pr-4">
+    <p className="text-5xl md:text-7xl font-serif font-extrabold mb-4 text-black leading-tight">
+      EMPOWERING
+    </p>
+    <div className="flex items-center space-x-4 mb-4">
+      <ImagePlaceholder className="w-24 h-24 object-cover rounded-md bg-gray-300">
+        <Layers size={32} />
+      </ImagePlaceholder>
+      <p className="text-3xl md:text-4xl font-serif font-extrabold text-orange-500">
+        YOUR DIGITAL
+      </p>
+    </div>
+    <p className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
+      PRESENCE
+    </p>
+  </div>
 
-                {/* Right Column */}
-                <div className="lg:w-1/2 pt-16 lg:pt-0 text-gray-700 space-y-4">
-                    <p>
-                        <span className="font-bold text-orange-500">WebOria</span> is a results-driven digital agency that helps brands stand out in the online world.
-                        From SEO and social media marketing to web development, branding, and automation — we create strategies that convert clicks into loyal customers.
-                    </p>
-                    <p>
-                        With a passion for innovation and design, we craft tailored digital experiences that amplify visibility, boost engagement, and drive measurable growth.
-                        At WebOria, your brand isn’t just seen — it’s remembered.
-                    </p>
-                    <button className="flex items-center mt-6 px-8 py-3 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 transition">
-                        <PhoneCall className="h-5 w-5 mr-2" />
-                        Let’s Talk Strategy
-                    </button>
-                </div>
-            </section>
+  {/* Right Column */}
+  <div className="lg:w-1/2 pt-16 lg:pt-0 text-gray-700 space-y-4">
+    <p>
+      <span className="font-bold text-orange-500">WebOria</span> is a results-driven digital agency that helps brands stand out in the online world. 
+      From SEO and social media marketing to web development, branding, and automation — we create strategies that convert clicks into loyal customers.
+    </p>
+    <p>
+      With a passion for innovation and design, we craft tailored digital experiences that amplify visibility, boost engagement, and drive measurable growth. 
+      At WebOria, your brand isn’t just seen — it’s remembered.
+    </p>
+    <button className="flex items-center mt-6 px-8 py-3 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 transition">
+      <PhoneCall className="h-5 w-5 mr-2" />
+      Let’s Talk Strategy
+    </button>
+  </div>
+</section>
 
-            <section className="container mx-auto px-4 py-6 lg:py-8">
+
+            {/* Services Section */}
+            <section className="container mx-auto px-4 py-6 lg:py-24">
                 <header className="text-center mb-12">
                     <div className="mb-12">
                         <div className="flex justify-center items-center mb-4">

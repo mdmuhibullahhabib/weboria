@@ -16,7 +16,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800 antialiased">
       {/* 1. Hero Section */}
-      <section className="relative py-6 px-4 lg:px-20 overflow-hidden">
+      <section className="relative py- px-4 lg:px-20 overflow-hidden">
         <div className="hidden lg:block absolute top-10 md:left-30 w-full h-full pointer-events-none">
           <h1 className="text-[12rem] xl:text-[14rem] font-black leading-none uppercase text-gray-200 opacity-20 whitespace-nowrap -translate-x-10">
             WEBORIA
