@@ -135,9 +135,24 @@ const Home = () => {
       <Service />
       <ScrollingLogos />
 
-      {/* 5. Featured Projects Section */}
-      <section className="py-8 px-4 lg:px-20">
-        <SectionTitle titleTop={"OUR FEATURED"} titleBottom={"PROJECTS"}></SectionTitle>
+      {/* 5. Featured Projects */}
+      <section className="py-20 px-4 lg:px-20">
+        <h2 className="text-5xl font-semibold text-black text-center">
+          OUR FEATURED
+        </h2>
+        <h2 className='text-orange-500 text-5xl lg:ml-[620px]'> PROJECTS</h2>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-16">
+          {/* Project Items (same as your original code) */}
+        </div>
+      </section>
+
+            {/* 5. Featured Projects Section */}
+      <section className="py-20 px-4 lg:px-20">
+        <h2 className="text-5xl font-semibold text-black text-center">
+          OUR FEATURED 
+        </h2>
+        <h2 className='text-orange-500 text-5xl lg:ml-[620px]'> PROJECTS</h2>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-16">
 
@@ -209,7 +224,7 @@ const Home = () => {
       </section>
 
       {/* 6. SEO Audit */}
-      <section className="py-8 px-4 lg:px-20 bg-gray-100 text-center">
+      <section className="py-20 px-4 lg:px-20 bg-gray-100 text-center">
         <SectionTitle titleTop={"GET FREE"} titleBottom={"SEO AUDIT?"}></SectionTitle>
         <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto mt-12">
           <div className="lg:w-1/2 p-4 lg:pr-8">
