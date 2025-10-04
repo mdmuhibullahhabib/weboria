@@ -54,9 +54,9 @@ const UserIcon = (props) => (
 
 // --- Mock Data ---
 const statsData = [
-  { label: 'Years Experience', value: '2+', icon: Briefcase },
-  { label: 'Completed Projects', value: '30+', icon: CheckIcon },
-  { label: 'Satisfied Clients', value: '30+', icon: UserIcon },
+  { label: 'Years Experience', value: '12+', icon: Briefcase },
+  { label: 'Completed Projects', value: '200+', icon: CheckIcon },
+  { label: 'Satisfied Clients', value: '130+', icon: UserIcon },
 ];
 
 const teamMembers = [
@@ -93,7 +93,7 @@ const AboutPage = () => {
       <div className="relative overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900 py-36">
         {/* Background Overlay with Image */}
         <Image
-          src={Aboutbg}
+          src={}
           alt="Background"
           fill
           className="object-cover"
@@ -117,7 +117,7 @@ const AboutPage = () => {
           </h1>
 
           <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Since <span className="text-orange-400 font-semibold">2024</span>, WebOria has been
+            Since <span className="text-orange-400 font-semibold">2012</span>, WebOria has been
             empowering brands to rise above the noise — crafting AI-powered digital strategies
             that drive measurable growth, ignite engagement, and transform ideas into impact.
           </p>

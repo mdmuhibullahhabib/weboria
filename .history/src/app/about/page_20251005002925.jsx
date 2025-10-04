@@ -54,9 +54,9 @@ const UserIcon = (props) => (
 
 // --- Mock Data ---
 const statsData = [
-  { label: 'Years Experience', value: '2+', icon: Briefcase },
-  { label: 'Completed Projects', value: '30+', icon: CheckIcon },
-  { label: 'Satisfied Clients', value: '30+', icon: UserIcon },
+  { label: 'Years Experience', value: '12+', icon: Briefcase },
+  { label: 'Completed Projects', value: '200+', icon: CheckIcon },
+  { label: 'Satisfied Clients', value: '130+', icon: UserIcon },
 ];
 
 const teamMembers = [

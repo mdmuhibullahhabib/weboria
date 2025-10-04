@@ -1,9 +1,6 @@
 "use client";
 import React from 'react';
 import Mission from './components/Mission';
-import Image from 'next/image';
-import Aboutbg from '../../../public/assets/images/about/weboria-software-and-marketing-agency.avif';
-
 
 // --- Icon Placeholders (inline SVGs for single-file constraint) ---
 const CheckIcon = (props) => (
@@ -54,9 +51,9 @@ const UserIcon = (props) => (
 
 // --- Mock Data ---
 const statsData = [
-  { label: 'Years Experience', value: '2+', icon: Briefcase },
-  { label: 'Completed Projects', value: '30+', icon: CheckIcon },
-  { label: 'Satisfied Clients', value: '30+', icon: UserIcon },
+  { label: 'Years Experience', value: '12+', icon: Briefcase },
+  { label: 'Completed Projects', value: '200+', icon: CheckIcon },
+  { label: 'Satisfied Clients', value: '130+', icon: UserIcon },
 ];
 
 const teamMembers = [
@@ -92,13 +89,13 @@ const AboutPage = () => {
       {/* Hero */}
       <div className="relative overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900 py-36">
         {/* Background Overlay with Image */}
-        <Image
-          src={Aboutbg}
-          alt="Background"
-          fill
-          className="object-cover"
-          priority
-        />
+          <Image
+    src="https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1920&q=80"
+    alt="Background"
+    fill
+    className="object-cover"
+    priority
+  />
 
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
@@ -117,7 +114,7 @@ const AboutPage = () => {
           </h1>
 
           <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Since <span className="text-orange-400 font-semibold">2024</span>, WebOria has been
+            Since <span className="text-orange-400 font-semibold">2012</span>, WebOria has been
             empowering brands to rise above the noise — crafting AI-powered digital strategies
             that drive measurable growth, ignite engagement, and transform ideas into impact.
           </p>
