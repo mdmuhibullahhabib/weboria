@@ -143,18 +143,11 @@ const AgencySections = () => {
             {subServices.map((s, i) => <ServiceCard key={i} {...s} />)}
           </div>
         </div>
-
-        <div className="text-center">
-        <Button 
-        className='mt-8 '
-        text={"View all services"}
-        href='/services'
-        />
-        </div>
+        <Button/>
       </section>
 
       {/* Process Section */}
-      <section className="py-7 lg:py-28 bg-gray-50">
+      <section className="py-20 lg:py-28 bg-gray-50">
         <div className="container mx-auto px-4 max-w-7xl">
           <header className="text-center mb-16">
             <SectionTitle titleTop={"WORKING"} titleBottom={"PROCESS"} />

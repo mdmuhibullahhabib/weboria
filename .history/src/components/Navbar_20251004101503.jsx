@@ -49,7 +49,7 @@ export default function Navbar() {
 
             {/* CTA Button */}
             <Button
-            className="ml-16 "
+            // className="ml-16"
               text={"Get Started"}
               href="/contact"
             />

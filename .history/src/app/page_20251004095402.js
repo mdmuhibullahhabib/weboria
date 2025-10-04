@@ -43,9 +43,9 @@ const Home = () => {
         From Bangladesh
       </span>
     </div>
-    <div className='mt-10 font-semibold space-x-3'>
-      <Button text="Contact Us" href='/contact'/>
-      <Button text="Let’s Chat" href='/wp'/>
+    <div className='mt-5 font-semibold'>
+      <Button text={"Contact Us"} href='contact'/>
+      <button className='btn'>Let’s Chat</button>
     </div>
   </div>
 
@@ -222,10 +222,9 @@ const Home = () => {
                 placeholder="ENTER YOUR EMAIL"
                 className="input w-full p-3 border-2 border-gray-300 focus:border-black rounded-md bg-white text-lg"
               />
-              <Button
-              text={"Submit"}
-              href=''
-              />
+              <button className="btn btn-lg bg-black text-white rounded-md shadow-lg hover:bg-gray-800 transition w-full max-w-sm lg:max-w-none">
+                <ChevronRight size={20} className="inline mr-2" /> Submit Now
+              </button>
             </div>
           </div>
 

@@ -222,10 +222,7 @@ const Home = () => {
                 placeholder="ENTER YOUR EMAIL"
                 className="input w-full p-3 border-2 border-gray-300 focus:border-black rounded-md bg-white text-lg"
               />
-              <Button
-              text={"Submit"}
-              href=''
-              />
+              <Butto
             </div>
           </div>
 

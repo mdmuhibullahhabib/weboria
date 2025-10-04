@@ -6,7 +6,6 @@ import ScrollingLogos from './Home/components/ScrollingLogos';
 import SectionTitle from '@/components/SectionTitle';
 import AgencySections from '@/components/AgencySections';
 import Testimonials from './Home/components/Testimonials';
-import Button from '@/components/Button';
 // Assuming you'll use lucide-react for the icons.
 
 // Placeholder components for images/logos to keep the code clean. 
@@ -29,30 +28,18 @@ const Home = () => {
           </h1>
         </div>
 
-  <div className="relative z-10 flex flex-col lg:flex-row items-start justify-between">
+    <div className="relative z-10 ">
   {/* Left Content: Title and Image */}
-  <div className="lg:w-1/2 mb-10 lg:mb-0 pr-4">
-    <div className="flex flex-wrap items-center gap-3 text-center lg:text-left">
-      <span className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
-        AI-Powered
-      </span>
-      <span className="text-5xl md:text-7xl font-serif font-extrabold text-orange-500 whitespace-nowrap">
-        Digital Marketing Agency
-      </span>
-      <span className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
-        From Bangladesh
-      </span>
-    </div>
-    <div className='mt-10 font-semibold space-x-3'>
-      <Button text="Contact Us" href='/contact'/>
-      <Button text="Let’s Chat" href='/wp'/>
-    </div>
+  <div className="lg:w-1/2 mb-10 lg:mb-0 pr-4 text-center lg:text-left">
+    <p className="text-3xl md:text-5xl font-serif font-extrabold text-black leading-tight flex flex-wrap justify-center lg:justify-start items-center gap-3">
+      <span className="text-black">AI-Powered</span>
+      <span className="text-orange-500">Digital Marketing Agency</span>
+      <span className="text-black">From Bangladesh</span>
+    </p>
   </div>
 
   {/* Right Content: About Text */}
-  <div className="lg:w-1/2 max-w-lg lg:pt-16">
-    {/* About section here */}
-  </div>
+  
 </div>
 
       </section>
@@ -222,10 +209,9 @@ const Home = () => {
                 placeholder="ENTER YOUR EMAIL"
                 className="input w-full p-3 border-2 border-gray-300 focus:border-black rounded-md bg-white text-lg"
               />
-              <Button
-              text={"Submit"}
-              href=''
-              />
+              <button className="btn btn-lg bg-black text-white rounded-md shadow-lg hover:bg-gray-800 transition w-full max-w-sm lg:max-w-none">
+                <ChevronRight size={20} className="inline mr-2" /> Submit Now
+              </button>
             </div>
           </div>
 

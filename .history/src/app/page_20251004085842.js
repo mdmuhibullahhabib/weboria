@@ -6,7 +6,6 @@ import ScrollingLogos from './Home/components/ScrollingLogos';
 import SectionTitle from '@/components/SectionTitle';
 import AgencySections from '@/components/AgencySections';
 import Testimonials from './Home/components/Testimonials';
-import Button from '@/components/Button';
 // Assuming you'll use lucide-react for the icons.
 
 // Placeholder components for images/logos to keep the code clean. 
@@ -29,32 +28,37 @@ const Home = () => {
           </h1>
         </div>
 
-  <div className="relative z-10 flex flex-col lg:flex-row items-start justify-between">
-  {/* Left Content: Title and Image */}
-  <div className="lg:w-1/2 mb-10 lg:mb-0 pr-4">
-    <div className="flex flex-wrap items-center gap-3 text-center lg:text-left">
-      <span className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
-        AI-Powered
-      </span>
-      <span className="text-5xl md:text-7xl font-serif font-extrabold text-orange-500 whitespace-nowrap">
-        Digital Marketing Agency
-      </span>
-      <span className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
-        From Bangladesh
-      </span>
-    </div>
-    <div className='mt-10 font-semibold space-x-3'>
-      <Button text="Contact Us" href='/contact'/>
-      <Button text="Let’s Chat" href='/wp'/>
-    </div>
-  </div>
+        {/* <div className="relative z-10 flex flex-col lg:flex-row items-start justify-between"> */}
 
-  {/* Right Content: About Text */}
-  <div className="lg:w-1/2 max-w-lg lg:pt-16">
-    {/* About section here */}
-  </div>
-</div>
+          {/* Left Content: Title and Image */}
+          <div className="lg:w-1/2 mb-10 lg:mb-0 pr-4">
+            <p className="text-4xl md:text-6xl font-serif font-extrabold mb-4 text-black leading-tight">
+              AI-Powered
+            </p>
+            <div className="flex items-center space-x-4 mb-4">
+              {/* <ImagePlaceholder className="w-24 h-24 object-cover rounded-md bg-gray-300">
+                <Layers size={32} />
+              </ImagePlaceholder> */}
+              <p className="text-5xl md:text-7xl font-serif font-extrabold text-orange-500">
+                Digital Marketing Agency
+              </p>
+            </div>
+            <p className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
+              From Bangladesh
+            </p>
+          </div>
 
+          {/* Right Content: About Text */}
+          {/* <div className="lg:w-1/2 max-w-lg lg:pt-16"> */}
+            {/* <p className="text-xl font-bold mb-4 text-orange-500">Visual i</p>
+            <p className="text-lg leading-relaxed text-gray-700">
+              Visual i is an international **digital marketing agency** with a head office in the UK and a country office in Banani, Dhaka, Bangladesh. We specialize in helping businesses excel online with services like SEO, social media marketing, Google Ads, PR, graphic design, cyber security, web development, and so on. Since our founding, we've worked with companies across the globe to enhance their digital presence.
+            </p>
+            <p className="text-lg leading-relaxed mt-4 text-gray-700">
+              Whether you need to boost online visibility, drive targeted traffic, or increase customer engagement, we craft bespoke strategies to make your brand shine. Join us and take your business to new heights!
+            </p> */}
+          {/* </div> */}
+        {/* </div> */}
       </section>
 
       {/* 2. Experience / Stats Section */}
@@ -222,10 +226,9 @@ const Home = () => {
                 placeholder="ENTER YOUR EMAIL"
                 className="input w-full p-3 border-2 border-gray-300 focus:border-black rounded-md bg-white text-lg"
               />
-              <Button
-              text={"Submit"}
-              href=''
-              />
+              <button className="btn btn-lg bg-black text-white rounded-md shadow-lg hover:bg-gray-800 transition w-full max-w-sm lg:max-w-none">
+                <ChevronRight size={20} className="inline mr-2" /> Submit Now
+              </button>
             </div>
           </div>
 

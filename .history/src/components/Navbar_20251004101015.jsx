@@ -37,10 +37,11 @@ export default function Navbar() {
             {navigation.map((item) => (
               <Link key={item.name} href={item.href} data-testid={`link-${item.name.toLowerCase()}`}>
                 <span
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive(item.href)
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    isActive(item.href)
                       ? "bg-primary text-primary-content"
                       : "text-base-content hover:text-primary"
-                    }`}
+                  }`}
                 >
                   {item.name}
                 </span>
@@ -48,11 +49,10 @@ export default function Navbar() {
             ))}
 
             {/* CTA Button */}
-            <Button
-            className="ml-16 "
+                          <Button 
               text={"Get Started"}
               href="/contact"
-            />
+              />
           </div>
 
           {/* Mobile menu button */}
@@ -74,10 +74,11 @@ export default function Navbar() {
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href} data-testid={`link-mobile-${item.name.toLowerCase()}`}>
                   <span
-                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.href)
+                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                      isActive(item.href)
                         ? "bg-primary text-primary-content"
                         : "text-base-content hover:text-primary"
-                      }`}
+                    }`}
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
@@ -86,9 +87,9 @@ export default function Navbar() {
               ))}
 
               {/* Mobile CTA Button */}
-              <Button
-                text={"Get Started"}
-                href="/contact"
+              <Button 
+              text={"Get Started"}
+              href="/contact"
               />
             </div>
           </div>

@@ -48,11 +48,12 @@ export default function Navbar() {
             ))}
 
             {/* CTA Button */}
+            <div className="w">
             <Button
-            className="ml-16 "
               text={"Get Started"}
               href="/contact"
             />
+            </div>
           </div>
 
           {/* Mobile menu button */}

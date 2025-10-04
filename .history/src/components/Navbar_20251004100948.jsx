@@ -3,7 +3,6 @@ import { useState } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X } from "lucide-react";
-import Button from "./Button";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -37,10 +36,11 @@ export default function Navbar() {
             {navigation.map((item) => (
               <Link key={item.name} href={item.href} data-testid={`link-${item.name.toLowerCase()}`}>
                 <span
-                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${isActive(item.href)
+                  className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
+                    isActive(item.href)
                       ? "bg-primary text-primary-content"
                       : "text-base-content hover:text-primary"
-                    }`}
+                  }`}
                 >
                   {item.name}
                 </span>
@@ -48,11 +48,9 @@ export default function Navbar() {
             ))}
 
             {/* CTA Button */}
-            <Button
-            className="ml-16 "
-              text={"Get Started"}
-              href="/contact"
-            />
+            <Link href="/contact">
+              <button className="btn btn-sm btn-primary ml-4">Get Started</button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -74,10 +72,11 @@ export default function Navbar() {
               {navigation.map((item) => (
                 <Link key={item.name} href={item.href} data-testid={`link-mobile-${item.name.toLowerCase()}`}>
                   <span
-                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.href)
+                    className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                      isActive(item.href)
                         ? "bg-primary text-primary-content"
                         : "text-base-content hover:text-primary"
-                      }`}
+                    }`}
                     onClick={() => setIsOpen(false)}
                   >
                     {item.name}
@@ -86,10 +85,15 @@ export default function Navbar() {
               ))}
 
               {/* Mobile CTA Button */}
-              <Button
-                text={"Get Started"}
-                href="/contact"
-              />
+              <Link href="/contact">
+                <button
+                  className="btn btn-primary w-full mt-2"
+                  data-testid="button-mobile-get-started"
+                  onClick={() => setIsOpen(false)}
+                >
+                  Get Started
+                </button>
+              </Link>
             </div>
           </div>
         )}
