@@ -87,6 +87,18 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-white font-['Inter']">
       {/* Hero */}
+      {/* <div className="relative overflow-hidden bg-gray-900 py-32">
+        <div className="absolute inset-0 bg-gray-900/80"></div>
+        <div className="absolute inset-0 opacity-20"
+          style={{ backgroundImage: "url('https://placehold.co/1920x600/1F2937/FFFFFF?text=About+Us+Header')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div className="relative max-w-7xl mx-auto px-4 text-center">
+          <p className="text-xl font-semibold text-orange-500 mb-2">Our Story</p>
+          <h1 className="text-6xl sm:text-7xl font-extrabold text-white">About Weboria</h1>
+          <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
+            Empowering Your Digital Presence with strategic, result-driven solutions since 2012.
+          </p>
+        </div>
+      </div> */}
       <div className="relative overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900 py-36">
         {/* Background Overlay with Image */}
         <div
@@ -136,7 +148,7 @@ const AboutPage = () => {
       <Mission />
 
       {/* Core Values */}
-      <section className="py-8 bg-gradient-to-b from-white via-gray-50 to-white">
+      <section className="py-8 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <SectionHeader mainText="WHY" subText="CHOOSE US" />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -155,14 +167,14 @@ const AboutPage = () => {
       <section className="py-8 bg-gradient-to-b from-white via-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
-          <div className="text-center mb-8">
-            <p className="text-orange-500 text-2xl md:text-3xl font-semibold tracking-widest uppercase mb-2">
+          <div className="text-center mb-14">
+            <p className="text-orange-500 font-semibold tracking-widest uppercase mb-2">
               Visual i
             </p>
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
               In Numbers
             </h2>
-            <p className="text-gray-600 text-lg mt-3 max-w-2xl mx-auto">
+            <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
               Empowering growth and delivering measurable success through innovation,
               technology, and results that speak louder than words.
             </p>
@@ -194,7 +206,7 @@ const AboutPage = () => {
 
 
       {/* Team */}
-      <section className="py-8 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <SectionHeader mainText="MEET OUR" subText="EXPERT TEAM" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

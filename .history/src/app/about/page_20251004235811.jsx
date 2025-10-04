@@ -87,56 +87,68 @@ const AboutPage = () => {
   return (
     <div className="min-h-screen bg-white font-['Inter']">
       {/* Hero */}
-      <div className="relative overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900 py-36">
-        {/* Background Overlay with Image */}
-        <div
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1920&q=80')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
-
-        {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
-
-        {/* Glow Gradient at Bottom */}
-        <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-orange-500/20 via-transparent to-transparent"></div>
-
-        {/* Content */}
-        <div className="relative max-w-6xl mx-auto px-6 text-center z-10">
-          <p className="text-lg md:text-xl font-semibold text-orange-400 mb-3 tracking-wider uppercase">
-            Our Story
+      {/* <div className="relative overflow-hidden bg-gray-900 py-32">
+        <div className="absolute inset-0 bg-gray-900/80"></div>
+        <div className="absolute inset-0 opacity-20"
+          style={{ backgroundImage: "url('https://placehold.co/1920x600/1F2937/FFFFFF?text=About+Us+Header')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
+        <div className="relative max-w-7xl mx-auto px-4 text-center">
+          <p className="text-xl font-semibold text-orange-500 mb-2">Our Story</p>
+          <h1 className="text-6xl sm:text-7xl font-extrabold text-white">About Weboria</h1>
+          <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
+            Empowering Your Digital Presence with strategic, result-driven solutions since 2012.
           </p>
-
-          <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight drop-shadow-lg">
-            About <span className="text-orange-500">WebOria</span>
-          </h1>
-
-          <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-            Since <span className="text-orange-400 font-semibold">2012</span>, WebOria has been
-            empowering brands to rise above the noise — crafting AI-powered digital strategies
-            that drive measurable growth, ignite engagement, and transform ideas into impact.
-          </p>
-
-          {/* Call to Action */}
-          <div className="mt-10 flex justify-center">
-            <a
-              href="/contact"
-              className="px-8 py-4 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 hover:scale-105 transition-transform duration-300"
-            >
-              Let’s Build Something Great
-            </a>
-          </div>
         </div>
-      </div>
+      </div> */}
+      <div className="relative overflow-hidden bg-gradient-to-b from-gray-900 via-black to-gray-900 py-36">
+  {/* Background Overlay with Image */}
+  <div
+    className="absolute inset-0"
+    style={{
+      backgroundImage:
+        "url('https://images.unsplash.com/photo-1522199755839-a2bacb67c546?auto=format&fit=crop&w=1920&q=80')",
+      backgroundSize: "cover",
+      backgroundPosition: "center",
+    }}
+  ></div>
 
-      <Mission />
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/70 backdrop-blur-[1px]"></div>
+
+  {/* Glow Gradient at Bottom */}
+  <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-t from-orange-500/20 via-transparent to-transparent"></div>
+
+  {/* Content */}
+  <div className="relative max-w-6xl mx-auto px-6 text-center z-10">
+    <p className="text-lg md:text-xl font-semibold text-orange-400 mb-3 tracking-wider uppercase">
+      Our Story
+    </p>
+
+    <h1 className="text-5xl sm:text-6xl md:text-7xl font-extrabold text-white leading-tight drop-shadow-lg">
+      About <span className="text-orange-500">WebOria</span>
+    </h1>
+
+    <p className="mt-6 text-lg md:text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
+      Since <span className="text-orange-400 font-semibold">2012</span>, WebOria has been
+      empowering brands to rise above the noise — crafting AI-powered digital strategies
+      that drive measurable growth, ignite engagement, and transform ideas into impact.
+    </p>
+
+    {/* Call to Action */}
+    <div className="mt-10 flex justify-center">
+      <a
+        href="/contact"
+        className="px-8 py-4 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 hover:scale-105 transition-transform duration-300"
+      >
+        Let’s Build Something Great
+      </a>
+    </div>
+  </div>
+</div>
+
+      <Mission/>
 
       {/* Core Values */}
-      <section className="py-8 bg-gradient-to-b from-white via-gray-50 to-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
           <SectionHeader mainText="WHY" subText="CHOOSE US" />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -152,49 +164,23 @@ const AboutPage = () => {
       </section>
 
       {/* Stats */}
-      <section className="py-8 bg-gradient-to-b from-white via-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-6">
-          {/* Section Header */}
-          <div className="text-center mb-8">
-            <p className="text-orange-500 text-2xl md:text-3xl font-semibold tracking-widest uppercase mb-2">
-              Visual i
-            </p>
-            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-              In Numbers
-            </h2>
-            <p className="text-gray-600 text-lg mt-3 max-w-2xl mx-auto">
-              Empowering growth and delivering measurable success through innovation,
-              technology, and results that speak louder than words.
-            </p>
-          </div>
-
-          {/* Stats Grid */}
-          <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+      <section className="py-16 bg-gray-900">
+        <div className="max-w-7xl mx-auto px-4">
+          <SectionHeader mainText="VISUAL I" subText="IN NUMBERS" />
+          <div className="grid md:grid-cols-3 gap-8">
             {statsData.map((stat, i) => (
-              <div
-                key={i}
-                className="group bg-white p-10 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300 text-center"
-              >
-                <div className="flex justify-center">
-                  <div className="p-4 bg-orange-100 rounded-full mb-5 group-hover:bg-orange-500 transition-colors duration-300">
-                    <stat.icon className="w-8 h-8 text-orange-500 group-hover:text-white transition-colors duration-300" />
-                  </div>
-                </div>
-                <p className="text-5xl font-extrabold text-gray-900 group-hover:text-orange-500 transition-colors duration-300">
-                  {stat.value}
-                </p>
-                <h3 className="text-lg font-semibold text-gray-600 mt-2">
-                  {stat.label}
-                </h3>
+              <div key={i} className="bg-gray-800 p-8 rounded-xl text-center border-b-4 border-orange-500 shadow-2xl transition">
+                <stat.icon className="w-10 h-10 text-orange-500 mx-auto mb-4" />
+                <p className="text-6xl font-extrabold text-white">{stat.value}</p>
+                <h3 className="text-lg font-semibold text-gray-300 mt-2">{stat.label}</h3>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-
       {/* Team */}
-      <section className="py-8 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <SectionHeader mainText="MEET OUR" subText="EXPERT TEAM" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

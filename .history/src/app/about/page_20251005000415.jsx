@@ -155,7 +155,7 @@ const AboutPage = () => {
       <section className="py-8 bg-gradient-to-b from-white via-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
-          <div className="text-center mb-8">
+          <div className="text-center mb-14">
             <p className="text-orange-500 text-2xl md:text-3xl font-semibold tracking-widest uppercase mb-2">
               Visual i
             </p>
@@ -194,7 +194,7 @@ const AboutPage = () => {
 
 
       {/* Team */}
-      <section className="py-8 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <SectionHeader mainText="MEET OUR" subText="EXPERT TEAM" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

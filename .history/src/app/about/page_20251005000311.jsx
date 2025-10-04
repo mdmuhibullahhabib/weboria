@@ -155,14 +155,14 @@ const AboutPage = () => {
       <section className="py-8 bg-gradient-to-b from-white via-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-6">
           {/* Section Header */}
-          <div className="text-center mb-8">
-            <p className="text-orange-500 text-2xl md:text-3xl font-semibold tracking-widest uppercase mb-2">
+          <div className="text-center mb-14">
+            <p className="text-orange-500 text-2xl font-semibold tracking-widest uppercase mb-2">
               Visual i
             </p>
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
               In Numbers
             </h2>
-            <p className="text-gray-600 text-lg mt-3 max-w-2xl mx-auto">
+            <p className="text-gray-600 mt-3 max-w-2xl mx-auto">
               Empowering growth and delivering measurable success through innovation,
               technology, and results that speak louder than words.
             </p>
@@ -194,7 +194,7 @@ const AboutPage = () => {
 
 
       {/* Team */}
-      <section className="py-8 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <SectionHeader mainText="MEET OUR" subText="EXPERT TEAM" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">

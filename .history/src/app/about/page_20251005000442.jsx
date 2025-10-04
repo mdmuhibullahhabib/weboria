@@ -194,7 +194,7 @@ const AboutPage = () => {
 
 
       {/* Team */}
-      <section className="py-8 bg-white">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <SectionHeader mainText="MEET OUR" subText="EXPERT TEAM" />
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
