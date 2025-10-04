@@ -93,7 +93,7 @@ const AboutPage = () => {
           style={{ backgroundImage: "url('https://placehold.co/1920x600/1F2937/FFFFFF?text=About+Us+Header')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <p className="text-xl font-semibold text-orange-500 mb-2">Our Story</p>
-          <h1 className="text-6xl sm:text-7xl font-extrabold text-white">About Weboria</h1>
+          <h1 className="text-6xl sm:text-7xl font-extrabold text-white">About Visual i</h1>
           <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
             Empowering Your Digital Presence with strategic, result-driven solutions since 2012.
           </p>

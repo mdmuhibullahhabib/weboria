@@ -54,45 +54,34 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white pt-8">
+    <div className="min-h-screen bg-white pt-16">
       {/* Hero Section */}
-   <section className="w-full bg-white text-gray-900 py-2">
-      {/* Main Heading */}
-      <div className="text-center mb-16">
-        <h1 className="text-6xl md:text-9xl font-extrabold tracking-wider text-black">
-          CONTACT
-        </h1>
-        <div className="mt-6 flex justify-center">
-          <div className="w-24 h-1 bg-yellow-400 rounded-full"></div>
-        </div>
-      </div>
+      <section className="py-24 bg-gradient-to-br from-sky-50 to-blue-100 relative overflow-hidden">
+  <div className="max-w-4xl mx-auto text-center px-4">
+  <h2 className="text-3xl md:text-5xl font-extrabold text-gray-900 mb-6 leading-tight">
+    Trusted Digital Marketing Company in <span className="text-sky-500">Bangladesh</span>
+  </h2>
 
-      {/* Content Section */}
-      <div className="max-w-6xl mx-auto px-6 md:px-0">
-        <h2 className="text-2xl md:text-3xl font-extrabold text-black mb-4">
-          Trusted Digital Marketing Company in Bangladesh
-        </h2>
+  <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+    At <b className="text-gray-900">Weboria</b>, we believe that strong communication builds
+    strong partnerships. As a trusted online marketing company, we’re dedicated to supporting
+    your business with <b>tailored digital solutions</b> designed for measurable success.
+  </p>
 
-        <p className="text-gray-700 text-lg leading-relaxed">
-          At <span className="font-semibold text-black">Weboria</span>, strong communication builds strong
-          partnerships. As a trusted IT online marketing company, we are ready to support your business
-          with tailored digital solutions designed for measurable success. Connect with us to explore how
-          our expertise in
-          <span className="font-semibold text-black"> Digital Marketing</span>,
-          <span className="font-semibold text-black"> SEO</span>,
-          <span className="font-semibold text-black"> Web Development</span>,
-          <span className="font-semibold text-black"> Cyber Security</span>, and
-          <span className="font-semibold text-black"> AI-driven strategies</span> can transform your growth
-          journey.
-        </p>
+  <p className="mt-4 text-lg md:text-xl text-gray-600 leading-relaxed">
+    Connect with us to explore how our expertise in <b>Digital Marketing</b>, <b>SEO</b>, 
+    <b> Web Development</b>, <b>Cyber Security</b>, and <b>AI-driven strategies</b> can
+    transform your growth journey.
+  </p>
 
-        <p className="text-gray-700 text-lg leading-relaxed mt-4">
-          Our dedicated team is committed to providing timely, professional assistance for all inquiries.
-          Please use the contact form below or reach out directly. We look forward to partnering with you
-          and driving your digital success forward.
-        </p>
-      </div>
-    </section>
+  <p className="mt-4 text-lg md:text-xl text-gray-600 leading-relaxed">
+    Our dedicated team is committed to providing <b>timely, professional assistance</b> for
+    all inquiries. Please use the contact form below or reach out directly — we look forward
+    to <b>partnering with you</b> and driving your <b>digital success forward.</b>
+  </p>
+</div>
+
+      </section>
 
       {/* Contact Section */}
       <section className="py-24 bg-base-100">

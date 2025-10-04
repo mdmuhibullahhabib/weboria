@@ -56,39 +56,36 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-white pt-8">
       {/* Hero Section */}
-   <section className="w-full bg-white text-gray-900 py-2">
-      {/* Main Heading */}
-      <div className="text-center mb-16">
-        <h1 className="text-6xl md:text-9xl font-extrabold tracking-wider text-black">
+  <section className="w-full bg-white text-black">
+      {/* CONTACT HEADING */}
+      <div className="text-center mb-10">
+        <h1 className="text-6xl md:text-9xl font-extrabold tracking-widest">
           CONTACT
         </h1>
-        <div className="mt-6 flex justify-center">
-          <div className="w-24 h-1 bg-yellow-400 rounded-full"></div>
-        </div>
+        <div className="mt-6 border-b border-gray-200 w-full"></div>
       </div>
 
-      {/* Content Section */}
+      {/* CONTENT */}
       <div className="max-w-6xl mx-auto px-6 md:px-0">
-        <h2 className="text-2xl md:text-3xl font-extrabold text-black mb-4">
+        <h2 className="text-2xl md:text-3xl font-extrabold mb-4">
           Trusted Digital Marketing Company in Bangladesh
         </h2>
 
-        <p className="text-gray-700 text-lg leading-relaxed">
-          At <span className="font-semibold text-black">Weboria</span>, strong communication builds strong
-          partnerships. As a trusted IT online marketing company, we are ready to support your business
-          with tailored digital solutions designed for measurable success. Connect with us to explore how
-          our expertise in
-          <span className="font-semibold text-black"> Digital Marketing</span>,
-          <span className="font-semibold text-black"> SEO</span>,
-          <span className="font-semibold text-black"> Web Development</span>,
-          <span className="font-semibold text-black"> Cyber Security</span>, and
-          <span className="font-semibold text-black"> AI-driven strategies</span> can transform your growth
-          journey.
+        <p className="text-gray-700 text-base md:text-lg leading-relaxed">
+          At <span className="font-semibold">Visual i</span>, strong communication builds strong partnerships. 
+          As a trusted IT online marketing company, we are ready to support your business with tailored digital 
+          solutions designed for measurable success. Connect with us to explore how our expertise in 
+          <span className="font-semibold"> Digital Marketing</span>, 
+          <span className="font-semibold"> SEO</span>, 
+          <span className="font-semibold"> Web Development</span>, 
+          <span className="font-semibold"> Cyber Security</span>, and 
+          <span className="font-semibold"> AI-driven strategies</span> 
+          can transform your growth journey.
         </p>
 
-        <p className="text-gray-700 text-lg leading-relaxed mt-4">
-          Our dedicated team is committed to providing timely, professional assistance for all inquiries.
-          Please use the contact form below or reach out directly. We look forward to partnering with you
+        <p className="text-gray-700 text-base md:text-lg leading-relaxed mt-4">
+          Our dedicated team is committed to providing timely, professional assistance for all inquiries. 
+          Please use the contact form below or reach out directly. We look forward to partnering with you 
           and driving your digital success forward.
         </p>
       </div>

@@ -1,6 +1,5 @@
 "use client";
 import React from 'react';
-import Mission from './components/Mission';
 
 // --- Icon Placeholders (inline SVGs for single-file constraint) ---
 const CheckIcon = (props) => (
@@ -93,7 +92,7 @@ const AboutPage = () => {
           style={{ backgroundImage: "url('https://placehold.co/1920x600/1F2937/FFFFFF?text=About+Us+Header')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <p className="text-xl font-semibold text-orange-500 mb-2">Our Story</p>
-          <h1 className="text-6xl sm:text-7xl font-extrabold text-white">About Weboria</h1>
+          <h1 className="text-6xl sm:text-7xl font-extrabold text-white">About Visual i</h1>
           <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
             Empowering Your Digital Presence with strategic, result-driven solutions since 2012.
           </p>
@@ -101,7 +100,30 @@ const AboutPage = () => {
       </div>
 
       {/* Story + Mission */}
-      <Mission/>
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+
+          <div className="relative p-8 bg-indigo-50 rounded-xl shadow-xl border-t-8 border-indigo-600">
+            <div className="absolute top-4 right-4 text-indigo-400">
+              <TargetIcon className="w-12 h-12" />
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl font-bold text-indigo-900 mb-2 border-b border-indigo-300 pb-1">Our Mission</h4>
+                <p className="text-gray-700">
+                  To <b>empower ambitious brands</b> with integrated, high-performance digital strategies that drive tangible results.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-indigo-900 mb-2 border-b border-indigo-300 pb-1">Our Vision</h4>
+                <p className="text-gray-700">
+                  To be globally recognized as the <b>catalyst for digital transformation</b>, setting benchmarks for innovation and growth worldwide.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Core Values */}
       <section className="py-20 bg-gray-50">

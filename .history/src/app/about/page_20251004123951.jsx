@@ -1,7 +1,6 @@
 "use client";
 import React from 'react';
-import Mission from './components/Mission';
-
+import { TargetIcon } from 'lucide-react';
 // --- Icon Placeholders (inline SVGs for single-file constraint) ---
 const CheckIcon = (props) => (
   <svg {...props} xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -93,7 +92,7 @@ const AboutPage = () => {
           style={{ backgroundImage: "url('https://placehold.co/1920x600/1F2937/FFFFFF?text=About+Us+Header')", backgroundSize: 'cover', backgroundPosition: 'center' }}></div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <p className="text-xl font-semibold text-orange-500 mb-2">Our Story</p>
-          <h1 className="text-6xl sm:text-7xl font-extrabold text-white">About Weboria</h1>
+          <h1 className="text-6xl sm:text-7xl font-extrabold text-white">About Visual i</h1>
           <p className="mt-4 text-xl text-gray-300 max-w-3xl mx-auto">
             Empowering Your Digital Presence with strategic, result-driven solutions since 2012.
           </p>
@@ -101,7 +100,106 @@ const AboutPage = () => {
       </div>
 
       {/* Story + Mission */}
-      <Mission/>
+      {/* <section className="py-20 bg-white">
+        <div>
+          <SectionHeader mainText="OUR" subText="ORIGIN STORY" align="left" />
+          <p className="mt-4 text-lg text-gray-600">
+            Visual i was founded on the belief that a brand's digital presence should be <b>a powerful engine for measurable business growth</b>, not just a beautiful design.
+          </p>
+          <p className="mt-4 text-lg text-gray-600">
+            With over a decade of experience, we've evolved into a 360° digital solutions agency, partnering with companies across the globe. Our commitment: bespoke strategies in web development, SEO, and creative design that elevate your brand and drive <b>commercial success.</b>
+          </p>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+          <div className="relative p-8 bg-indigo-50 rounded-xl shadow-xl border-t-8 border-indigo-600">
+            <div className="absolute top-4 right-4 text-indigo-400">
+              <TargetIcon className="w-12 h-12" />
+            </div>
+            <div className="space-y-6">
+              <div>
+                <h4 className="text-xl font-bold text-indigo-900 mb-2 border-b border-indigo-300 pb-1">Our Mission</h4>
+                <p className="text-gray-700">
+                  To <b>empower ambitious brands</b> with integrated, high-performance digital strategies that drive tangible results.
+                </p>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-indigo-900 mb-2 border-b border-indigo-300 pb-1">Our Vision</h4>
+                <p className="text-gray-700">
+                  To be globally recognized as the <b>catalyst for digital transformation</b>, setting benchmarks for innovation and growth worldwide.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section> */}
+          <section className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 grid lg:grid-cols-2 gap-12 items-start">
+        
+        {/* === LEFT COLUMN: Title, Text, and Custom Buttons === */}
+        <div className="space-y-6">
+            
+          {/* Section Header */}
+          <SectionHeader 
+            mainText="OUR" 
+            subText="ORIGIN STORY" 
+            align="left" 
+          />
+          
+          {/* Main Content Paragraphs */}
+          <p className="mt-4 text-lg text-gray-600">
+            Visual i was founded on the belief that a brand's digital presence should be 
+            <b className="font-bold text-gray-800">a powerful engine for measurable business growth</b>, not just a beautiful design.
+          </p>
+          <p className="mt-4 text-lg text-gray-600">
+            With over a decade of experience, we've evolved into a 360° digital solutions agency, partnering with companies across the globe. Our commitment: bespoke strategies in web development, SEO, and creative design that elevate your brand and drive 
+            <b className="font-bold text-gray-800">commercial success.</b>
+          </p>
+          
+          {/* Buttons from image_0be8ab.png */}
+          <div className='pt-8 flex gap-4 font-semibold'>
+            <SectionButton text="Contact Us" href='/contact'/>
+            <SectionButton text="Let’s Chat" href='/chat' className='bg-gray-300 hover:bg-gray-400' />
+          </div>
+        </div>
+
+        {/* === RIGHT COLUMN: Mission & Vision Card (from your provided code) === */}
+        <div className="relative p-8 bg-gray-100 rounded-xl shadow-lg border-t-8 border-gray-900 lg:mt-[100px]">
+          
+          {/* Decorative Icon */}
+          <div className="absolute top-4 right-4 text-gray-400">
+            <TargetIcon className="w-12 h-12" />
+          </div>
+          
+          <div className="space-y-6">
+            
+            {/* Mission Box */}
+            <div className="bg-white p-6 rounded-lg shadow-inner">
+              <h4 className="text-2xl font-bold text-gray-900 mb-2 border-b border-gray-300 pb-1 flex items-center">
+                <span className="w-4 h-4 rounded-full bg-yellow-400 mr-3 inline-block"></span>
+                Our Mission
+              </h4>
+              <p className="text-gray-700 mt-2">
+                To <b>empower ambitious brands</b> with integrated, high-performance digital strategies that drive tangible results.
+              </p>
+            </div>
+            
+            {/* Vision Box */}
+            <div className="bg-white p-6 rounded-lg shadow-inner">
+              <h4 className="text-2xl font-bold text-gray-900 mb-2 border-b border-gray-300 pb-1 flex items-center">
+                <span className="w-4 h-4 rounded-full bg-orange-500 mr-3 inline-block"></span>
+                Our Vision
+              </h4>
+              <p className="text-gray-700 mt-2">
+                To be globally recognized as the <b>catalyst for digital transformation</b>, setting benchmarks for innovation and growth worldwide.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
 
       {/* Core Values */}
       <section className="py-20 bg-gray-50">
