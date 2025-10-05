@@ -32,7 +32,6 @@ export default async function Service({ params }) {
     const { heroSection, serviceListSection, whyChooseUsSection, faqSection } =
         service;
 
-
     // Dynamic section
     const HeroSection = () => (
         <section className="relative pt-4 pb-4 md:pt-8 md:pb-8 bg-white overflow-hidden">
@@ -345,6 +344,7 @@ export default async function Service({ params }) {
             <HeroSection />
             <ServiceListSection />
             <WhyChooseUsSection />
+
             <WorkingProcessSection />
             <StatsSection />
             <FAQSection />

@@ -24,14 +24,15 @@ export default async function Service({ params }) {
 
   const serviceCollection = dbConnect(collectionNamesobj.servicesCollection);
   const services = await serviceCollection.find({}).toArray();
+  console.log(services)
 
       const service = services.find(
       (item) => item.page === p.page
     );
+    console.log(service)
 
     const { heroSection, serviceListSection, whyChooseUsSection, faqSection } =
         service;
-
 
     // Dynamic section
     const HeroSection = () => (
@@ -345,6 +346,7 @@ export default async function Service({ params }) {
             <HeroSection />
             <ServiceListSection />
             <WhyChooseUsSection />
+
             <WorkingProcessSection />
             <StatsSection />
             <FAQSection />
