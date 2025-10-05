@@ -11,20 +11,12 @@ import {
 } from "lucide-react";
 
 // fixed data
-const whyChooseKeywords = [
-  { title: 'EXPERIENCE...', customColor: '#1f2937' },
-  { title: 'COLLABORATIVE...', customColor: '#f97316' },
-  { title: 'EFFECTIVENESS...', customColor: '#f97316' },
-  { title: 'CLIENT-CENTRIC...', customColor: '#f97316' },
-];
-
 const processSteps = [
   { number: '01', title: 'DISCOVERY & PLANNING', position: 'top-left' },
   { number: '02', title: 'DESIGN & ARCHITECTURE', position: 'mid-left' },
   { number: '03', title: 'DEPLOYMENT & TESTING', position: 'mid-right' },
   { number: '04', title: 'POST-DEPLOYMENT SUPPORT & MAINTENANCE', position: 'bottom-center' },
 ];
-
 
 // 🔹 JSON Data
 const serviceData = {
@@ -106,11 +98,13 @@ const serviceData = {
   },
 };
 
-
-
-export default function Service() {
+export default async function Service({params}) {
   const { heroSection, serviceListSection, whyChooseUsSection, faqSection } =
     serviceData;
+
+  const serviceCollection = dbConnect(collectionNamesobj.servicesCollection);
+  const services = await serviceCollection.find({}).toArray();
+  console.log(services)
 
   // Dynamic section
   const HeroSection = () => (
@@ -148,7 +142,7 @@ export default function Service() {
   );
 
   const ServiceListSection = () => (
-    <div className="bg-white py-16 md:py-24">
+    <div className="bg-white py-6 md:py-14">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">
           {serviceListSection.title}
@@ -172,13 +166,13 @@ export default function Service() {
             height={400}
             className="w-full h-auto rounded-lg shadow-xl"
           />
-          <div className="grid grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 gap-1">
             {serviceListSection.images.slice(1).map((img, idx) => (
               <img
                 key={idx}
                 src={img.url}
                 alt={img.alt}
-                width={400}
+                width={600}
                 height={200}
                 className="rounded-lg shadow-md"
               />
@@ -190,7 +184,7 @@ export default function Service() {
   );
 
   const WhyChooseUsSection = () => (
-    <section className="py-24 bg-white">
+    <section className="py-6 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-5xl md:text-7xl font-extrabold text-gray-900 mb-16 text-center">
           {whyChooseUsSection.title}
@@ -243,7 +237,7 @@ export default function Service() {
   );
 
   const FAQSection = () => (
-    <section className="py-16 bg-white">
+    <section className="py-8 bg-white">
       <div className="max-w-5xl mx-auto px-6">
         <h2 className="text-5xl font-extrabold text-gray-900 mb-12 text-center">
           {faqSection.title}
