@@ -11,19 +11,19 @@ import {
 } from "lucide-react";
 
 // fixed data
-const whyChooseKeywords = [
-  { title: 'EXPERIENCE...', customColor: '#1f2937' },
-  { title: 'COLLABORATIVE...', customColor: '#f97316' },
-  { title: 'EFFECTIVENESS...', customColor: '#f97316' },
-  { title: 'CLIENT-CENTRIC...', customColor: '#f97316' },
-];
+  const whyChooseKeywords = [
+    { title: 'EXPERIENCE...', customColor: '#1f2937' },
+    { title: 'COLLABORATIVE...', customColor: '#f97316' },
+    { title: 'EFFECTIVENESS...', customColor: '#f97316' },
+    { title: 'CLIENT-CENTRIC...', customColor: '#f97316' },
+  ];
 
-const processSteps = [
-  { number: '01', title: 'DISCOVERY & PLANNING', position: 'top-left' },
-  { number: '02', title: 'DESIGN & ARCHITECTURE', position: 'mid-left' },
-  { number: '03', title: 'DEPLOYMENT & TESTING', position: 'mid-right' },
-  { number: '04', title: 'POST-DEPLOYMENT SUPPORT & MAINTENANCE', position: 'bottom-center' },
-];
+  const processSteps = [
+    { number: '01', title: 'DISCOVERY & PLANNING', position: 'top-left' },
+    { number: '02', title: 'DESIGN & ARCHITECTURE', position: 'mid-left' },
+    { number: '03', title: 'DEPLOYMENT & TESTING', position: 'mid-right' },
+    { number: '04', title: 'POST-DEPLOYMENT SUPPORT & MAINTENANCE', position: 'bottom-center' },
+  ];
 
 
 // 🔹 JSON Data
@@ -114,7 +114,7 @@ export default function Service() {
 
   // Dynamic section
   const HeroSection = () => (
-    <section className="relative pt-4 pb-4 md:pt-8 md:pb-8 bg-white overflow-hidden">
+    <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
@@ -343,11 +343,11 @@ export default function Service() {
     </div>
   );
 
-  const ContactSection = () => (
+ const ContactSection = () => (
     <div className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12">
-
+         
           {/* Left Side: Contact Info (Screenshot 115) */}
           <div>
             <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
@@ -358,7 +358,7 @@ export default function Service() {
             <p className="text-lg text-gray-600 mb-12 max-w-lg">
               We welcome the opportunity to connect with you! Feel free to contact us using the details provided or by filling out the contact form. As a leading advertising agency in Bangladesh, our dedicated team is here to provide expert assistance and answer any questions you may have.
             </p>
-
+           
             <div className="space-y-8">
               {/* Call Us At */}
               <div className="flex items-start">
@@ -368,7 +368,7 @@ export default function Service() {
                   <p className="text-lg text-gray-600">+88 0189-600-6896</p>
                 </div>
               </div>
-
+             
               {/* Email Us On */}
               <div className="flex items-start">
                 <Mail className="w-8 h-8 text-gray-900 mr-4 mt-1 flex-shrink-0" />
@@ -377,7 +377,7 @@ export default function Service() {
                   <p className="text-lg text-gray-600">hello@visualiweb.com</p>
                 </div>
               </div>
-
+             
               {/* Find Us */}
               <div className="flex items-start">
                 <MapPin className="w-8 h-8 text-gray-900 mr-4 mt-1 flex-shrink-0" />
@@ -392,7 +392,7 @@ export default function Service() {
               </div>
             </div>
           </div>
-
+         
           {/* Right Side: Contact Form (Screenshot 115) */}
           <div>
             <h2 className="text-5xl font-extrabold text-gray-900 mb-8">
@@ -411,7 +411,7 @@ export default function Service() {
               </button>
             </form>
           </div>
-
+         
         </div>
       </div>
     </div>
@@ -425,10 +425,11 @@ export default function Service() {
       <ServiceListSection />
       <WhyChooseUsSection />
 
-      <WorkingProcessSection />
-      <StatsSection />
+              <WorkingProcessSection />
+        <StatsSection />
       <FAQSection />
-      <ContactSection />
+              <ContactSection />
+
     </main>
   );
 }

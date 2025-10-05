@@ -114,7 +114,7 @@ export default function Service() {
 
   // Dynamic section
   const HeroSection = () => (
-    <section className="relative pt-4 pb-4 md:pt-8 md:pb-8 bg-white overflow-hidden">
+    <section className="relative pt-4 pb-8 md:pt- md:pb-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>

@@ -11,19 +11,19 @@ import {
 } from "lucide-react";
 
 // fixed data
-const whyChooseKeywords = [
-  { title: 'EXPERIENCE...', customColor: '#1f2937' },
-  { title: 'COLLABORATIVE...', customColor: '#f97316' },
-  { title: 'EFFECTIVENESS...', customColor: '#f97316' },
-  { title: 'CLIENT-CENTRIC...', customColor: '#f97316' },
-];
+  const whyChooseKeywords = [
+    { title: 'EXPERIENCE...', customColor: '#1f2937' },
+    { title: 'COLLABORATIVE...', customColor: '#f97316' },
+    { title: 'EFFECTIVENESS...', customColor: '#f97316' },
+    { title: 'CLIENT-CENTRIC...', customColor: '#f97316' },
+  ];
 
-const processSteps = [
-  { number: '01', title: 'DISCOVERY & PLANNING', position: 'top-left' },
-  { number: '02', title: 'DESIGN & ARCHITECTURE', position: 'mid-left' },
-  { number: '03', title: 'DEPLOYMENT & TESTING', position: 'mid-right' },
-  { number: '04', title: 'POST-DEPLOYMENT SUPPORT & MAINTENANCE', position: 'bottom-center' },
-];
+  const processSteps = [
+    { number: '01', title: 'DISCOVERY & PLANNING', position: 'top-left' },
+    { number: '02', title: 'DESIGN & ARCHITECTURE', position: 'mid-left' },
+    { number: '03', title: 'DEPLOYMENT & TESTING', position: 'mid-right' },
+    { number: '04', title: 'POST-DEPLOYMENT SUPPORT & MAINTENANCE', position: 'bottom-center' },
+  ];
 
 
 // 🔹 JSON Data
@@ -114,7 +114,7 @@ export default function Service() {
 
   // Dynamic section
   const HeroSection = () => (
-    <section className="relative pt-4 pb-4 md:pt-8 md:pb-8 bg-white overflow-hidden">
+    <section className="relative pt-24 pb-16 md:pt-32 md:pb-24 bg-white overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div>
@@ -263,8 +263,8 @@ export default function Service() {
     </section>
   );
 
-
   // Fixed section
+
   const WorkingProcessSection = () => {
     // Component to render the step boxes
     const StepBox = ({ step }) => (
@@ -320,6 +320,7 @@ export default function Service() {
     );
   };
 
+
   const StatsSection = () => (
     <div className="bg-white py-12 -mt-16 md:-mt-20 relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -343,92 +344,15 @@ export default function Service() {
     </div>
   );
 
-  const ContactSection = () => (
-    <div className="bg-white py-24">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid md:grid-cols-2 gap-12">
 
-          {/* Left Side: Contact Info (Screenshot 115) */}
-          <div>
-            <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-6">
-              DON'T HESITATE TO
-              <br />
-              REACH OUT TO US
-            </h2>
-            <p className="text-lg text-gray-600 mb-12 max-w-lg">
-              We welcome the opportunity to connect with you! Feel free to contact us using the details provided or by filling out the contact form. As a leading advertising agency in Bangladesh, our dedicated team is here to provide expert assistance and answer any questions you may have.
-            </p>
-
-            <div className="space-y-8">
-              {/* Call Us At */}
-              <div className="flex items-start">
-                <Phone className="w-8 h-8 text-gray-900 mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-1">CALL US AT</h4>
-                  <p className="text-lg text-gray-600">+88 0189-600-6896</p>
-                </div>
-              </div>
-
-              {/* Email Us On */}
-              <div className="flex items-start">
-                <Mail className="w-8 h-8 text-gray-900 mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-1">EMAIL US ON</h4>
-                  <p className="text-lg text-gray-600">hello@visualiweb.com</p>
-                </div>
-              </div>
-
-              {/* Find Us */}
-              <div className="flex items-start">
-                <MapPin className="w-8 h-8 text-gray-900 mr-4 mt-1 flex-shrink-0" />
-                <div>
-                  <h4 className="text-xl font-bold text-gray-900 mb-1">FIND US</h4>
-                  <p className="text-lg text-gray-600">
-                    House # 3, Road # 2/2, Banani,
-                    <br />
-                    Dhaka-1213, Bangladesh
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Side: Contact Form (Screenshot 115) */}
-          <div>
-            <h2 className="text-5xl font-extrabold text-gray-900 mb-8">
-              SEND US A MESSAGE
-            </h2>
-            <form className="space-y-4">
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                <input type="text" placeholder="YOUR NAME" className="input input-lg input-bordered w-full rounded-lg text-gray-800 placeholder-gray-500" />
-                <input type="email" placeholder="YOUR EMAIL" className="input input-lg input-bordered w-full rounded-lg text-gray-800 placeholder-gray-500" />
-              </div>
-              <input type="text" placeholder="YOUR SUBJECT" className="input input-lg input-bordered w-full rounded-lg text-gray-800 placeholder-gray-500" />
-              <textarea placeholder="WRITE MESSAGE..." className="textarea textarea-lg textarea-bordered w-full h-40 rounded-lg text-gray-800 placeholder-gray-500 resize-none"></textarea>
-              <button type="submit" className="btn btn-neutral btn-lg rounded-lg shadow-xl mt-4">
-                <ChevronRight className="w-5 h-5" />
-                Send a message
-              </button>
-            </form>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  );
-
-
-  //  Main 
+  //  Main R
   return (
     <main className="bg-white text-gray-900 font-sans">
       <HeroSection />
       <ServiceListSection />
       <WhyChooseUsSection />
-
-      <WorkingProcessSection />
-      <StatsSection />
+      
       <FAQSection />
-      <ContactSection />
     </main>
   );
 }
