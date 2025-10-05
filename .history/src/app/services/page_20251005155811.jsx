@@ -313,6 +313,38 @@ const HeroSection = () => {
     );
   };
 
+  
+  const AlliancePartnersSection = () => {
+    const partners = [
+      { name: 'AWS', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=aws', style: 'text-2xl font-bold' },
+      { name: 'Azure', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=Azure', style: 'text-2xl font-bold' },
+      { name: 'Pico Public Cloud', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=Pico', style: 'text-xl font-bold' },
+      { name: 'Google Partner', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=Google', style: 'text-xl font-bold' },
+      { name: 'ISO Certified', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=ISO', style: 'text-xl font-bold' },
+      { name: 'Stock Exchange', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=Stock', style: 'text-xl font-bold' },
+    ];
+
+    return (
+      <div className="bg-white py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Title from Screenshot 112 */}
+          <h2 className="text-5xl md:text-7xl font-extrabold mb-16">
+            <span className="text-blue-700">ALLIANCES &</span>
+            <span className="block text-5xl md:text-7xl font-extrabold" style={{ color: '#f97316' }}>PARTNERS</span>
+          </h2>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+            {partners.map((partner, index) => (
+              <div key={index} className="flex items-center justify-center p-6 bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300 h-32">
+                <img src={partner.icon} alt={partner.name} className="max-h-full max-w-full" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
+  
   const FAQSection = () => (
     <div className="bg-gray-50 py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -415,15 +447,26 @@ const HeroSection = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       <main>
+        {/* The first set of images defined the style and the core sections */}
         <Hero />
         <HeroSection />
-        <StatsSection /> 
+        <StatsSection /> {/* NEW: Stats section (Screenshot 113) */}
         <ServiceListSection />
         <WhyChooseUsSection />
+        <TeamImageSection />
         
-        <WorkingProcessSection /> 
-        <FAQSection /> 
-        <ContactSection /> 
+        {/* The new sections from the latest screenshots */}
+        <WorkingProcessSection /> {/* NEW: Working Process (Screenshots 110 & 111) */}
+        <AlliancePartnersSection /> {/* NEW: Alliances & Partners (Screenshot 112) */}
+        <FAQSection /> {/* NEW: F.A.Q. Section (Screenshot 114) */}
+        <ContactSection /> {/* NEW: Contact Form (Screenshot 115) */}
+
+        {/* Footer placeholder */}
+        <footer className="footer footer-center p-8 bg-base-300 text-base-content">
+          <aside>
+            <p>Copyright © 2024 - All rights reserved by Visual I</p>
+          </aside>
+        </footer>
       </main>
     </div>
   );

@@ -81,7 +81,7 @@ const HeroSection = () => {
   <div className="flex items-center mb-3 hover:translate-x-1 transition-transform duration-300">
     {/* + icon */}
     <span
-      className="text-2xl font-bold mr-1 flex-shrink-0"
+      className="text-2xl font-bold mr-3 flex-shrink-0"
       style={{ color: '#f97316' }}
     >
       +
@@ -104,12 +104,12 @@ const HeroSection = () => {
               DEVELOPMENT
             </h1>
                     <div className="pt-2">
-            <h2 className="text-2xl font-semibold text-gray-900 mb-6">
-              Services
+            <h2 className="text-3xl font-bold text-gray-900 mb-6">
+              Our Services
             </h2>
 
             {/* services */}
-            <div className="grid lg:grid-cols-2 items-center">
+            <div className="flex flex-wrap items-center">
               {services.map((service, index) => (
                 <ServiceListItem key={index} text={service} />
               ))}
@@ -147,9 +147,9 @@ const HeroSection = () => {
   );
 
   const ServiceListSection = () => (
-    <div className="bg-white py-16 md:py-24">
+    <div className="bg-gray-50 py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Top Title Section (from Screenshot 105) */}
+        {/* Title from Screenshot 105 */}
         <div className="mb-12">
           <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-4">
             Best Software Development Service in Dhaka, Bangladesh
@@ -160,7 +160,7 @@ const HeroSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          {/* Left Side: How Software Empowers (Matches image_cdef6a.png) */}
+          {/* Left Side: How Software Empowers (Screenshot 105 structure) */}
           <div>
             <h2 className="text-5xl md:text-6xl font-extrabold text-gray-900 mb-8">
               HOW SOFTWARE
@@ -169,39 +169,22 @@ const HeroSection = () => {
               <br />
               EMPOWERS YOUR
               <br />
-              BUSINESS?
+              BUSINESS
             </h2>
           </div>
 
-          {/* Right Side: Service List & Description (Combines content from Screenshot 103 and 105 text) */}
-          <div className="p-6">
-            <p className="text-sm text-gray-600 mb-8">
-              Custom software solutions streamline operations, enhance efficiency, and improve customer experiences. Tailored systems automate tasks, save time, and reduce costs, allowing your business to scale faster and make data-driven decisions. With the right software, you gain a competitive edge, boosting productivity and ultimately securing a higher return on investment (ROI).
+          {/* Right Side: Service List (Screenshot 103 structure) */}
+          <div className="p-6 bg-white rounded-xl shadow-lg">
+            <p className="text-lg text-gray-700 mb-6">
+              Custom software solutions streamline operations, enhance efficiency, and improve customer experiences.
             </p>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-y-4 gap-x-8">
+              {services.map((service, index) => (
+                <ServiceListItem key={index} text={service} />
+              ))}
+            </div>
           </div>
         </div>
-
-                   {/* Image below the title, matching the visual placement in image_cdef6a.png */}
-            <div className="mt-8 space-y-4">
-                <img
-                    src="https://placehold.co/600x400/f2f2f2/1f2937?text=Collaborative+Development+Team"
-                    alt="Team working on code"
-                    className="w-full h-auto rounded-lg shadow-xl"
-                />
-                {/* Placeholder for the second image, if needed, mimicking the split view */}
-                 <div className="grid grid-cols-2 gap-4">
-                    <img
-                        src="https://placehold.co/300x200/f2f2f2/1f2937?text=Dedicated+Programmer"
-                        alt="Dedicated Programmer"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                    />
-                    <img
-                        src="https://placehold.co/300x200/f2f2f2/1f2937?text=Dedicated+Programmer"
-                        alt="Dedicated Programmer"
-                        className="w-full h-full object-cover rounded-lg shadow-md"
-                    />
-                 </div>
-            </div>
       </div>
     </div>
   );
@@ -313,6 +296,52 @@ const HeroSection = () => {
     );
   };
 
+  const TeamImageSection = () => (
+    <div className="bg-white py-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Placeholder for the team image (Screenshots 106 & 107) */}
+        <div className="h-96 w-full rounded-xl overflow-hidden shadow-2xl">
+          <img
+            src="https://placehold.co/1200x400/1e293b/ffffff?text=Our+Software+Development+Team"
+            alt="Team working on code"
+            className="w-full h-full object-cover"
+          />
+        </div>
+      </div>
+    </div>
+  );
+  
+  const AlliancePartnersSection = () => {
+    const partners = [
+      { name: 'AWS', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=aws', style: 'text-2xl font-bold' },
+      { name: 'Azure', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=Azure', style: 'text-2xl font-bold' },
+      { name: 'Pico Public Cloud', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=Pico', style: 'text-xl font-bold' },
+      { name: 'Google Partner', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=Google', style: 'text-xl font-bold' },
+      { name: 'ISO Certified', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=ISO', style: 'text-xl font-bold' },
+      { name: 'Stock Exchange', icon: 'https://placehold.co/100x60/f2f2f2/000000?text=Stock', style: 'text-xl font-bold' },
+    ];
+
+    return (
+      <div className="bg-white py-24">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          {/* Title from Screenshot 112 */}
+          <h2 className="text-5xl md:text-7xl font-extrabold mb-16">
+            <span className="text-blue-700">ALLIANCES &</span>
+            <span className="block text-5xl md:text-7xl font-extrabold" style={{ color: '#f97316' }}>PARTNERS</span>
+          </h2>
+          
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-6">
+            {partners.map((partner, index) => (
+              <div key={index} className="flex items-center justify-center p-6 bg-white border border-gray-200 rounded-xl shadow-lg hover:shadow-xl transition duration-300 h-32">
+                <img src={partner.icon} alt={partner.name} className="max-h-full max-w-full" />
+              </div>
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  };
+  
   const FAQSection = () => (
     <div className="bg-gray-50 py-24">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -415,15 +444,26 @@ const HeroSection = () => {
   return (
     <div className="min-h-screen bg-white font-sans">
       <main>
+        {/* The first set of images defined the style and the core sections */}
         <Hero />
         <HeroSection />
-        <StatsSection /> 
+        <StatsSection /> {/* NEW: Stats section (Screenshot 113) */}
         <ServiceListSection />
         <WhyChooseUsSection />
+        <TeamImageSection />
         
-        <WorkingProcessSection /> 
-        <FAQSection /> 
-        <ContactSection /> 
+        {/* The new sections from the latest screenshots */}
+        <WorkingProcessSection /> {/* NEW: Working Process (Screenshots 110 & 111) */}
+        <AlliancePartnersSection /> {/* NEW: Alliances & Partners (Screenshot 112) */}
+        <FAQSection /> {/* NEW: F.A.Q. Section (Screenshot 114) */}
+        <ContactSection /> {/* NEW: Contact Form (Screenshot 115) */}
+
+        {/* Footer placeholder */}
+        <footer className="footer footer-center p-8 bg-base-300 text-base-content">
+          <aside>
+            <p>Copyright © 2024 - All rights reserved by Visual I</p>
+          </aside>
+        </footer>
       </main>
     </div>
   );

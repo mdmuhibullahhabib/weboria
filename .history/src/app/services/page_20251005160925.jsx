@@ -54,7 +54,6 @@ export default function Service() {
   );
 
   // --- Section Components ---
-
     const Hero = () => (
     <section
       className="relative bg-cover bg-center text-white py-32"

@@ -14,11 +14,11 @@ export default function Navbar() {
   // Secondary: #0B0F19 (dark navy)
   // Accent: gradient orange-pink
   const subServices = [
-    { name: "Web Development", href: "/service/web-development" },
-    { name: "E-Commerce Solutions", href: "/service/ecommerce" },
-    { name: "Digital Marketing", href: "/service/digital-marketing" },
-    { name: "SEO Optimization", href: "/service/seo" },
-    { name: "UI/UX Design", href: "/service/ui-ux" },
+    { name: "Web Development", href: "/services/web-development" },
+    { name: "E-Commerce Solutions", href: "/services/ecommerce" },
+    { name: "Digital Marketing", href: "/services/digital-marketing" },
+    { name: "SEO Optimization", href: "/services/seo" },
+    { name: "UI/UX Design", href: "/services/ui-ux" },
     { name: "API & Cloud", href: "/service/api-cloud" },
   ];
 
