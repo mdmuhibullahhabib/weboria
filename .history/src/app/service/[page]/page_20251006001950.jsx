@@ -17,6 +17,85 @@ const processSteps = [
     { number: '04', title: 'POST-DEPLOYMENT SUPPORT & MAINTENANCE', position: 'bottom-center' },
 ];
 
+// 🔹 JSON Data
+// const serviceData = {
+//     page: "software-development",
+//     heroSection: {
+//         title: "SOFTWARE DEVELOPMENT",
+//         subtitle: "Services",
+//         services: [
+//             "Custom Software Development",
+//             "Web Application Development",
+//             "Software Integration",
+//             "Cloud Software Development",
+//             "Legacy System Modernization",
+//             "Software Maintenance & Support",
+//             "Quality Assurance & Testing",
+//             "Consulting Services",
+//         ],
+//     },
+//     serviceListSection: {
+//         title: "Best Software Development Service in Dhaka, Bangladesh",
+//         description:
+//             "In today's digital landscape, powerful, scalable software is a must for business success. As a leading Software Development Company in Dhaka, Bangladesh, Visual I specializes in crafting custom software solutions that drive growth. From web applications to enterprise software and AI-driven solutions, our expert developers ensure seamless functionality, robust security, and innovative designs. We deliver high-performance, user-focused software that keeps your business ahead of the competition. Let us turn your vision into reality with cutting-edge technology tailored to your needs.",
+//         headline: "HOW SOFTWARE DEVELOPMENT EMPOWERS YOUR BUSINESS?",
+//         paragraph:
+//             "Custom software solutions streamline operations, enhance efficiency, and improve customer experiences. Tailored systems automate tasks, save time, and reduce costs, allowing your business to scale faster and make data-driven decisions. With the right software, you gain a competitive edge, boosting productivity and ultimately securing a higher return on investment (ROI).",
+//         images: [
+//             {
+//                 url: "https://placehold.co/600x400/f2f2f2/1f2937?text=Collaborative+Development+Team",
+//                 alt: "Team working on code",
+//             },
+//             {
+//                 url: "https://placehold.co/300x200/f2f2f2/1f2937?text=Dedicated+Programmer",
+//                 alt: "Dedicated Programmer",
+//             },
+//             {
+//                 url: "https://placehold.co/300x200/f2f2f2/1f2937?text=Dedicated+Programmer",
+//                 alt: "Dedicated Programmer",
+//             },
+//         ],
+//     },
+//     whyChooseUsSection: {
+//         title: "WHY CHOOSE OUR SOFTWARE DEVELOPMENT?",
+//         highlightColor: "#f97316",
+//         leftCard: {
+//             iconColor: "#1f2937",
+//             innerDotColor: "#f97316",
+//             heading: "PROVEN EXPERTISE AND EXPERIENCE",
+//             description:
+//                 "Our seasoned software developers have extensive knowledge and experience in various domains, including web development, mobile app development, and custom software solutions.",
+//             buttonText: "Send Your Message",
+//         },
+//         keywords: [
+//             { title: "EXPERIENCE...", customColor: "#1f2937" },
+//             { title: "COLLABORATIVE...", customColor: "#f97316" },
+//             { title: "EFFECTIVENESS...", customColor: "#f97316" },
+//             { title: "CLIENT-CENTRIC...", customColor: "#f97316" },
+//         ],
+//     },
+//     faqSection: {
+//         title: "F.A.Q",
+//         faqs: [
+//             {
+//                 question: "HOW MUCH DOES IT COST TO DEVELOP SOFTWARE?",
+//                 answer:
+//                     "The cost of software development can vary depending on several factors, including the size and complexity of the project and the technologies used. We will provide you with a detailed quote after gathering your requirements and understanding your project needs.",
+//             },
+//             {
+//                 question: "HOW LONG DOES IT TAKE TO DEVELOP SOFTWARE?",
+//                 answer:
+//                     "Project duration varies widely. A small application might take 4-8 weeks, while complex enterprise solutions can take 6 months or more. We establish clear timelines during the planning phase.",
+//             },
+//             {
+//                 question:
+//                     "WHY SHOULD I CHOOSE CUSTOM SOFTWARE DEVELOPMENT OVER OFF-THE-SHELF SOLUTIONS?",
+//                 answer:
+//                     "Custom software is tailored exactly to your unique business processes, providing a competitive edge, better integration, and greater scalability, unlike generic off-the-shelf products.",
+//             },
+//         ],
+//     },
+// };
 
 export default async function Service({ params }) {
     
@@ -33,6 +112,7 @@ export default async function Service({ params }) {
 
     const { heroSection, serviceListSection, whyChooseUsSection, faqSection } =
         service;
+
 
     // Dynamic section
     const HeroSection = () => (
