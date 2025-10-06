@@ -4,6 +4,9 @@ import { Rocket, Lightbulb, Monitor, Check, PhoneCall, Zap, Layers } from "lucid
 import Image from "next/image";
 import PRESENCE from "../../public/assets/EMPOWERING.jpg";
 
+const ImagePlaceholder = ({ children, className = "bg-gray-200 h-full w-full flex items-center justify-center text-gray-500" }) => (
+    <div className={className}>{children}</div>
+);
 
 const Service = () => {
     // Mock data for the service cards
@@ -50,12 +53,12 @@ const Service = () => {
                         EMPOWERING
                     </p>
                     <div className="flex items-center space-x-4 mb-4">
-                        <div className="relative w-48 h-24 rounded-md overflow-hidden shadow-lg">
+                              <div className="relative w-24 h-24 rounded-md overflow-hidden shadow-lg">
                             <Image
-                                src={PRESENCE} 
+                                src={PRESENCE} // ✅ Local image used
                                 alt="presence image"
-                                fill 
-                                className="object-cover"
+                                fill // ✅ Fill parent div
+                                className="object-cover" // ✅ Proper object-fit
                             />
                         </div>
                         <p className="text-3xl md:text-4xl font-serif font-extrabold text-orange-500">

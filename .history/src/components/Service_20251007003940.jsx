@@ -50,12 +50,12 @@ const Service = () => {
                         EMPOWERING
                     </p>
                     <div className="flex items-center space-x-4 mb-4">
-                        <div className="relative w-48 h-24 rounded-md overflow-hidden shadow-lg">
+                        <div className="relative w-24 h-24 rounded-md overflow-hidden shadow-lg">
                             <Image
                                 src={PRESENCE} 
                                 alt="presence image"
                                 fill 
-                                className="object-cover"
+                                className="object-cover" // ✅ Proper object-fit
                             />
                         </div>
                         <p className="text-3xl md:text-4xl font-serif font-extrabold text-orange-500">

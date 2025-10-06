@@ -1,9 +1,10 @@
 "use client"
 import React from "react";
 import { Rocket, Lightbulb, Monitor, Check, PhoneCall, Zap, Layers } from "lucide-react";
-import Image from "next/image";
-import PRESENCE from "../../public/assets/EMPOWERING.jpg";
 
+const ImagePlaceholder = ({ children, className = "bg-gray-200 h-full w-full flex items-center justify-center text-gray-500" }) => (
+    <div className={className}>{children}</div>
+);
 
 const Service = () => {
     // Mock data for the service cards
@@ -50,14 +51,9 @@ const Service = () => {
                         EMPOWERING
                     </p>
                     <div className="flex items-center space-x-4 mb-4">
-                        <div className="relative w-48 h-24 rounded-md overflow-hidden shadow-lg">
-                            <Image
-                                src={PRESENCE} 
-                                alt="presence image"
-                                fill 
-                                className="object-cover"
-                            />
-                        </div>
+                        <ImagePlaceholder className="w-24 h-24 object-cover rounded-md bg-gray-300">
+                            
+                        </ImagePlaceholder>
                         <p className="text-3xl md:text-4xl font-serif font-extrabold text-orange-500">
                             YOUR DIGITAL
                         </p>
