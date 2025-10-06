@@ -36,10 +36,10 @@ export default async function Service({ params }) {
     // Dynamic section
     const HeroSection = () => (
         <section className="relative pt-4 pb-4 md:pt-8 md:pb-8 bg-white overflow-hidden">
-            <div className="px-4 sm:px-6 lg:px-8">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                     <div>
-                        <h1 className="text-6xl sm:text-6xl md:text-8xl font-bold leading-none tracking-tighter text-gray-900 mb-8">
+                        <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[10rem] font-extrabold leading-none tracking-tighter text-gray-900 mb-8">
                             {heroSection.title}
                         </h1>
                         <h2 className="text-2xl font-semibold text-gray-900 mb-6">

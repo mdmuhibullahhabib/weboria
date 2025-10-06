@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-all duration-300">
-      <div className="max-w-7xl mx-auto lg:py-1 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto py-3 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" data-testid="link-home">

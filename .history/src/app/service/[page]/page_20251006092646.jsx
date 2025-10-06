@@ -39,7 +39,7 @@ export default async function Service({ params }) {
             <div className="px-4 sm:px-6 lg:px-8">
                 <div className="grid md:grid-cols-2 gap-12 items-start">
                     <div>
-                        <h1 className="text-6xl sm:text-6xl md:text-8xl font-bold leading-none tracking-tighter text-gray-900 mb-8">
+                        <h1 className="text-6xl sm:text-7xl md:text-8xl font-bold leading-none tracking-tighter text-gray-900 mb-8">
                             {heroSection.title}
                         </h1>
                         <h2 className="text-2xl font-semibold text-gray-900 mb-6">
