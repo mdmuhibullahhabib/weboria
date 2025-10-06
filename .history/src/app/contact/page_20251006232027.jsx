@@ -43,7 +43,7 @@ export default function ContactPage() {
       icon: MapPin,
       title: "Office",
       details: "Dhaka, Bangladesh",
-      description: "Mirpur 1200",
+      description: "123 Innovation Street, Mirpur 1200",
     },
     {
       icon: Clock,

@@ -117,21 +117,24 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen pt-6">
       {/* Hero Section */}
-      <FeaturedProjects />
+      <FeaturedProjects/>
 
-      {/* Filter Buttons - Light Theme */}
-      <section className="py-12 bg-white border-b border-gray-200">
+      {/* Filter Buttons */}
+      <section className="py-12 bg-base-100 border-b">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-wrap justify-center gap-4">
             {categories.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveFilter(category)}
-                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 border ${activeFilter === category
-                    ? "bg-sky-600 text-white border-sky-600 shadow-md"
-                    : "bg-white text-gray-700 border-gray-300 hover:bg-sky-50 hover:border-sky-400 hover:text-sky-700"
-                  }`}
-                data-testid={`button-filter-${category.toLowerCase().replace(/\s+/g, "-")}`}
+                className={`btn ${
+                  activeFilter === category
+                    ? "btn-primary"
+                    : "btn-outline hover:btn-primary"
+                } transition-all duration-300`}
+                data-testid={`button-filter-${category
+                  .toLowerCase()
+                  .replace(/\s+/g, "-")}`}
               >
                 {category}
               </button>
@@ -140,8 +143,8 @@ export default function PortfolioPage() {
         </div>
       </section>
 
-      {/* Portfolio Grid - Light Theme */}
-      <section className="py-24 bg-gradient-to-b from-white via-gray-50 to-white">
+      {/* Portfolio Grid */}
+      <section className="py-24 bg-base-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {filteredItems.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -160,10 +163,10 @@ export default function PortfolioPage() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-12 bg-white ">
+      <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-heading font-bold mb-6">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-heading font-bold mb-6">
               Project <span className="text-primary">Results</span>
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

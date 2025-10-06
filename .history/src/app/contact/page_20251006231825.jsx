@@ -42,8 +42,8 @@ export default function ContactPage() {
     {
       icon: MapPin,
       title: "Office",
-      details: "Dhaka, Bangladesh",
-      description: "Mirpur 1200",
+      details: "San Francisco, CA",
+      description: "123 Innovation Street, Suite 100",
     },
     {
       icon: Clock,

@@ -71,11 +71,11 @@ export default function Footer() {
             <div className="space-y-2 text-gray-200">
               <div className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
-                <span className="text-sm">weboria.tech@gmail.com</span>
+                <span className="text-sm">hello@weboria.com</span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                <span className="text-sm">01577118273</span>
+                <span className="text-sm">+1 (555) 123-4567</span>
               </div>
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2" />
@@ -159,7 +159,7 @@ export default function Footer() {
             {/* Copyright */}
             <div className="text-center md:text-right">
               <p className="text-gray-300 text-sm">
-                © 2025 Weboria. All rights reserved.
+                © 202 Weboria. All rights reserved.
               </p>
             </div>
           </div>

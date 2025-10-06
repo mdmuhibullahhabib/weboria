@@ -30,20 +30,20 @@ export default function ContactPage() {
     {
       icon: Mail,
       title: "Email",
-      details: "weboria.tech@gmail.com",
+      details: "hello@weboria.com",
       description: "Send us an email anytime",
     },
     {
       icon: Phone,
       title: "Phone",
-      details: "+880 1577118273",
-      description: "Sat-Sun from 8am to 10pm",
+      details: "+1 (555) 123-4567",
+      description: "Mon-Fri from 8am to 6pm",
     },
     {
       icon: MapPin,
       title: "Office",
-      details: "Dhaka, Bangladesh",
-      description: "Mirpur 1200",
+      details: "San Francisco, CA",
+      description: "123 Innovation Street, Suite 100",
     },
     {
       icon: Clock,
@@ -124,7 +124,7 @@ export default function ContactPage() {
                       <input
                         name="email"
                         type="email"
-                        placeholder="your@email.com"
+                        placeholder="weboria.tech@gmail.com"
                         className="input input-bordered w-full bg-white border-gray-300 focus:border-sky-400 focus:ring-2 focus:ring-sky-300"
                         required
                       />

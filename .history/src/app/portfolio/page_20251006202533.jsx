@@ -117,47 +117,48 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen pt-6">
       {/* Hero Section */}
-      <FeaturedProjects />
+      <FeaturedProjects/>
 
-      {/* Filter Buttons - Light Theme */}
-      <section className="py-12 bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap justify-center gap-4">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setActiveFilter(category)}
-                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 border ${activeFilter === category
-                    ? "bg-sky-600 text-white border-sky-600 shadow-md"
-                    : "bg-white text-gray-700 border-gray-300 hover:bg-sky-50 hover:border-sky-400 hover:text-sky-700"
-                  }`}
-                data-testid={`button-filter-${category.toLowerCase().replace(/\s+/g, "-")}`}
-              >
-                {category}
-              </button>
-            ))}
-          </div>
-        </div>
-      </section>
+{/* Filter Buttons - Light Theme */}
+<section className="py-12 bg-white border-b border-gray-200">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex flex-wrap justify-center gap-4">
+      {categories.map((category) => (
+        <button
+          key={category}
+          onClick={() => setActiveFilter(category)}
+          className={`px-6 py-2 rounded-full font-medium transition-all duration-300 border ${
+            activeFilter === category
+              ? "bg-sky-600 text-white border-sky-600 shadow-md"
+              : "bg-white text-gray-700 border-gray-300 hover:bg-sky-50 hover:border-sky-400 hover:text-sky-700"
+          }`}
+          data-testid={`button-filter-${category.toLowerCase().replace(/\s+/g, "-")}`}
+        >
+          {category}
+        </button>
+      ))}
+    </div>
+  </div>
+</section>
 
-      {/* Portfolio Grid - Light Theme */}
-      <section className="py-24 bg-gradient-to-b from-white via-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {filteredItems.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredItems.map((item) => (
-                <Portfolio key={item.id} {...item} />
-              ))}
-            </div>
-          ) : (
-            <div className="text-center py-16">
-              <p className="text-xl text-gray-500">
-                No projects found in this category.
-              </p>
-            </div>
-          )}
-        </div>
-      </section>
+{/* Portfolio Grid - Light Theme */}
+<section className="py-24 bg-gradient-to-b from-white via-gray-50 to-white">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    {filteredItems.length > 0 ? (
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {filteredItems.map((item) => (
+          <Portfolio key={item.id} {...item} />
+        ))}
+      </div>
+    ) : (
+      <div className="text-center py-16">
+        <p className="text-xl text-gray-500">
+          No projects found in this category.
+        </p>
+      </div>
+    )}
+  </div>
+</section>
 
       {/* Stats Section */}
       <section className="py-12 bg-white ">
