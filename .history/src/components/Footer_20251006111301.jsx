@@ -24,18 +24,16 @@ export default function Footer() {
   const quickLinks = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Services", href: "/service/web-development" },
+    { name: "Services", href: "/services" },
     { name: "Portfolio", href: "/portfolio" },
     { name: "Contact", href: "/contact" },
   ];
 
   const services = [
-    { name: "Web Development", href: "/service/web-development" },
-    { name: "E-Commerce", href: "/service/ecommerce" },
-    { name: "Digital Marketing", href: "/service/digital-marketing" },
-    { name: "UI/UX Design", href: "/service/ui-ux" },
-    { name: "SEO Services", href: "/service/seo" },
-    { name: "Api & Cloud", href: "/service/api-cloud" },
+    { name: "Web Development", href: "/service/w" },
+    { name: "Mobile Apps", href: "/services" },
+    { name: "Digital Marketing", href: "/services" },
+    { name: "SEO Services", href: "/services" },
   ];
 
   const socialLinks = [
