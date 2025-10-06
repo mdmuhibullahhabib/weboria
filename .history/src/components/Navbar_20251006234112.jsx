@@ -4,7 +4,6 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Button from "./Button";
-import Image from "next/image";
 import Logo from "../../public/assets/icons/weboria-marketing-agency-web-development.png";
 
 export default function Navbar() {
@@ -42,15 +41,14 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-all duration-300">
       <div className="max-w-7xl mx-auto lg:py-1 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-
           {/* Logo */}
           <Link href="/" data-testid="link-home">
-            <div className="w-26 h-26 relative">
+            <div className="w-12 h-12 relative">
               <Image
-                src={Logo}
+                src="/logo.png" // replace with your logo path
                 alt="Weboria Logo"
                 fill
-                className="object-contain "
+                className="object-contain"
               />
             </div>
           </Link>

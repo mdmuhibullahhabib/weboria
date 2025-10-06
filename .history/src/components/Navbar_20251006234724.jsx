@@ -45,7 +45,7 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href="/" data-testid="link-home">
-            <div className="w-26 h-26 relative">
+            <div className="w-26 h-20 relative">
               <Image
                 src={Logo}
                 alt="Weboria Logo"

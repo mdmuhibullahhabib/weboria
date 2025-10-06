@@ -11,8 +11,6 @@ import {
   MapPin,
 } from "lucide-react";
 import Image from "next/image";
-import Logo from "../../public/assets/icons/weboria-marketing-agency-web-development.png";
-
 
 export default function Footer() {
   // ✅ CTA function in plain JS
@@ -65,11 +63,11 @@ export default function Footer() {
           {/* Company Info */}
           <div className="space-y-4">
                 <Link href="/" data-testid="link-home">
-      <div className="flex items-center">
+      <div className="flex items-center space-x-2">
         {/* Logo Image */}
-        <div className="w-16 h-16 relative">
+        <div className="w-10 h-10 relative">
           <Image
-            src={Logo}
+            src= // replace with your logo path
             alt="Weboria Logo"
             fill
             className="object-contain"
@@ -77,7 +75,7 @@ export default function Footer() {
         </div>
 
         {/* Brand Name */}
-        <h1 className="text-lg font-semibold text-gray-900 tracking-tight hover:text-orange-500 transition-colors">
+        <h1 className="text-2xl font-extrabold text-gray-900 tracking-tight hover:text-orange-500 transition-colors">
           Weboria
         </h1>
       </div>
@@ -100,7 +98,7 @@ export default function Footer() {
               </div>
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2" />
-                <span className="text-sm">Mirpur, Dhaka 1200</span>
+                <span className="text-sm">San Francisco, CA</span>
               </div>
             </div>
           </div>

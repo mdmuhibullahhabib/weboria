@@ -5,6 +5,7 @@ import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Button from "./Button";
 import Image from "next/image";
+import Link from "next/link";
 import Logo from "../../public/assets/icons/weboria-marketing-agency-web-development.png";
 
 export default function Navbar() {
@@ -45,12 +46,12 @@ export default function Navbar() {
 
           {/* Logo */}
           <Link href="/" data-testid="link-home">
-            <div className="w-26 h-26 relative">
+            <div className="w-12 h-12 relative">
               <Image
-                src={Logo}
+                src="Logo"
                 alt="Weboria Logo"
                 fill
-                className="object-contain "
+                className="object-contain"
               />
             </div>
           </Link>

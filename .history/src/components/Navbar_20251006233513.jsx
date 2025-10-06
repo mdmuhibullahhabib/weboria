@@ -4,8 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Button from "./Button";
-import Image from "next/image";
-import Logo from "../../public/assets/icons/weboria-marketing-agency-web-development.png";
+import Logo from "../../public/assets/icons/";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -42,16 +41,15 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl border-b border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.05)] transition-all duration-300">
       <div className="max-w-7xl mx-auto lg:py-1 px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-
           {/* Logo */}
           <Link href="/" data-testid="link-home">
-            <div className="w-26 h-26 relative">
-              <Image
-                src={Logo}
-                alt="Weboria Logo"
-                fill
-                className="object-contain "
-              />
+            <div className="flex items-center space-x-2">
+              <div className="bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold text-lg px-2 py-1 rounded-md shadow-sm">
+                W
+              </div>
+              <h1 className="text-2xl font-extrabold text-gray-900 tracking-tight hover:text-orange-500 transition-colors">
+                Weboria
+              </h1>
             </div>
           </Link>
 
@@ -66,10 +64,11 @@ export default function Navbar() {
                 >
                   <div className="flex items-center space-x-1 cursor-pointer">
                     <span
-                      className={`relative px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${isActive(item.href)
+                      className={`relative px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
+                        isActive(item.href)
                           ? "text-orange-600 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-orange-500"
                           : "text-gray-700 hover:text-orange-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-orange-500"
-                        }`}
+                      }`}
                     >
                       {item.name}
                     </span>
@@ -83,10 +82,11 @@ export default function Navbar() {
                         <li key={sub.name}>
                           <Link
                             href={sub.href}
-                            className={`block px-4 py-2 text-sm transition-colors duration-200 ${isActive(sub.href)
+                            className={`block px-4 py-2 text-sm transition-colors duration-200 ${
+                              isActive(sub.href)
                                 ? "bg-orange-50 text-orange-600 font-semibold"
                                 : "text-gray-700 hover:bg-orange-50 hover:text-orange-600"
-                              }`}
+                            }`}
                           >
                             {sub.name}
                           </Link>
@@ -103,10 +103,11 @@ export default function Navbar() {
                   data-testid={`link-${item.name.toLowerCase()}`}
                 >
                   <span
-                    className={`relative px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${isActive(item.href)
+                    className={`relative px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
+                      isActive(item.href)
                         ? "text-orange-600 after:absolute after:left-0 after:bottom-0 after:h-[2px] after:w-full after:bg-orange-500"
                         : "text-gray-700 hover:text-orange-600 hover:after:absolute hover:after:left-0 hover:after:bottom-0 hover:after:h-[2px] hover:after:w-full hover:after:bg-orange-500"
-                      }`}
+                    }`}
                   >
                     {item.name}
                   </span>
@@ -150,10 +151,11 @@ export default function Navbar() {
                     onClick={() => setIsOpen(false)}
                   >
                     <span
-                      className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${isActive(item.href)
+                      className={`block px-3 py-2 rounded-md text-base font-medium transition-colors ${
+                        isActive(item.href)
                           ? "bg-gradient-to-r from-orange-500 to-pink-500 text-white"
                           : "text-gray-800 hover:bg-orange-50 hover:text-orange-600"
-                        }`}
+                      }`}
                     >
                       {item.name}
                     </span>
