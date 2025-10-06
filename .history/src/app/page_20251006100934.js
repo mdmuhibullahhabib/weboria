@@ -191,21 +191,23 @@ const Home = () => {
 
           {/* Project Text/CTA */}
           <div className="flex flex-col justify-center p-4">
-            <p className="text-lg leading-relaxed mb-10 text-gray-700">
-              As a leading <span className="font-semibold text-gray-900">digital marketing agency in Dhaka, Bangladesh</span>,
-              <span className="text-orange-500 font-semibold"> WebOria</span> empowers businesses with
-              <span className="font-medium"> data-driven strategies</span> that deliver real results. From innovative startups
-              to enterprise brands, our success stories — including projects like
-              <span className="font-semibold"> Fiber@Home</span>, <span className="font-semibold">Ajwah Tech</span>,
-              <span className="font-semibold"> Rainstone Money</span>, and <span className="font-semibold">NorthSouth Group</span> —
-              showcase how we transform digital potential into measurable growth.
-              <br /><br />
-              Discover how WebOria’s expertise in
-              <span className="font-medium text-gray-900"> SEO</span>,
-              <span className="font-medium text-gray-900"> Social Media Marketing</span>, and
-              <span className="font-medium text-gray-900"> Branding</span> can help your business stand out
-              and scale faster in today’s competitive market.
-            </p>
+          <p className="text-lg leading-relaxed mb-10 text-gray-700">
+  As a leading <span className="font-semibold text-gray-900">digital marketing agency in Dhaka, Bangladesh</span>, 
+  <span className="text-orange-500 font-semibold"> WebOria</span> empowers businesses with 
+  <span className="font-medium"> data-driven strategies</span> that deliver real results. From innovative startups 
+  to enterprise brands, our success stories — including projects like 
+  <span className="font-semibold"> Fiber@Home</span>, <span className="font-semibold">Ajwah Tech</span>, 
+  <span className="font-semibold"> Rainstone Money</span>, and <span className="font-semibold">NorthSouth Group</span> — 
+  showcase how we transform digital potential into measurable growth.
+  <br /><br />
+  Discover how WebOria’s expertise in 
+  <span className="font-medium text-gray-900"> SEO</span>, 
+  <span className="font-medium text-gray-900"> Social Media Marketing</span>, and 
+  <span className="font-medium text-gray-900"> Branding</span> can help your business stand out 
+  and scale faster in today’s competitive market.
+</p>
+
+
             {/* "See More Projects" CTA - large black circle */}
             <div className="relative w-48 h-48 mx-auto">
               <Link
@@ -225,15 +227,7 @@ const Home = () => {
         <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto mt-12">
           <div className="lg:w-1/2 p-4 lg:pr-8">
             <p className="text-lg leading-relaxed mb-8 text-gray-700 lg:text-left">
-              <span className="font-semibold text-orange-500">WebOria</span>, a leading
-              <span className="font-medium text-gray-900"> digital marketing and SEO agency in Bangladesh</span>,
-              offers a <span className="font-semibold">free SEO audit</span> to assess your website’s performance.
-              Our audit reveals key opportunities to improve your
-              <span className="font-medium"> search visibility, site speed, and user experience</span>,
-              helping you understand exactly what’s holding your growth back.
-              Whether you want to boost traffic, rank higher on Google, or strengthen your overall digital strategy,
-              WebOria’s <span className="font-semibold">free SEO audit</span> is your perfect first step toward
-              measurable online success.
+              Visual i, a top-tier digital marketing and SEO agency, offers a free SEO audit to evaluate your website&apos;s performance. This audit uncovers key opportunities for improvement—from search engine rankings to user experience—and delivers actionable insights to enhance your online visibility. If boosting traffic or strengthening your SEO strategy is your goal, this free SEO audit is the perfect starting point for impactful results.
             </p>
             <div className="space-y-4 max-w-sm lg:max-w-none mx-auto lg:mx-0">
               <input
