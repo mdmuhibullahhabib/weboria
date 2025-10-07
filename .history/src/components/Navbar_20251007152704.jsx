@@ -6,7 +6,6 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import Button from "./Button";
 import Image from "next/image";
 import Logo from "../../public/assets/icons/weboria-marketing-agency-web-development.png";
-import Link from "next/link";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,7 +27,7 @@ export default function Navbar() {
   const navigation = [
     { name: "Home", href: "/" },
     { name: "About", href: "/about" },
-    { name: "Services", href: "/services", dropdown: subServices },
+    { name: "Services", dropdown: subServices }, // href: "/services",
     { name: "Portfolio", href: "/portfolio" },
     { name: "Contact", href: "/contact" },
   ];
