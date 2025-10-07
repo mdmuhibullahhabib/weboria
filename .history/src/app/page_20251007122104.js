@@ -218,19 +218,19 @@ const Home = () => {
           </div>
 
           {/* --- Right Image --- */}
-          <div className="lg:w-1/2 flex justify-center items-center p-4">
-            <div className="relative w-full max-w-lg bg-white rounded-xl shadow-xl overflow-hidden flex items-center justify-center">
-              <Image
-                src={seo}
-                alt="SEO Audit Illustration"
-                width={600}
-                height={450}
-                className="w-full h-auto object-contain transition-transform duration-700 hover:scale-105"
-                priority
-              />
-            </div>
+        <div className="lg:w-1/2 flex justify-center items-center p-4">
+          <div className="relative w-full max-w-lg bg-white rounded-xl shadow-xl overflow-hidden flex items-center justify-center">
+            <Image
+              src={seo}
+              alt="SEO Audit Illustration"
+              width={600}
+              height={450}
+              className="w-full h-auto object-contain transition-transform duration-700 hover:scale-105"
+              priority
+            />
           </div>
-
+        </div>
+        
         </div>
       </section>
 

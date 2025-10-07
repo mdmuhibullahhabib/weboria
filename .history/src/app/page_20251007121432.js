@@ -17,7 +17,8 @@ import prottaysha from "../../public/assets/images/featured/weboria-web-developm
 import ProjectCard from './components/ProjectCard';
 import CTAButton from './components/CTAButton';
 import Image from 'next/image';
-import seo from "../../public/assets/images/home/free-seo-audit-by-best-search-engine-optimization-company-in-bangladesh.webp"
+
+import seo from "../../public/assets/images/home/Weboria-Digital-Marketing-and-software-Agency.webp"
 
 
 const Home = () => {
@@ -217,20 +218,18 @@ const Home = () => {
             </div>
           </div>
 
-          {/* --- Right Image --- */}
-          <div className="lg:w-1/2 flex justify-center items-center p-4">
-            <div className="relative w-full max-w-lg bg-white rounded-xl shadow-xl overflow-hidden flex items-center justify-center">
-              <Image
-                src={seo}
-                alt="SEO Audit Illustration"
-                width={600}
-                height={450}
-                className="w-full h-auto object-contain transition-transform duration-700 hover:scale-105"
-                priority
-              />
-            </div>
+                 {/* --- Right Image --- */}
+        <div className="lg:w-1/2 flex justify-center items-center p-4">
+          <div className="relative w-full max-w-md h-[400px] lg:h-[480px] rounded-xl overflow-hidden shadow-2xl bg-white">
+            <Image
+              src={seo}
+              alt="SEO Audit Illustration"
+              fill
+              className="object-contain hover:scale-105 transition-transform duration-700 ease-out"
+              priority
+            />
           </div>
-
+        </div>
         </div>
       </section>
 
