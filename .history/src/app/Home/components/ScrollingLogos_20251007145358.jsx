@@ -6,8 +6,8 @@ const logos = [
     { name: "Cholo Bangladesh", color: "text-gray-700", size: "text-3xl", weight: "font-extrabold" },
     { name: "HASHI", color: "text-green-700", size: "text-xl", weight: "font-bold" },
     { name: "PADDY", color: "text-yellow-500", size: "text-3xl", weight: "font-extrabold" },
-    { name: "SILICAINFOTECH", color: "text-gray-700", size: "text-xl", weight: "font-bold" },
-    { name: "CRICKEFVERCE", color: "text-gray-700", size: "text-xl", weight: "font-bold" },
+    { name: "SILICA", color: "text-gray-700", size: "text-xl", weight: "font-bold" },
+    { name: "TSG Accountants", color: "text-gray-700", size: "text-xl", weight: "font-bold" },
 ];
 
 const ScrollingLogos = () => {

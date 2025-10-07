@@ -3,11 +3,11 @@ import React from "react";
 
 const logos = [
     { name: "Aloron", color: "text-blue-700", size: "text-3xl", weight: "font-extrabold" },
-    { name: "Cholo Bangladesh", color: "text-gray-700", size: "text-3xl", weight: "font-extrabold" },
-    { name: "HASHI", color: "text-green-700", size: "text-xl", weight: "font-bold" },
-    { name: "PADDY", color: "text-yellow-500", size: "text-3xl", weight: "font-extrabold" },
-    { name: "SILICAINFOTECH", color: "text-gray-700", size: "text-xl", weight: "font-bold" },
-    { name: "CRICKEFVERCE", color: "text-gray-700", size: "text-xl", weight: "font-bold" },
+    { name: "cholo ", color: "text-gray-700", size: "text-3xl", weight: "font-extrabold" },
+    { name: "NORTH SOUTH GROUP", color: "text-green-700", size: "text-xl", weight: "font-bold" },
+    { name: "PAYLAKES", color: "text-yellow-500", size: "text-3xl", weight: "font-extrabold" },
+    { name: "RAINSTONE MONEY", color: "text-gray-700", size: "text-xl", weight: "font-bold" },
+    { name: "TSG Accountants", color: "text-gray-700", size: "text-xl", weight: "font-bold" },
 ];
 
 const ScrollingLogos = () => {

@@ -7,7 +7,7 @@ const logos = [
     { name: "HASHI", color: "text-green-700", size: "text-xl", weight: "font-bold" },
     { name: "PADDY", color: "text-yellow-500", size: "text-3xl", weight: "font-extrabold" },
     { name: "SILICAINFOTECH", color: "text-gray-700", size: "text-xl", weight: "font-bold" },
-    { name: "CRICKEFVERCE", color: "text-gray-700", size: "text-xl", weight: "font-bold" },
+    { name: "Cricket Verse", color: "text-gray-700", size: "text-xl", weight: "font-bold" },
 ];
 
 const ScrollingLogos = () => {
