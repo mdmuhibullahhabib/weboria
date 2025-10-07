@@ -3,9 +3,9 @@ import React from "react";
 import { Rocket, Lightbulb, Monitor, Check, PhoneCall, Zap, Layers } from "lucide-react";
 import Image from "next/image";
 import PRESENCE from "../../public/assets/EMPOWERING.jpg";
-// import seo from "../../public/assets/images/home/digital-marketing-seo-rocket.webp";
-// import web from "../../public/assets/images/home/WEBSITE-DEVELOPMENT-SERVICES.jpg";
-// import enterprice from "../../public/assets/images/home/ENTERPRISE-SOLUTIONS.jpg";
+import seo from "../../public/assets/images/home/digital-marketing-seo-rocket.webp";
+import web from "../../public/assets/images/home/WEBSITE-DEVELOPMENT-SERVICES.jpg";
+import enterprice from "../../public/assets/images/home/ENTERPRISE-SOLUTIONS.jpg";
 
 const Service = () => {
     // Mock data for the service cards

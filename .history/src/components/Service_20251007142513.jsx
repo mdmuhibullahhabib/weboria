@@ -3,9 +3,10 @@ import React from "react";
 import { Rocket, Lightbulb, Monitor, Check, PhoneCall, Zap, Layers } from "lucide-react";
 import Image from "next/image";
 import PRESENCE from "../../public/assets/EMPOWERING.jpg";
-// import seo from "../../public/assets/images/home/digital-marketing-seo-rocket.webp";
-// import web from "../../public/assets/images/home/WEBSITE-DEVELOPMENT-SERVICES.jpg";
-// import enterprice from "../../public/assets/images/home/ENTERPRISE-SOLUTIONS.jpg";
+
+import seo from "../../public/assets/images/home/digital-marketing-seo-rocket.webp";
+import web from "../../public/assets/images/home/digital-marketing-seo-rocket.webp";
+import enterprice from "../../public/assets/images/home/digital-marketing-seo-rocket.webp";
 
 const Service = () => {
     // Mock data for the service cards
@@ -14,7 +15,7 @@ const Service = () => {
             title: "DIGITAL MARKETING & SEO SOLUTIONS",
             icon: Rocket,
             iconColor: "text-red-500",
-            image: "https://i.ibb.co.com/zhKpDgY6/digital-marketing-seo-rocket.webp",
+            image: {seo},
             expertise: [
                 "Increase Website Traffic",
                 "Rank Higher on Google",
@@ -26,14 +27,14 @@ const Service = () => {
             title: "ENTERPRISE SOLUTIONS",
             icon: Lightbulb,
             iconColor: "text-yellow-500",
-            image: "https://i.ibb.co.com/yF4dXf88/ENTERPRISE-SOLUTIONS.jpg",
+            image: "https://placehold.co/400x300/fffbeb/d97706?text=Enterprise+Idea",
             expertise: ["Optimize Operations", "Boost Productivity", "Scale Securely", "Grow Smart"],
         },
         {
             title: "WEBSITE DEVELOPMENT SERVICES",
             icon: Monitor,
             iconColor: "text-blue-500",
-            image: "https://i.ibb.co.com/T3Z0VCn/WEBSITE-DEVELOPMENT-SERVICES.jpg",
+            image: "https://placehold.co/400x300/f3e8ff/7c3aed?text=Web+Monitor",
             expertise: [
                 "Website Design and Development",
                 "Web Application Development",

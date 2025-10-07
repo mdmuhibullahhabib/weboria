@@ -3,9 +3,9 @@ import React from "react";
 import { Rocket, Lightbulb, Monitor, Check, PhoneCall, Zap, Layers } from "lucide-react";
 import Image from "next/image";
 import PRESENCE from "../../public/assets/EMPOWERING.jpg";
-// import seo from "../../public/assets/images/home/digital-marketing-seo-rocket.webp";
-// import web from "../../public/assets/images/home/WEBSITE-DEVELOPMENT-SERVICES.jpg";
-// import enterprice from "../../public/assets/images/home/ENTERPRISE-SOLUTIONS.jpg";
+import seo from "../../public/assets/images/home/digital-marketing-seo-rocket.webp";
+import web from "../../public/assets/images/home/WEBSITE-DEVELOPMENT-SERVICES.jpg";
+import enterprice from "../../public/assets/images/home/ENTERPRISE-SOLUTIONS.jpg";
 
 const Service = () => {
     // Mock data for the service cards
@@ -26,7 +26,7 @@ const Service = () => {
             title: "ENTERPRISE SOLUTIONS",
             icon: Lightbulb,
             iconColor: "text-yellow-500",
-            image: "https://i.ibb.co.com/yF4dXf88/ENTERPRISE-SOLUTIONS.jpg",
+            image: "",
             expertise: ["Optimize Operations", "Boost Productivity", "Scale Securely", "Grow Smart"],
         },
         {
