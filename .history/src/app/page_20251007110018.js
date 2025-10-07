@@ -16,7 +16,6 @@ import hashi from "../../public/assets/images/featured/weboria-web-development-a
 import paddy from "../../public/assets/images/featured/weboria-web-development-and-marketing-paddy.png"
 import prottaysha from "../../public/assets/images/featured/weboria-web-development-and-marketing-prottaysha.png"
 import ProjectCard from './components/ProjectCard';
-import CTAButton from './components/CTAButton';
 
 
 const Home = () => {
@@ -178,16 +177,14 @@ const Home = () => {
             </p>
 
             {/* CTA Button */}
-            {/* <div className="relative w-48 h-48 mx-auto">
+            <div className="relative w-48 h-48 mx-auto">
               <Link
                 href="/portfolio"
                 className="absolute w-full h-full rounded-full bg-black text-white flex flex-col items-center justify-center text-xl font-semibold hover:bg-gray-800 transition"
               >
                 See <ChevronRight className="inline ml-1" size={24} /> More Projects
               </Link>
-            </div> */}
-            <CTAButton></CTAButton>
-
+            </div>
           </div>
         </div>
 

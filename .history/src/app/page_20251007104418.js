@@ -8,6 +8,7 @@ import AgencySections from '@/components/AgencySections';
 import Testimonials from './Home/components/Testimonials';
 import Button from '@/components/Button';
 import Link from "next/link";
+import Image from 'next/image';
 
 // import feature
 import aloron from "../../public/assets/images/featured/weboria-web-development-and-marketing-aloron.png"
@@ -15,9 +16,11 @@ import choloBangladesh from "../../public/assets/images/featured/weboria-web-dev
 import hashi from "../../public/assets/images/featured/weboria-web-development-and-marketing-hashi.png"
 import paddy from "../../public/assets/images/featured/weboria-web-development-and-marketing-paddy.png"
 import prottaysha from "../../public/assets/images/featured/weboria-web-development-and-marketing-prottaysha.png"
-import ProjectCard from './components/ProjectCard';
-import CTAButton from './components/CTAButton';
 
+
+const ImagePlaceholder = ({ children, className = "bg-gray-200 h-full w-full flex items-center justify-center text-gray-500" }) => (
+  <div className={className}>{children}</div>
+);
 
 const Home = () => {
   return (
@@ -147,11 +150,81 @@ const Home = () => {
         <SectionTitle titleTop={"OUR FEATURED"} titleBottom={"PROJECTS"}></SectionTitle>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-16">
-          <ProjectCard number="01" title="ALORON" image={aloron} />
-          <ProjectCard number="02" title="CHOLO BANGLADESH" image={choloBangladesh} />
-          <ProjectCard number="03" title="HASHI DENTAL" image={hashi} />
-          <ProjectCard number="04" title="PADDY" image={paddy} />
-          <ProjectCard number="05" title="PROTTAYSHA" image={prottaysha} />
+          {/* ---------- Project 1 ---------- */}
+          <div className="flex flex-col p-4">
+            <p className="text-6xl font-bold text-gray-300 mb-2">01</p>
+            <h3 className="text-4xl font-bold mb-8">ALORON</h3>
+
+            <div className="relative w-full h-96 rounded-lg shadow-xl overflow-hidden bg-gray-100 flex items-center justify-center">
+              <Image
+                src={aloron}
+                alt="Aloron Project"
+                fill
+                className="object-contain hover:scale-105 transition-transform duration-500"
+                priority
+              />
+            </div>
+          </div>
+
+          {/* ---------- Project 2 ---------- */}
+          <div className="flex flex-col p-4">
+            <p className="text-6xl font-bold text-gray-300 mb-2">02</p>
+            <h3 className="text-4xl font-bold mb-8">CHOLO BANGLADESH</h3>
+
+            <div className="relative w-full h-96 rounded-lg shadow-xl overflow-hidden bg-gray-100 flex items-center justify-center">
+              <Image
+                src={choloBangladesh}
+                alt="Cholo Bangladesh Project"
+                fill
+                className="object-contain hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          {/* ---------- Project 3 ---------- */}
+          <div className="flex flex-col p-4">
+            <p className="text-6xl font-bold text-gray-300 mb-2">03</p>
+            <h3 className="text-4xl font-bold mb-8">HASHI DENTAL</h3>
+
+            <div className="relative w-full h-96 rounded-lg shadow-xl overflow-hidden bg-gray-100 flex items-center justify-center">
+              <Image
+                src={hashi}
+                alt="Hashi Dental Project"
+                fill
+                className="object-contain hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          {/* ---------- Project 4 ---------- */}
+          <div className="flex flex-col p-4">
+            <p className="text-6xl font-bold text-gray-300 mb-2">04</p>
+            <h3 className="text-4xl font-bold mb-8">PADDY</h3>
+
+            <div className="relative w-full h-96 rounded-lg shadow-xl overflow-hidden bg-gray-100 flex items-center justify-center">
+              <Image
+                src={paddy}
+                alt="Paddy Project"
+                fill
+                className="object-contain hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+
+          {/* ---------- Project 5 ---------- */}
+          <div className="flex flex-col p-4">
+            <p className="text-6xl font-bold text-gray-300 mb-2">05</p>
+            <h3 className="text-4xl font-bold mb-8">PROTTAYSHA</h3>
+
+            <div className="relative w-full h-96 rounded-lg shadow-xl overflow-hidden bg-gray-100 flex items-center justify-center">
+              <Image
+                src={prottaysha}
+                alt="Prottaysha Project"
+                fill
+                className="object-contain hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
 
           {/* ---------- CTA Section ---------- */}
           <div className="flex flex-col justify-center p-4">
@@ -178,16 +251,14 @@ const Home = () => {
             </p>
 
             {/* CTA Button */}
-            {/* <div className="relative w-48 h-48 mx-auto">
+            <div className="relative w-48 h-48 mx-auto">
               <Link
                 href="/portfolio"
                 className="absolute w-full h-full rounded-full bg-black text-white flex flex-col items-center justify-center text-xl font-semibold hover:bg-gray-800 transition"
               >
                 See <ChevronRight className="inline ml-1" size={24} /> More Projects
               </Link>
-            </div> */}
-            <CTAButton></CTAButton>
-
+            </div>
           </div>
         </div>
 

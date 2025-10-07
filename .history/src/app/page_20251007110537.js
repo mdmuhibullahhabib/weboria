@@ -16,7 +16,6 @@ import hashi from "../../public/assets/images/featured/weboria-web-development-a
 import paddy from "../../public/assets/images/featured/weboria-web-development-and-marketing-paddy.png"
 import prottaysha from "../../public/assets/images/featured/weboria-web-development-and-marketing-prottaysha.png"
 import ProjectCard from './components/ProjectCard';
-import CTAButton from './components/CTAButton';
 
 
 const Home = () => {
@@ -177,17 +176,52 @@ const Home = () => {
               out and scale faster in today’s competitive market.
             </p>
 
-            {/* CTA Button */}
-            {/* <div className="relative w-48 h-48 mx-auto">
-              <Link
-                href="/portfolio"
-                className="absolute w-full h-full rounded-full bg-black text-white flex flex-col items-center justify-center text-xl font-semibold hover:bg-gray-800 transition"
-              >
-                See <ChevronRight className="inline ml-1" size={24} /> More Projects
-              </Link>
-            </div> */}
-            <CTAButton></CTAButton>
+   <div className="relative w-48 h-48 mx-auto group">
+      {/* Bubble Glow Effect */}
+      <div className="absolute inset-0 rounded-full bg-gradient-to-r from-orange-500 to-pink-500 opacity-30 blur-2xl group-hover:opacity-70 group-hover:scale-110 transition-all duration-700"></div>
 
+      {/* Main CTA Button */}
+      <Link
+        href="/portfolio"
+        className="absolute w-full h-full rounded-full bg-black text-white flex flex-col items-center justify-center text-xl font-semibold hover:bg-gradient-to-r hover:from-orange-500 hover:to-pink-500 transition-all duration-500 shadow-xl"
+      >
+        <span className="relative z-10 flex items-center gap-2">
+          See <ChevronRight size={24} />
+        </span>
+
+        {/* Floating bubble */}
+        <div className="absolute -bottom-3 right-6 w-6 h-6 bg-gradient-to-r from-orange-400 to-pink-500 rounded-full animate-bounce-slow group-hover:animate-bubble-move"></div>
+      </Link>
+
+      {/* Custom Keyframes (Tailwind plugin or global CSS) */}
+      <style jsx>{`
+        @keyframes bubble-move {
+          0% {
+            transform: translate(0, 0);
+          }
+          50% {
+            transform: translate(-12px, -18px);
+          }
+          100% {
+            transform: translate(0, 0);
+          }
+        }
+        .animate-bubble-move {
+          animation: bubble-move 1.8s ease-in-out infinite;
+        }
+        @keyframes bounce-slow {
+          0%, 100% {
+            transform: translateY(0);
+          }
+          50% {
+            transform: translateY(-6px);
+          }
+        }
+        .animate-bounce-slow {
+          animation: bounce-slow 2.2s ease-in-out infinite;
+        }
+      `}</style>
+    </div>
           </div>
         </div>
 

@@ -8,6 +8,7 @@ import AgencySections from '@/components/AgencySections';
 import Testimonials from './Home/components/Testimonials';
 import Button from '@/components/Button';
 import Link from "next/link";
+import Image from 'next/image';
 
 // import feature
 import aloron from "../../public/assets/images/featured/weboria-web-development-and-marketing-aloron.png"
@@ -16,8 +17,11 @@ import hashi from "../../public/assets/images/featured/weboria-web-development-a
 import paddy from "../../public/assets/images/featured/weboria-web-development-and-marketing-paddy.png"
 import prottaysha from "../../public/assets/images/featured/weboria-web-development-and-marketing-prottaysha.png"
 import ProjectCard from './components/ProjectCard';
-import CTAButton from './components/CTAButton';
 
+
+const ImagePlaceholder = ({ children, className = "bg-gray-200 h-full w-full flex items-center justify-center text-gray-500" }) => (
+  <div className={className}>{children}</div>
+);
 
 const Home = () => {
   return (
@@ -146,50 +150,48 @@ const Home = () => {
       <section className="py-8 px-4 lg:px-20">
         <SectionTitle titleTop={"OUR FEATURED"} titleBottom={"PROJECTS"}></SectionTitle>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-16">
-          <ProjectCard number="01" title="ALORON" image={aloron} />
-          <ProjectCard number="02" title="CHOLO BANGLADESH" image={choloBangladesh} />
-          <ProjectCard number="03" title="HASHI DENTAL" image={hashi} />
-          <ProjectCard number="04" title="PADDY" image={paddy} />
-          <ProjectCard number="05" title="PROTTAYSHA" image={prottaysha} />
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mt-16">
+      <ProjectCard number="01" title="ALORON" image={aloron} />
+      <ProjectCard number="02" title="CHOLO BANGLADESH" image={choloBangladesh} />
+      <ProjectCard number="03" title="HASHI DENTAL" image={hashi} />
+      <ProjectCard number="04" title="PADDY" image={paddy} />
+      <ProjectCard number="05" title="PROTTAYSHA" image={prottaysha} />
 
-          {/* ---------- CTA Section ---------- */}
-          <div className="flex flex-col justify-center p-4">
-            <p className="text-lg leading-relaxed mb-10 text-gray-700">
-              As a leading{" "}
-              <span className="font-semibold text-gray-900">
-                digital marketing agency in Dhaka, Bangladesh
-              </span>
-              ,<span className="text-orange-500 font-semibold"> WebOria</span> empowers businesses with
-              <span className="font-medium"> data-driven strategies</span> that deliver real results.
-              From innovative startups to enterprise brands, our success stories — including projects
-              like <span className="font-semibold">Fiber@Home</span>,{" "}
-              <span className="font-semibold">Ajwah Tech</span>,{" "}
-              <span className="font-semibold">Rainstone Money</span>, and{" "}
-              <span className="font-semibold">NorthSouth Group</span> — showcase how we transform
-              digital potential into measurable growth.
-              <br />
-              <br />
-              Discover how WebOria’s expertise in{" "}
-              <span className="font-medium text-gray-900">SEO</span>,{" "}
-              <span className="font-medium text-gray-900">Social Media Marketing</span>, and{" "}
-              <span className="font-medium text-gray-900">Branding</span> can help your business stand
-              out and scale faster in today’s competitive market.
-            </p>
+      {/* ---------- CTA Section ---------- */}
+      <div className="flex flex-col justify-center p-4">
+        <p className="text-lg leading-relaxed mb-10 text-gray-700">
+          As a leading{" "}
+          <span className="font-semibold text-gray-900">
+            digital marketing agency in Dhaka, Bangladesh
+          </span>
+          ,<span className="text-orange-500 font-semibold"> WebOria</span> empowers businesses with
+          <span className="font-medium"> data-driven strategies</span> that deliver real results.
+          From innovative startups to enterprise brands, our success stories — including projects
+          like <span className="font-semibold">Fiber@Home</span>,{" "}
+          <span className="font-semibold">Ajwah Tech</span>,{" "}
+          <span className="font-semibold">Rainstone Money</span>, and{" "}
+          <span className="font-semibold">NorthSouth Group</span> — showcase how we transform
+          digital potential into measurable growth.
+          <br />
+          <br />
+          Discover how WebOria’s expertise in{" "}
+          <span className="font-medium text-gray-900">SEO</span>,{" "}
+          <span className="font-medium text-gray-900">Social Media Marketing</span>, and{" "}
+          <span className="font-medium text-gray-900">Branding</span> can help your business stand
+          out and scale faster in today’s competitive market.
+        </p>
 
-            {/* CTA Button */}
-            {/* <div className="relative w-48 h-48 mx-auto">
-              <Link
-                href="/portfolio"
-                className="absolute w-full h-full rounded-full bg-black text-white flex flex-col items-center justify-center text-xl font-semibold hover:bg-gray-800 transition"
-              >
-                See <ChevronRight className="inline ml-1" size={24} /> More Projects
-              </Link>
-            </div> */}
-            <CTAButton></CTAButton>
-
-          </div>
+        {/* CTA Button */}
+        <div className="relative w-48 h-48 mx-auto">
+          <Link
+            href="/portfolio"
+            className="absolute w-full h-full rounded-full bg-black text-white flex flex-col items-center justify-center text-xl font-semibold hover:bg-gray-800 transition"
+          >
+            See <ChevronRight className="inline ml-1" size={24} /> More Projects
+          </Link>
         </div>
+      </div>
+    </div>
 
       </section>
 

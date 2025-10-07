@@ -186,7 +186,7 @@ const Home = () => {
                 See <ChevronRight className="inline ml-1" size={24} /> More Projects
               </Link>
             </div> */}
-            <CTAButton></CTAButton>
+            <CTAButton
 
           </div>
         </div>
