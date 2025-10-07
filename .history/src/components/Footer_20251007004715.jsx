@@ -36,9 +36,9 @@ export default function Footer() {
     { name: "Web Development", href: "/service/web-development" },
     { name: "E-Commerce", href: "/service/ecommerce" },
     { name: "Digital Marketing", href: "/service/digital-marketing" },
-    // { name: "UI/UX Design", href: "/service/ui-ux" },
-    // { name: "SEO Services", href: "/service/seo" },
-    // { name: "Api & Cloud", href: "/service/api-cloud" },
+    { name: "UI/UX Design", href: "/service/ui-ux" },
+    { name: "SEO Services", href: "/service/seo" },
+    { name: "Api & Cloud", href: "/service/api-cloud" },
   ];
 
   const socialLinks = [
