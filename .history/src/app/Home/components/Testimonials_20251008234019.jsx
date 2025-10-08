@@ -282,7 +282,7 @@ const TestimonialSection = () => {
 
 // --- Stats ---
 const StatsSection = () => (
-  <section className="relative lg:py-8 py-6 bg-gradient-to-br from-white via-gray-50 to-orange-50 font-['Inter'] overflow-hidden">
+  <section className="relative lg:py-12 py-6 bg-gradient-to-br from-white via-gray-50 to-orange-50 font-['Inter'] overflow-hidden">
     {/* Decorative Gradient Shape */}
     <div className="absolute top-0 right-0 w-72 h-72 bg-orange-100 rounded-full blur-3xl opacity-40 -z-10"></div>
     <div className="absolute bottom-0 left-0 w-72 h-72 bg-pink-100 rounded-full blur-3xl opacity-40 -z-10"></div>
