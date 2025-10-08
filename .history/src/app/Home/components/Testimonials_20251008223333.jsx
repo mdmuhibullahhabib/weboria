@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 import SectionTitle from "@/components/SectionTitle";
 import React from "react";
 import { motion } from "framer-motion";
-
+import { ArrowRight } from "lucide-react";
 
 // --- Icon Placeholders (Simulated SVGs) ---
 const ArrowRight = (props) => (
@@ -236,63 +236,29 @@ const TestimonialSection = () => {
 
 // --- Stats ---
 const StatsSection = () => (
-  <section className="relative py-20 bg-gradient-to-br from-white via-gray-50 to-orange-50 font-['Inter'] overflow-hidden">
-    {/* Decorative Gradient Shape */}
-    <div className="absolute top-0 right-0 w-72 h-72 bg-orange-100 rounded-full blur-3xl opacity-40 -z-10"></div>
-    <div className="absolute bottom-0 left-0 w-72 h-72 bg-pink-100 rounded-full blur-3xl opacity-40 -z-10"></div>
+  <section className="py-5 md:py-8 bg-gray-50 font-['Inter']">
+    <div className="max-w-7xl mx-auto px-6">
+      <SectionTitle titleTop={"Visual I"} titleBottom={"In Numbers"} />
 
-    <div className="max-w-7xl mx-auto px-6 text-center">
-      {/* Header */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: true }}
-        className="mb-14"
-      >
-        <p className="text-orange-500 font-semibold tracking-widest uppercase mb-3">
-          Weboria
-        </p>
-        <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900">
-          In Numbers
-        </h2>
-        <p className="text-gray-600 mt-3 max-w-2xl mx-auto text-lg leading-relaxed">
-          Empowering brands with measurable growth — our success is reflected
-          through innovation, strategy, and proven results.
-        </p>
-      </motion.div>
-
-      {/* Stats Grid */}
-      <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         {statsData.map((stat, i) => (
-          <motion.div
+          <div
             key={i}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: i * 0.1, duration: 0.7 }}
-            viewport={{ once: true }}
-            className="group bg-white p-10 rounded-2xl border border-gray-200 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
+            className="bg-white p-8 rounded-xl shadow-lg border-t-4 border-indigo-600/50 hover:scale-[1.03] hover:shadow-2xl transition duration-300"
           >
-            {/* Header Row */}
             <div className="flex justify-between items-start mb-4">
-              <h3 className="text-lg font-semibold text-gray-600 group-hover:text-orange-500 transition-colors duration-300">
+              <h3 className="text-lg font-semibold text-gray-600">
                 {stat.label}
               </h3>
-              <ArrowRight className="w-5 h-5 text-gray-400 rotate-45 group-hover:text-orange-500 transition-colors duration-300" />
+              <ArrowRight className="w-5 h-5 text-gray-400 rotate-45" />
             </div>
-
-            {/* Main Stat */}
-            <p className="text-5xl md:text-6xl font-extrabold text-gray-900 group-hover:text-orange-500 transition-colors duration-300">
+            <p className="text-6xl font-extrabold text-indigo-600 my-4">
               {stat.value}
             </p>
-
-            {/* Icon */}
-            <div className="flex justify-end mt-6">
-              <div className="p-3 bg-orange-100 rounded-full group-hover:bg-orange-500 transition-colors duration-300">
-                <stat.icon className="w-8 h-8 text-orange-500 group-hover:text-white transition-colors duration-300" />
-              </div>
+            <div className="flex justify-end">
+              <stat.icon className="w-10 h-10 text-indigo-400" />
             </div>
-          </motion.div>
+          </div>
         ))}
       </div>
     </div>

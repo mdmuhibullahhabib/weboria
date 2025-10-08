@@ -3,7 +3,7 @@ import Button from "@/components/Button";
 import SectionTitle from "@/components/SectionTitle";
 import React from "react";
 import { motion } from "framer-motion";
-
+import { ArrowRight } from "lucide-react";
 
 // --- Icon Placeholders (Simulated SVGs) ---
 const ArrowRight = (props) => (
