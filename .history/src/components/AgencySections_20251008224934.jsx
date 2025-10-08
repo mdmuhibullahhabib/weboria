@@ -6,7 +6,6 @@ import {
 } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 import Button from './Button';
-import { motion, AnimatePresence } from "framer-motion";
 
 // --- DATA STRUCTURES ---
 
@@ -80,6 +79,7 @@ const faqItems = [
 ];
 
 // --- REUSABLE COMPONENTS ---
+
 const ServiceCard = ({ title, icon: Icon, subtitle, large = false }) => (
   <div className={`${large ? 'p-10' : 'p-6'} bg-white rounded-xl shadow-lg border border-gray-100 transition-all duration-300 hover:shadow-2xl hover:border-blue-500 flex flex-col items-center text-center h-full`}>
     <div className={`${large ? 'p-4 mb-4 bg-gray-100 rounded-full' : 'p-2 mb-2'}`}>
@@ -172,7 +172,7 @@ const AgencySections = () => {
             <SectionTitle titleTop={"Got Questions?"} />
 
           </header>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             {faqItems.map((item, i) => <FAQItem key={i} item={item} isOpen={openFaqIndex === i} onClick={() => toggleFaq(i)} />)}
           </div>
         </div>

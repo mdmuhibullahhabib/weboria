@@ -6,7 +6,6 @@ import {
 } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 import Button from './Button';
-import { motion, AnimatePresence } from "framer-motion";
 
 // --- DATA STRUCTURES ---
 
@@ -172,7 +171,7 @@ const AgencySections = () => {
             <SectionTitle titleTop={"Got Questions?"} />
 
           </header>
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-3xl mx-auto">
             {faqItems.map((item, i) => <FAQItem key={i} item={item} isOpen={openFaqIndex === i} onClick={() => toggleFaq(i)} />)}
           </div>
         </div>

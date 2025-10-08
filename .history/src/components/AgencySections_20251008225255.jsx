@@ -166,17 +166,63 @@ const AgencySections = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-6 lg:py-8 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <header className="text-center mb-12">
-            <SectionTitle titleTop={"Got Questions?"} />
+   <section className="relative py-20 bg-gradient-to-b from-white via-orange-50/30 to-white overflow-hidden">
+      {/* Background Decoration */}
+      <div className="absolute -top-20 -left-32 w-96 h-96 bg-orange-100 rounded-full blur-3xl opacity-40 -z-10"></div>
+      <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-pink-100 rounded-full blur-3xl opacity-40 -z-10"></div>
 
-          </header>
-          <div className="max-w-4xl mx-auto">
-            {faqItems.map((item, i) => <FAQItem key={i} item={item} isOpen={openFaqIndex === i} onClick={() => toggleFaq(i)} />)}
-          </div>
+      <div className="container mx-auto px-6 max-w-6xl">
+        {/* Header */}
+        <header className="text-center mb-16">
+          <SectionTitle titleTop="Got Questions?" titleBottom="We've Got Answers" />
+          <p className="text-gray-600 text-lg mt-4 max-w-2xl mx-auto">
+            Find answers to the most common questions about our services, pricing, and process.
+          </p>
+        </header>
+
+        {/* FAQ List */}
+        <div className="max-w-3xl mx-auto space-y-4">
+          {faqItems.map((item, i) => (
+            <motion.div
+              key={i}
+              className="bg-white rounded-2xl shadow-md border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300"
+            >
+              <button
+                onClick={() => toggleFaq(i)}
+                className="w-full flex justify-between items-center px-6 py-5 text-left"
+              >
+                <h3 className="font-semibold text-gray-900 text-lg">
+                  {item.question}
+                </h3>
+                <motion.div
+                  animate={{ rotate: openFaqIndex === i ? 180 : 0 }}
+                  transition={{ duration: 0.3 }}
+                >
+                  <ChevronDown className="w-5 h-5 text-orange-500" />
+                </motion.div>
+              </button>
+
+              <AnimatePresence>
+                {openFaqIndex === i && (
+                  <motion.div
+                    initial={{ height: 0, opacity: 0 }}
+                    animate={{ height: "auto", opacity: 1 }}
+                    exit={{ height: 0, opacity: 0 }}
+                    transition={{ duration: 0.4 }}
+                    className="px-6 pb-5 text-gray-600 leading-relaxed text-base"
+                  >
+                    {item.answer}
+                  </motion.div>
+                )}
+              </AnimatePresence>
+            </motion.div>
+          ))}
         </div>
-      </section>
+      </div>
+
+      {/* Decorative Gradient Line */}
+      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 via-pink-400 to-yellow-400"></div>
+    </section>
     </div>
   );
 };

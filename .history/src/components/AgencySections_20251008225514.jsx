@@ -166,17 +166,42 @@ const AgencySections = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-6 lg:py-8 bg-white">
-        <div className="container mx-auto px-4 max-w-7xl">
-          <header className="text-center mb-12">
-            <SectionTitle titleTop={"Got Questions?"} />
+<section className="relative py-20 bg-gradient-to-b from-white via-orange-50/20 to-white overflow-hidden">
+  {/* Decorative Background */}
+  <div className="absolute top-0 left-0 w-[300px] h-[300px] bg-orange-100 rounded-full blur-3xl opacity-40 -z-10"></div>
+  <div className="absolute bottom-0 right-0 w-[400px] h-[400px] bg-pink-100 rounded-full blur-3xl opacity-40 -z-10"></div>
 
-          </header>
-          <div className="max-w-4xl mx-auto">
-            {faqItems.map((item, i) => <FAQItem key={i} item={item} isOpen={openFaqIndex === i} onClick={() => toggleFaq(i)} />)}
-          </div>
+  <div className="container mx-auto px-6 max-w-7xl">
+    {/* Header */}
+    <header className="text-center mb-14">
+      <SectionTitle titleTop="Got Questions?" />
+      <p className="text-gray-600 text-lg mt-4 max-w-2xl mx-auto leading-relaxed">
+        Find answers to common questions about our services, pricing, and process.  
+        We’re here to make things clear for you.
+      </p>
+    </header>
+
+    {/* FAQ List */}
+    <div className="max-w-3xl mx-auto space-y-5">
+      {faqItems.map((item, i) => (
+        <div
+          key={i}
+          className="bg-white border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
+        >
+          <FAQItem
+            item={item}
+            isOpen={openFaqIndex === i}
+            onClick={() => toggleFaq(i)}
+          />
         </div>
-      </section>
+      ))}
+    </div>
+  </div>
+
+  {/* Gradient Accent Line */}
+  <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 via-pink-400 to-yellow-400"></div>
+</section>
+
     </div>
   );
 };
