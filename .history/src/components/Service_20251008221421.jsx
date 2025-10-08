@@ -77,13 +77,15 @@ const Service = () => {
                         With a passion for innovation and design, we craft tailored digital experiences that amplify visibility, boost engagement, and drive measurable growth.
                         At WebOria, your brand isn’t just seen — it’s remembered.
                     </p>
+                    <Link
+                        href={'/contact'} >
 
-                    <Link href={'/contact'} >
                         <button className="flex items-center mt-6 px-8 py-3 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 transition">
                             <PhoneCall className="h-5 w-5 mr-2" />
                             Let’s Talk Strategy
                         </button>
                     </Link>
+
                 </div>
             </section>
 

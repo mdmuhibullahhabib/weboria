@@ -52,9 +52,9 @@ const Service = () => {
                     <div className="flex items-center space-x-4 mb-4">
                         <div className="relative w-48 h-24 rounded-md overflow-hidden shadow-lg">
                             <Image
-                                src={PRESENCE}
+                                src={PRESENCE} 
                                 alt="presence image"
-                                fill
+                                fill 
                                 className="object-cover"
                             />
                         </div>
@@ -77,12 +77,11 @@ const Service = () => {
                         With a passion for innovation and design, we craft tailored digital experiences that amplify visibility, boost engagement, and drive measurable growth.
                         At WebOria, your brand isn’t just seen — it’s remembered.
                     </p>
-
-                    <Link href={'/contact'} >
-                        <button className="flex items-center mt-6 px-8 py-3 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 transition">
-                            <PhoneCall className="h-5 w-5 mr-2" />
-                            Let’s Talk Strategy
-                        </button>
+                    <Link
+                    href={}
+                     className="flex items-center mt-6 px-8 py-3 bg-orange-500 text-white font-semibold rounded-full shadow-lg hover:bg-orange-600 transition">
+                        <PhoneCall className="h-5 w-5 mr-2" />
+                        Let’s Talk Strategy
                     </Link>
                 </div>
             </section>
