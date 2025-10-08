@@ -1,8 +1,8 @@
 "use client";
 import Button from "@/components/Button";
 import SectionTitle from "@/components/SectionTitle";
-import { motion, AnimatePresence } from "framer-motion";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { motion, AnimatePresence  } from "framer-motion";
 
 
 // --- Icon Placeholders (Simulated SVGs) ---
@@ -164,7 +164,7 @@ const SectionHeader = ({ mainText, subText }) => (
 
 // --- Testimonial ---
 const TestimonialSection = () => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = React.useState(0);
   const testimonial = testimonials[index];
 
   const prevSlide = () =>
@@ -172,108 +172,62 @@ const TestimonialSection = () => {
   const nextSlide = () =>
     setIndex((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
 
-  // ✅ Auto-scroll every 6 seconds
-  useEffect(() => {
-    const interval = setInterval(() => {
-      nextSlide();
-    }, 6000);
-    return () => clearInterval(interval);
-  }, [index]);
-
   return (
-    <section className="relative w-full py-8 bg-gradient-to-r from-white via-gray-50 to-orange-50 font-['Inter'] overflow-hidden">
-      {/* Decorative Blur Shapes */}
-      <div className="absolute top-0 left-0 w-80 h-80 bg-orange-100 rounded-full blur-3xl opacity-40 -z-10"></div>
-      <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-100 rounded-full blur-3xl opacity-40 -z-10"></div>
+    <section className="py-5 md:py-8 bg-gradient-to-r from-gray-50 to-white font-['Inter'] relative">
+      <div className="max-w-5xl mx-auto px-6">
+        <SectionTitle titleTop={"Reactions From"} titleBottom={"Delighted Clients"} />
 
-      <div className="max-w-6xl mx-auto px-6 relative">
-        <SectionTitle titleTop="Weboria" titleBottom="Client Testimonials" />
-
-        {/* Navigation Buttons */}
+        {/* Navigation Arrows */}
         <button
           onClick={prevSlide}
-          aria-label="Previous Testimonial"
-          className="absolute left-2 md:left-10 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white shadow-md hover:bg-orange-100 transition z-20"
+          className="absolute left-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white shadow hover:bg-gray-100 transition"
         >
-          <ArrowLeft className="w-5 h-5 text-gray-700" />
+          <ArrowLeft className="w-5 h-5 text-gray-600" />
         </button>
-
         <button
           onClick={nextSlide}
-          aria-label="Next Testimonial"
-          className="absolute right-2 md:right-10 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white shadow-md hover:bg-orange-100 transition z-20"
+          className="absolute right-4 top-1/2 -translate-y-1/2 p-3 rounded-full bg-white shadow hover:bg-gray-100 transition"
         >
-          <ArrowRight className="w-5 h-5 text-gray-700" />
+          <ArrowRight className="w-5 h-5 text-gray-600" />
         </button>
 
         {/* Testimonial Card */}
-        <div className="relative mt-10 flex justify-center">
-          <AnimatePresence mode="wait">
-            <motion.div
-              key={testimonial.author}
-              initial={{ opacity: 0, x: 80 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -80 }}
-              transition={{ duration: 0.6 }}
-              className="w-full md:w-5/6 lg:w-4/5 xl:w-3/4 bg-white p-10 md:p-14 rounded-3xl shadow-2xl border border-gray-100 text-center md:text-left"
-            >
-              <div className="flex flex-col md:flex-row items-center gap-8">
-                {/* Avatar */}
-                <motion.div
-                  initial={{ scale: 0.9 }}
-                  animate={{ scale: 1 }}
-                  transition={{ duration: 0.6 }}
-                  className="flex-shrink-0"
-                >
-                  <img
-                    src={testimonial.avatarUrl}
-                    alt={testimonial.author}
-                    className="w-24 h-24 md:w-28 md:h-28 rounded-full object-cover ring-4 ring-orange-400 shadow-md"
-                  />
-                </motion.div>
+        <div className="bg-white p-8 rounded-xl shadow-xl border hover:shadow-2xl transition">
+          <div className="flex flex-col md:flex-row items-start gap-8">
+            {/* Avatar */}
+            <div className="flex-shrink-0">
+              <img
+                src={testimonial.avatarUrl}
+                alt={testimonial.author}
+                className="w-20 h-20 rounded-lg object-cover ring-4 ring-yellow-400"
+              />
+            </div>
 
-                {/* Content */}
-                <div className="flex-1">
-                  <p className="text-gray-700 text-lg md:text-xl leading-relaxed mb-6 relative italic">
-                    <span className="text-6xl text-orange-400 absolute -top-10 left-0 opacity-30">
-                      “
-                    </span>
-                    {testimonial.quote}
-                  </p>
-                  <div>
-                    <h4 className="font-bold text-gray-900 text-xl">
-                      {testimonial.author}
-                    </h4>
-                    <p className="text-sm text-gray-500">{testimonial.title}</p>
-                  </div>
-                </div>
-
-                {/* Company Logo */}
-                {testimonial.logoUrl && (
-                  <div className="flex-shrink-0 hidden md:block">
-                    <img
-                      src={testimonial.logoUrl}
-                      alt="Company Logo"
-                      className="h-12 object-contain opacity-70"
-                    />
-                  </div>
-                )}
+            {/* Content */}
+            <div className="flex-1">
+              <p className="text-gray-600 text-lg leading-relaxed mb-6 relative italic">
+                <span className="text-5xl text-yellow-400 absolute -top-6 -left-4">
+                  “
+                </span>
+                {testimonial.quote}
+              </p>
+              <div>
+                <h4 className="font-bold text-gray-900 text-lg">
+                  {testimonial.author}
+                </h4>
+                <p className="text-sm text-gray-500">{testimonial.title}</p>
               </div>
-            </motion.div>
-          </AnimatePresence>
-        </div>
+            </div>
 
-        {/* Dots Navigation */}
-        <div className="flex justify-center gap-3 mt-8">
-          {testimonials.map((_, i) => (
-            <button
-              key={i}
-              onClick={() => setIndex(i)}
-              className={`w-3 h-3 rounded-full transition-all duration-300 ${
-                i === index ? "bg-orange-500 w-6" : "bg-gray-300 hover:bg-gray-400"
-              }`}
-            ></button>
-          ))}
+            {/* Company Logo */}
+            <div className="flex-shrink-0 self-end">
+              <img
+                src={testimonial.logoUrl}
+                alt="Company Logo"
+                className="h-10 object-contain"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </section>

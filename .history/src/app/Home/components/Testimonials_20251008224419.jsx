@@ -181,7 +181,7 @@ const TestimonialSection = () => {
   }, [index]);
 
   return (
-    <section className="relative w-full py-8 bg-gradient-to-r from-white via-gray-50 to-orange-50 font-['Inter'] overflow-hidden">
+    <section className="relative w-full py-24 bg-gradient-to-r from-white via-gray-50 to-orange-50 font-['Inter'] overflow-hidden">
       {/* Decorative Blur Shapes */}
       <div className="absolute top-0 left-0 w-80 h-80 bg-orange-100 rounded-full blur-3xl opacity-40 -z-10"></div>
       <div className="absolute bottom-0 right-0 w-96 h-96 bg-pink-100 rounded-full blur-3xl opacity-40 -z-10"></div>
