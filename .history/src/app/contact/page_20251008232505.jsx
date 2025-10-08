@@ -58,7 +58,7 @@ export default function ContactPage() {
       {/* Hero Section */}
       <section className="w-full bg-white text-gray-900 py-2">
         {/* Main Heading */}
-        <div className="text-center lg:mb-12 mb-6">
+        <div className="text-center lgmb-16">
           <h1 className="text-6xl md:text-9xl font-extrabold tracking-wider text-black">
             CONTACT
           </h1>
