@@ -1,9 +1,7 @@
 "use client";
 import { Code, Smartphone, TrendingUp, Search, CheckCircle } from 'lucide-react';
-import CTASection from '../Home/components/CTASection';
 import Service from '../Home/components/Service';
 import { motion } from "framer-motion";
-import Hero from './components/Hero';
 
 export default function ServicesPage() {
   const services = [

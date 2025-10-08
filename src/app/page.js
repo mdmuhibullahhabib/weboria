@@ -1,3 +1,4 @@
+"use client"
 import React from 'react';
 import { ChevronRight } from 'lucide-react';
 import Marquee from './Home/components/Marquee';
@@ -7,6 +8,7 @@ import SectionTitle from '@/components/SectionTitle';
 import AgencySections from '@/components/AgencySections';
 import Testimonials from './Home/components/Testimonials';
 import Button from '@/components/Button';
+import { motion } from "framer-motion";
 
 // import feature
 import aloron from "../../public/assets/images/featured/weboria-web-development-and-marketing-aloron.png"
@@ -16,42 +18,88 @@ import paddy from "../../public/assets/images/featured/weboria-web-development-a
 import prottaysha from "../../public/assets/images/featured/weboria-web-development-and-marketing-prottaysha.png"
 import ProjectCard from './components/ProjectCard';
 import CTAButton from './components/CTAButton';
-import Image from 'next/image';
 import seo from "../../public/assets/images/home/free-seo-audit-by-best-search-engine-optimization-company-in-bangladesh.webp"
+import hero from "../../public/assets/images/home/digital-marketing-web-develioment-hero.jpg"
+import Image from 'next/image';
 
 
 const Home = () => {
   return (
     <div className="min-h-screen bg-white text-gray-800 antialiased">
       {/* 1. Hero Section */}
-      <section className="relative py-6 px-4 lg:px-20 overflow-hidden">
-        <div className="hidden lg:block absolute top-10 md:left-30 w-full h-full pointer-events-none">
-          <h1 className="text-[12rem] xl:text-[14rem] font-black leading-none uppercase text-gray-200 opacity-20 whitespace-nowrap -translate-x-10">
-            WEBORIA
-          </h1>
+    <section className="relative overflow-hidden bg-gradient-to-br from-white via-gray-50 to-orange-50 py-4 px-6 lg:px-20">
+      {/* Background Brand Text */}
+      <div className="hidden lg:block absolute top-16 left-1/2 -translate-x-1/2 opacity-10 pointer-events-none">
+        <h1 className="text-[13rem] xl:text-[15rem] font-extrabold tracking-widest text-gray-200 uppercase">
+          Weboria
+        </h1>
+      </div>
+
+      {/* Main Content */}
+      <div className="relative z-10 max-w-7xl mx-auto flex flex-col-reverse lg:flex-row items-center justify-between gap-20">
+        {/* Left Content */}
+        <div className="lg:w-1/2 space-y-8 text-center lg:text-left">
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-6xl xl:text-7xl font-extrabold text-gray-900 leading-tight"
+          >
+            Transform Your{" "}
+            <span className="bg-gradient-to-r from-orange-500 to-pink-500 bg-clip-text text-transparent">
+              Digital Future
+            </span>{" "}
+            with Weboria
+          </motion.h1>
+
+          <motion.p
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="text-gray-600 max-w-xl mx-auto lg:mx-0 text-lg leading-relaxed"
+          >
+            A next-generation agency crafting smart digital experiences — blending
+            design, AI, and innovation to help your business grow, engage, and
+            lead in the digital age.
+          </motion.p>
+
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.4, duration: 0.8 }}
+            viewport={{ once: true }}
+            className="flex flex-wrap justify-center lg:justify-start gap-4 pt-4"
+          >
+            <Button text="Get Started" href="/contact" />
+            <Button text="Explore Services" href="/services" outline />
+          </motion.div>
         </div>
 
-        <div className="relative z-10 flex flex-col lg:flex-row items-start justify-between">
-          <div className="lg:w-1/2 mb-10 lg:mb-0 pr-4">
-            <div className="uppercase flex flex-wrap items-center gap-3 text-center lg:text-left">
-              <span className="text-4xl md:text-6xl font-serif font-extrabold text-black leading-tight">
-                AI-Powered
-              </span>
-              <span className="text-5xl md:text-6xl font-serif font-extrabold text-orange-500 whitespace-nowrap">
-                Digital Marketing Agency
-              </span>
-            </div>
-            <div className='mt-10 font-semibold space-x-4'>
-              <Button text="Contact Us" href='/contact' />
-              <Button text="Let’s Chat" href='/wp' />
-            </div>
-          </div>
+        {/* Right Image Section (Increased Size) */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.6, duration: 0.8 }}
+          viewport={{ once: true }}
+          className="lg:w-1/2 flex justify-center"
+        >
+          <div className="relative">
+            {/* Glowing Gradient Behind Image */}
+            <div className="absolute -inset-8 bg-gradient-to-tr from-orange-200 to-pink-200 rounded-full blur-3xl opacity-50 animate-pulse"></div>
 
-          <div className="lg:w-1/2 max-w-lg lg:pt-16">
-            {/* About section here */}
+            {/* Hero Image — Larger */}
+            <Image
+              src={hero}
+              alt="Weboria Digital Hero"
+              priority
+              className="relative w-[480px] sm:w-[560px] md:w-[640px] lg:w-[700px] xl:w-[780px] h-auto drop-shadow-2xl rounded-3xl transition-transform duration-500 hover:scale-105"
+            />
           </div>
-        </div>
-      </section>
+        </motion.div>
+      </div>
+    </section>
 
       {/* 2. Experience Section */}
       <section className="py-6 px-4 lg:px-20 bg-gray-50">
