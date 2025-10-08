@@ -54,7 +54,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-white pt-6">
+    <div className="min-h-screen bg-white pt-8">
       {/* Hero Section */}
       <section className="w-full bg-white text-gray-900 py-2">
         {/* Main Heading */}
@@ -95,7 +95,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Section */}
-      <section className="lg:py-12 py-8 bg-white">
+      <section className="lg:py-12 py- bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-16">
 
           {/* Contact Form */}

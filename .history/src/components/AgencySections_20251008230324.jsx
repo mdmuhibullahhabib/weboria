@@ -6,8 +6,10 @@ import {
 } from 'lucide-react';
 import SectionTitle from './SectionTitle';
 import Button from './Button';
+import { motion, AnimatePresence } from "framer-motion";
 
 // --- DATA STRUCTURES ---
+
 const mainServices = [
   { title: "DIGITAL MARKETING", icon: Aperture, subtitle: "MARKETING" },
   { title: "ENTERPRISE SOLUTIONS", icon: Settings, subtitle: "SOLUTIONS" },

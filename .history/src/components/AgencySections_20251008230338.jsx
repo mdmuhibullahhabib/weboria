@@ -8,6 +8,7 @@ import SectionTitle from './SectionTitle';
 import Button from './Button';
 
 // --- DATA STRUCTURES ---
+
 const mainServices = [
   { title: "DIGITAL MARKETING", icon: Aperture, subtitle: "MARKETING" },
   { title: "ENTERPRISE SOLUTIONS", icon: Settings, subtitle: "SOLUTIONS" },
