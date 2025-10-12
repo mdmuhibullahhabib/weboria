@@ -100,8 +100,8 @@ const Clock = (props) => (
 // --- Data ---
 const statsData = [
   { label: "Years Experience", value: "2+", icon: Briefcase },
-  { label: "Completed Projects", value: "30+", icon: Target },
-  { label: "Satisfied Clients", value: "30+", icon: Briefcase },
+  { label: "Completed Projects", value: "200+", icon: Target },
+  { label: "Satisfied Clients", value: "130+", icon: Briefcase },
 ];
 
 const testimonials = [
