@@ -108,7 +108,7 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "We recently partnered with webOria for the design and development of Paddy website. From day one, the WebOria team demonstrated a strong understanding of our industry, translating complex technical offerings into a clean, modern, and user-friendly digital experience.",
+      "We recently partnered with webOria for the design and development of Paddy official website. From day one, the WebOria team demonstrated a strong understanding of our industry, translating complex technical offerings into a clean, modern, and user-friendly digital experience.",
     author: "Mohammad Mosabbir Rana",
     title: "Senior Manager & Business Revenue",
     avatarUrl: "https://placehold.co/100x100/2563EB/FFFFFF?text=MMR",

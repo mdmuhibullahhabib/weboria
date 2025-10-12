@@ -108,20 +108,20 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "We recently partnered with webOria for the design and development of Paddy website. From day one, the WebOria team demonstrated a strong understanding of our industry, translating complex technical offerings into a clean, modern, and user-friendly digital experience.",
+      "We recently partnered with Visual i for the design and development of Paddy official website. From day one, the Visual i team demonstrated a strong understanding of our industry, translating complex technical offerings into a clean, modern, and user-friendly digital experience.",
     author: "Mohammad Mosabbir Rana",
     title: "Senior Manager & Business Revenue",
     avatarUrl: "https://placehold.co/100x100/2563EB/FFFFFF?text=MMR",
-    logoUrl: "https://placehold.co/120x60/000000/FFF?text=Paddy",
+    logoUrl: "https://placehold.co/120x60/000000/FFF?text=Pico",
   },
   {
     id: 2,
     quote:
-      "We recently had the pleasure of working with WebOria for the development of Aloron official website. They delivered the project within the committed timeline, ensuring 100% interactive and proactive support throughout the process. Their team demonstrated exceptional professionalism, responsiveness, and a clear understanding of our requirements.",
+      "We recently had the pleasure of working with WebOria for the development of Aloron Limited's official website. They delivered the project within the committed timeline, ensuring 100% interactive and proactive support throughout the process. Their team demonstrated exceptional professionalism, responsiveness, and a clear understanding of our requirements.",
     author: "Razu Rahman",
     title: "Branding & Communications",
     avatarUrl: "https://placehold.co/100x100/F59E0B/FFFFFF?text=RR",
-    logoUrl: "https://placehold.co/120x60/2563EB/FFF?text=Aloron",
+    logoUrl: "https://placehold.co/120x60/2563EB/FFF?text=Fiber@Home",
   },
 ];
 
@@ -137,7 +137,7 @@ const blogPosts = [
   {
     id: 2,
     category: "BRANDING",
-    title: "WebOria'S SEO STRATEGY TOOK CROWN BANQU...",
+    title: "VISUAL I'S SEO STRATEGY TOOK CROWN BANQU...",
     date: "JUN 15, 2025",
     imageUrl: "https://placehold.co/400x250/F59E0B/FFFFFF?text=Case+Study",
   },
