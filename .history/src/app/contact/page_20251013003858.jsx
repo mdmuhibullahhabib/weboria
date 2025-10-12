@@ -55,7 +55,7 @@ export default function ContactPage() {
 
   return (
      <>
-      <title>Conatct - Weboria</title>
+      <title>Conatct - WebOria</title>
     <div className="min-h-screen bg-white pt-6">
       {/* Hero Section */}
       <section className="w-full bg-white text-gray-900 py-2">

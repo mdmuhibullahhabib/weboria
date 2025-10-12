@@ -19,14 +19,14 @@ const processSteps = [
 
 
 export default async function Service({ params }) {
-
+    
     const p = await params;
 
-    const serviceCollection = dbConnect(collectionNamesobj.servicesCollection);
-    const services = await serviceCollection.find({}).toArray();
+  const serviceCollection = dbConnect(collectionNamesobj.servicesCollection);
+  const services = await serviceCollection.find({}).toArray();
 
-    const service = services.find(
-        (item) => item.page === p.page
+      const service = services.find(
+      (item) => item.page === p.page
     );
 
     const { heroSection, serviceListSection, whyChooseUsSection, faqSection } =
@@ -247,9 +247,9 @@ export default async function Service({ params }) {
                 <div className="grid md:grid-cols-3 gap-8">
                     {/* Card Style from Screenshot 113 */}
                     {[
-                        { label: 'Years Experience', value: '2+' },
-                        { label: 'Completed Projects', value: '30+' },
-                        { label: 'Satisfied Clients', value: '30+' },
+                        { label: 'Years Experience', value: '12+' },
+                        { label: 'Completed Projects', value: '200+' },
+                        { label: 'Satisfied Clients', value: '130+' },
                     ].map((stat, index) => (
                         <div key={index} className="card bg-white p-6 shadow-xl border border-gray-100 rounded-xl hover:shadow-2xl transition duration-300">
                             <div className="flex justify-between items-start mb-8">
@@ -341,17 +341,14 @@ export default async function Service({ params }) {
 
     //  Main 
     return (
-        <>
-            <title>Service - Weboria</title>
-            <main className="bg-white text-gray-900 font-sans">
-                <HeroSection />
-                <ServiceListSection />
-                <WhyChooseUsSection />
-                <WorkingProcessSection />
-                <StatsSection />
-                <FAQSection />
-                <ContactSection />
-            </main>
-        </>
+        <main className="bg-white text-gray-900 font-sans">
+            <HeroSection />
+            <ServiceListSection />
+            <WhyChooseUsSection />
+            <WorkingProcessSection />
+            <StatsSection />
+            <FAQSection />
+            <ContactSection />
+        </main>
     );
 }

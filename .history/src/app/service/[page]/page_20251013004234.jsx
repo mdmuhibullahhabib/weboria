@@ -19,14 +19,14 @@ const processSteps = [
 
 
 export default async function Service({ params }) {
-
+    
     const p = await params;
 
-    const serviceCollection = dbConnect(collectionNamesobj.servicesCollection);
-    const services = await serviceCollection.find({}).toArray();
+  const serviceCollection = dbConnect(collectionNamesobj.servicesCollection);
+  const services = await serviceCollection.find({}).toArray();
 
-    const service = services.find(
-        (item) => item.page === p.page
+      const service = services.find(
+      (item) => item.page === p.page
     );
 
     const { heroSection, serviceListSection, whyChooseUsSection, faqSection } =
@@ -341,17 +341,17 @@ export default async function Service({ params }) {
 
     //  Main 
     return (
-        <>
-            <title>Service - Weboria</title>
-            <main className="bg-white text-gray-900 font-sans">
-                <HeroSection />
-                <ServiceListSection />
-                <WhyChooseUsSection />
-                <WorkingProcessSection />
-                <StatsSection />
-                <FAQSection />
-                <ContactSection />
-            </main>
+               <>
+      <title>Portfolio - Weboria</title>
+        <main className="bg-white text-gray-900 font-sans">
+            <HeroSection />
+            <ServiceListSection />
+            <WhyChooseUsSection />
+            <WorkingProcessSection />
+            <StatsSection />
+            <FAQSection />
+            <ContactSection />
+        </main>
         </>
     );
 }
