@@ -61,8 +61,8 @@ const statsData = [
 
 const teamMembers = [
   { name: 'Muhibullah habib', role: 'Founder & CEO', avatarUrl: 'https://placehold.co/150x150/1F2937/FFFFFF?text=CEO' },
-  { name: 'Mustak Ahmed', role: 'Head of Strategy', avatarUrl: 'https://placehold.co/150x150/2563EB/FFFFFF?text=Mustak' },
-  { name: 'Nahin Hasan', role: 'Lead Developer', avatarUrl: 'https://placehold.co/150x150/F97316/FFFFFF?text=Nahin' },
+  { name: 'Jane Smith', role: 'Head of Strategy', avatarUrl: 'https://placehold.co/150x150/2563EB/FFFFFF?text=Mustak' },
+  { name: 'Alex Lee', role: 'Lead Developer', avatarUrl: 'https://placehold.co/150x150/F97316/FFFFFF?text=Alex' },
   { name: 'Sara Khan', role: 'Creative Director', avatarUrl: 'https://placehold.co/150x150/10B981/FFFFFF?text=Sara' },
 ];
 
