@@ -98,7 +98,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-6 lg:py-8 bg-gray-50">
+      <section className="py-24 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-[clamp(1.8rem,5vw,2.8rem)] font-bold mb-4 text-gray-900">
@@ -166,7 +166,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-6 lg:py-8 bg-gradient-to-r from-orange-500 to-pink-500 text-white text-center">
+      <section className="py-20 bg-gradient-to-r from-orange-500 to-pink-500 text-white text-center">
         <div className="max-w-3xl mx-auto px-6">
           <h2 className="text-[clamp(1.8rem,5vw,2.8rem)] font-bold mb-4">
             Ready to Get Started?
