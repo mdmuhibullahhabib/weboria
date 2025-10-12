@@ -4,7 +4,6 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import CustomCursor from "@/components/CustomCursor";
-// import favicon from "../../public/favicon.png";
 
 
 const geistSans = Geist({

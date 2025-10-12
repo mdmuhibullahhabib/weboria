@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Weboria",
   description: "Digital Marketing Agency",
-  icons: "favicon.png",
+  icons: favicon.png,
 };
 
 export default function RootLayout({ children }) {

@@ -4,7 +4,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Toaster } from "react-hot-toast";
 import CustomCursor from "@/components/CustomCursor";
-// import favicon from "../../public/favicon.png";
+import favicon from "../../public/favicon.png";
 
 
 const geistSans = Geist({
@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 export const metadata = {
   title: "Weboria",
   description: "Digital Marketing Agency",
-  icons: "favicon.png",
+  icons: {favicon},
 };
 
 export default function RootLayout({ children }) {
