@@ -142,7 +142,7 @@ export default function AboutPage() {
         </section>
 
         {/* 🟦 Stats */}
-        <section className="md:py-6 py-4 bg-gradient-to-b from-white via-gray-50 to-white">
+        <section className="py-8 bg-gradient-to-b from-white via-gray-50 to-white">
           <div className="max-w-7xl mx-auto px-6 text-center">
             <motion.h2
               initial={{ opacity: 0, y: 20 }}
