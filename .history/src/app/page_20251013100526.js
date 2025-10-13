@@ -235,7 +235,7 @@ const Home = () => {
       </section>
 
       {/* 6. SEO Audit */}
-      <section className="md:py-4 py-3 px-4 lg:px-20 bg-white text-center">
+      <section className="md:py-4 py-3 px-4 lg:px-20 bg-gray-100 text-center">
         <SectionTitle titleTop={"GET FREE"} titleBottom={"SEO AUDIT?"}></SectionTitle>
         <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto mt-12">
           <div className="lg:w-1/2 p-4 lg:pr-8">

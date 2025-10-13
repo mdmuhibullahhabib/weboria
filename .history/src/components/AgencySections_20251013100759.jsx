@@ -103,7 +103,7 @@ const AgencySections = () => {
 
         <div className="text-center">
         <Button 
-        className='my-8 '
+        className='mt-8 '
         text={"View all services"}
         href='/services'
         />
@@ -111,7 +111,7 @@ const AgencySections = () => {
       </section>
 
       {/* Process Section */}
-      <section className="md:py-4 py-3 bg-white">
+      <section className="py-6 lg:py-8 bg-gray-50">
         <div className="container mx-auto px-4 max-w-7xl">
           <header className="text-center mb-16">
             <SectionTitle titleTop={"WORKING"} titleBottom={"PROCESS"} />

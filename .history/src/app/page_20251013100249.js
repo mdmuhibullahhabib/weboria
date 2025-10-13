@@ -195,7 +195,7 @@ const Home = () => {
       <section className="lg:py-3 py-2 px-4 lg:px-20">
         <SectionTitle titleTop={"OUR FEATURED"} titleBottom={"PROJECTS"}></SectionTitle>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 pb-4 mt-5 md:mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16  mt-5 md:mt-8">
           <ProjectCard number="01" title="ALORON" image={aloron} />
           <ProjectCard number="02" title="CHOLO BANGLADESH" image={choloBangladesh} />
           <ProjectCard number="03" title="HASHI DENTAL" image={hashi} />
@@ -235,7 +235,7 @@ const Home = () => {
       </section>
 
       {/* 6. SEO Audit */}
-      <section className="md:py-4 py-3 px-4 lg:px-20 bg-white text-center">
+      <section className="py-8 px-4 lg:px-20 bg-gray-100 text-center">
         <SectionTitle titleTop={"GET FREE"} titleBottom={"SEO AUDIT?"}></SectionTitle>
         <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto mt-12">
           <div className="lg:w-1/2 p-4 lg:pr-8">

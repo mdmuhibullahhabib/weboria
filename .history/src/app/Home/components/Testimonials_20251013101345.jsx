@@ -287,7 +287,7 @@ const StatsSection = () => (
     <div className="absolute top-0 right-0 w-72 h-72 bg-orange-100 rounded-full blur-3xl opacity-40 -z-10"></div>
     <div className="absolute bottom-0 left-0 w-72 h-72 bg-pink-100 rounded-full blur-3xl opacity-40 -z-10"></div>
 
-    <div className="md:py-6 py-4 max-w-7xl mx-auto px-6 text-center">
+    <div className="md:py-4 py-3 max-w-7xl mx-auto px-6 text-center">
       {/* Header */}
       <motion.div
         initial={{ opacity: 0, y: 40 }}
