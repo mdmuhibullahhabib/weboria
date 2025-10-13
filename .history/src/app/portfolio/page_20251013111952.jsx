@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Portfolio from "../Home/components/Portfolio";
 import FeaturedProjects from "./components/FeaturedProjects";
-import StatsSection from "./components/StatsSection";
 
 // Portfolio page with project cards and category filtering
 export default function PortfolioPage() {
@@ -163,7 +162,7 @@ export default function PortfolioPage() {
         </section>
 
         {/* Stats Section */}
-        <StatsSection/>
+        
       </div>
     </>
   );

@@ -2,7 +2,6 @@
 import { useState } from "react";
 import Portfolio from "../Home/components/Portfolio";
 import FeaturedProjects from "./components/FeaturedProjects";
-import StatsSection from "./components/StatsSection";
 
 // Portfolio page with project cards and category filtering
 export default function PortfolioPage() {
@@ -163,7 +162,46 @@ export default function PortfolioPage() {
         </section>
 
         {/* Stats Section */}
-        <StatsSection/>
+        <section className="py-10 bg-white ">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl lg:text-5xl text-black font-heading font-bold mb-6">
+                Project <span className="text-primary">Results</span>
+              </h2>
+              <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Real metrics from our successful projects that demonstrate our
+                commitment to delivering results
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                  30+
+                </div>
+                <div className="text-gray-600 font-medium">Projects Completed</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                  98%
+                </div>
+                <div className="text-gray-600 font-medium">On-Time Delivery</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                  150%
+                </div>
+                <div className="text-gray-600 font-medium">Avg. ROI Increase</div>
+              </div>
+              <div className="text-center">
+                <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
+                  24/7
+                </div>
+                <div className="text-gray-600 font-medium">Support Available</div>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </>
   );

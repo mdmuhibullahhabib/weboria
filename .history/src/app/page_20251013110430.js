@@ -25,26 +25,7 @@ import Image from 'next/image';
 
 const Home = () => {
 
-    // Animation presets
-  const fadeUp = {
-    hidden: { opacity: 0, y: 50 },
-    visible: (i = 1) => ({
-      opacity: 1,
-      y: 0,
-      transition: { delay: 0.15 * i, duration: 0.7, ease: "easeOut" },
-    }),
-  };
-
-  const fadeLeft = {
-    hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
-  };
-
-  const fadeRight = {
-    hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
-  };
-
+  
   return (
     <div className="min-h-screen bg-white text-gray-800 antialiased">
       {/* 1. Hero Section */}
@@ -214,7 +195,7 @@ const Home = () => {
       <Service />
       <ScrollingLogos />
 
-      {/* Featured Projects Section */}
+      {/* 🌟 Featured Projects Section */}
       <section className="lg:py-3 py-2 px-4 lg:px-20 overflow-hidden">
         <motion.div
           initial="hidden"
@@ -305,7 +286,7 @@ const Home = () => {
         </motion.div>
       </section>
 
-      {/* SEO Audit Section */}
+      {/* 🧭 SEO Audit Section */}
       <section className="md:py-4 py-3 px-4 lg:px-20 bg-white text-center overflow-hidden">
         <motion.div
           initial="hidden"

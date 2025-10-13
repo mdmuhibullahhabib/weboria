@@ -163,7 +163,7 @@ export default function PortfolioPage() {
         </section>
 
         {/* Stats Section */}
-        <StatsSection/>
+        <StatsSection
       </div>
     </>
   );

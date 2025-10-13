@@ -24,27 +24,6 @@ import Image from 'next/image';
 
 
 const Home = () => {
-
-    // Animation presets
-  const fadeUp = {
-    hidden: { opacity: 0, y: 50 },
-    visible: (i = 1) => ({
-      opacity: 1,
-      y: 0,
-      transition: { delay: 0.15 * i, duration: 0.7, ease: "easeOut" },
-    }),
-  };
-
-  const fadeLeft = {
-    hidden: { opacity: 0, x: -50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
-  };
-
-  const fadeRight = {
-    hidden: { opacity: 0, x: 50 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeOut" } },
-  };
-
   return (
     <div className="min-h-screen bg-white text-gray-800 antialiased">
       {/* 1. Hero Section */}
@@ -214,179 +193,83 @@ const Home = () => {
       <Service />
       <ScrollingLogos />
 
-      {/* Featured Projects Section */}
-      <section className="lg:py-3 py-2 px-4 lg:px-20 overflow-hidden">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={fadeUp}
-        >
-          <SectionTitle titleTop="OUR FEATURED" titleBottom="PROJECTS" />
-        </motion.div>
+      {/* 5. Featured Projects Section */}
+      <section className="lg:py-3 py-2 px-4 lg:px-20">
+        <SectionTitle titleTop={"OUR FEATURED"} titleBottom={"PROJECTS"}></SectionTitle>
 
-        <motion.div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-16 pb-4 mt-5 md:mt-8"
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
-          variants={{
-            visible: {
-              transition: { staggerChildren: 0.2 },
-            },
-          }}
-        >
-          {/* Animated Project Cards */}
-          {[
-            { num: "01", title: "ALORON", img: aloron },
-            { num: "02", title: "CHOLO BANGLADESH", img: choloBangladesh },
-            { num: "03", title: "HASHI DENTAL", img: hashi },
-            { num: "04", title: "PADDY", img: paddy },
-            { num: "05", title: "PROTTAYSHA", img: prottaysha },
-          ].map((p, i) => (
-            <motion.div
-              key={i}
-              variants={fadeUp}
-              custom={i}
-              whileHover={{ scale: 1.03, y: -5 }}
-              transition={{ type: "spring", stiffness: 120 }}
-            >
-              <ProjectCard number={p.num} title={p.title} image={p.img} />
-            </motion.div>
-          ))}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 pb-4 mt-5 md:mt-8">
+          <ProjectCard number="01" title="ALORON" image={aloron} />
+          <ProjectCard number="02" title="CHOLO BANGLADESH" image={choloBangladesh} />
+          <ProjectCard number="03" title="HASHI DENTAL" image={hashi} />
+          <ProjectCard number="04" title="PADDY" image={paddy} />
+          <ProjectCard number="05" title="PROTTAYSHA" image={prottaysha} />
 
-          {/* ⚡ CTA Section */}
-          <motion.div
-            className="flex flex-col justify-center p-4"
-            variants={fadeUp}
-            custom={6}
-          >
-            <motion.p
-              className="text-lg leading-relaxed mb-10 text-gray-700"
-              initial={{ opacity: 0 }}
-              whileInView={{ opacity: 1 }}
-              transition={{ delay: 0.3, duration: 0.8 }}
-            >
+          {/* ---------- CTA Section ---------- */}
+          <div className="flex flex-col justify-center p-4">
+            <p className="text-lg leading-relaxed mb-10 text-gray-700">
               As a leading{" "}
               <span className="font-semibold text-gray-900">
                 digital marketing agency in Dhaka, Bangladesh
               </span>
-              ,<span className="text-orange-500 font-semibold"> WebOria</span>{" "}
-              empowers businesses with
-              <span className="font-medium"> data-driven strategies</span> that
-              deliver real results. From innovative startups to enterprise
-              brands, our success stories — including{" "}
-              <span className="font-semibold">Fiber@Home</span>,{" "}
+              ,<span className="text-orange-500 font-semibold"> WebOria</span> empowers businesses with
+              <span className="font-medium"> data-driven strategies</span> that deliver real results.
+              From innovative startups to enterprise brands, our success stories — including projects
+              like <span className="font-semibold">Fiber@Home</span>,{" "}
               <span className="font-semibold">Ajwah Tech</span>,{" "}
               <span className="font-semibold">Rainstone Money</span>, and{" "}
-              <span className="font-semibold">NorthSouth Group</span> — showcase
-              how we transform digital potential into measurable growth.
+              <span className="font-semibold">NorthSouth Group</span> — showcase how we transform
+              digital potential into measurable growth.
               <br />
               <br />
               Discover how WebOria’s expertise in{" "}
               <span className="font-medium text-gray-900">SEO</span>,{" "}
-              <span className="font-medium text-gray-900">
-                Social Media Marketing
-              </span>
-              , and{" "}
-              <span className="font-medium text-gray-900">Branding</span> can
-              help your business stand out and scale faster in today’s
-              competitive market.
-            </motion.p>
-
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-            >
-              <CTAButton />
-            </motion.div>
-          </motion.div>
-        </motion.div>
-      </section>
-
-      {/* SEO Audit Section */}
-      <section className="md:py-4 py-3 px-4 lg:px-20 bg-white text-center overflow-hidden">
-        <motion.div
-          initial="hidden"
-          whileInView="visible"
-          variants={fadeUp}
-          viewport={{ once: true }}
-        >
-          <SectionTitle titleTop="GET FREE" titleBottom="SEO AUDIT?" />
-        </motion.div>
-
-        <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto mt-12">
-          {/* Left Text */}
-          <motion.div
-            className="lg:w-1/2 p-4 lg:pr-8"
-            variants={fadeLeft}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <p className="text-lg leading-relaxed mb-8 text-gray-700 lg:text-left">
-              <span className="font-semibold text-orange-500">WebOria</span>, a
-              leading
-              <span className="font-medium text-gray-900">
-                {" "}
-                digital marketing and SEO agency in Bangladesh
-              </span>
-              , offers a{" "}
-              <span className="font-semibold">free SEO audit</span> to assess
-              your website’s performance. Our audit reveals key opportunities to
-              improve your
-              <span className="font-medium">
-                {" "}
-                search visibility, site speed, and user experience
-              </span>
-              , helping you understand exactly what’s holding your growth back.
-              Whether you want to boost traffic, rank higher on Google, or
-              strengthen your overall digital strategy, WebOria’s{" "}
-              <span className="font-semibold">free SEO audit</span> is your
-              perfect first step toward measurable online success.
+              <span className="font-medium text-gray-900">Social Media Marketing</span>, and{" "}
+              <span className="font-medium text-gray-900">Branding</span> can help your business stand
+              out and scale faster in today’s competitive market.
             </p>
 
-            <motion.div
-              className="space-y-4 max-w-sm lg:max-w-none mx-auto lg:mx-0"
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.7 }}
-            >
+            {/* CTA Button */}
+            <CTAButton></CTAButton>
+
+          </div>
+        </div>
+
+      </section>
+
+      {/* 6. SEO Audit */}
+      <section className="md:py-4 py-3 px-4 lg:px-20 bg-white text-center">
+        <SectionTitle titleTop={"GET FREE"} titleBottom={"SEO AUDIT?"}></SectionTitle>
+        <div className="flex flex-col lg:flex-row items-center justify-between max-w-6xl mx-auto mt-12">
+          <div className="lg:w-1/2 p-4 lg:pr-8">
+            <p className="text-lg leading-relaxed mb-8 text-gray-700 lg:text-left">
+              <span className="font-semibold text-orange-500">WebOria</span>, a leading
+              <span className="font-medium text-gray-900"> digital marketing and SEO agency in Bangladesh</span>,
+              offers a <span className="font-semibold">free SEO audit</span> to assess your website’s performance.
+              Our audit reveals key opportunities to improve your
+              <span className="font-medium"> search visibility, site speed, and user experience</span>,
+              helping you understand exactly what’s holding your growth back.
+              Whether you want to boost traffic, rank higher on Google, or strengthen your overall digital strategy,
+              WebOria’s <span className="font-semibold">free SEO audit</span> is your perfect first step toward
+              measurable online success.
+            </p>
+            <div className="space-y-4 max-w-sm lg:max-w-none mx-auto lg:mx-0">
               <input
                 type="url"
                 placeholder="ENTER YOUR WEB-URL"
-                className="input w-full p-3 border-2 border-gray-300 focus:border-orange-500 rounded-md bg-white text-lg transition"
+                className="input w-full p-3 border-2 border-gray-300 focus:border-black rounded-md bg-white text-lg"
               />
               <input
                 type="email"
                 placeholder="ENTER YOUR EMAIL"
-                className="input w-full p-3 border-2 border-gray-300 focus:border-orange-500 rounded-md bg-white text-lg transition"
+                className="input w-full p-3 border-2 border-gray-300 focus:border-black rounded-md bg-white text-lg"
               />
-              <Button text="Submit" href="" />
-            </motion.div>
-          </motion.div>
+              <Button text={"Submit"} href='' />
+            </div>
+          </div>
 
-          {/* Right Image */}
-          <motion.div
-            className="lg:w-1/2 flex justify-center items-center p-4"
-            variants={fadeRight}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
-          >
-            <motion.div
-              className="relative w-full max-w-lg bg-white rounded-xl shadow-xl overflow-hidden flex items-center justify-center"
-              whileHover={{ scale: 1.03, rotate: 0.5 }}
-              transition={{ duration: 0.5 }}
-            >
-              <motion.div
-                className="absolute inset-0 bg-gradient-to-tr from-orange-500/10 via-pink-500/10 to-transparent"
-                animate={{
-                  opacity: [0.4, 0.6, 0.4],
-                }}
-                transition={{ duration: 4, repeat: Infinity }}
-              />
+          {/* --- Right Image --- */}
+          <div className="lg:w-1/2 flex justify-center items-center p-4">
+            <div className="relative w-full max-w-lg bg-white rounded-xl shadow-xl overflow-hidden flex items-center justify-center">
               <Image
                 src={seo}
                 alt="SEO Audit Illustration"
@@ -395,8 +278,9 @@ const Home = () => {
                 className="w-full h-auto object-contain transition-transform duration-700 hover:scale-105"
                 priority
               />
-            </motion.div>
-          </motion.div>
+            </div>
+          </div>
+
         </div>
       </section>
 
