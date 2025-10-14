@@ -8,7 +8,7 @@ import {
     MapPin,
 } from "lucide-react";
 import dbConnect, { collectionNamesobj } from "@/lib/dbconnect";
-  
+ 
 // fixed data
 const processSteps = [
     { number: '01', title: 'DISCOVERY & PLANNING', position: 'top-left' },

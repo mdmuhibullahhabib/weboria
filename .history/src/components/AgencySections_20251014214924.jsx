@@ -179,7 +179,7 @@ const AgencySections = () => {
   return (
     <div className="font-inter bg-gray-50 min-h-screen">
       {/* Services Section */}
-      <section className="py-4 bg-white">
+      <section className="py-8 bg-white">
         <MotionWrapper>
           <div className="container mx-auto px-4 max-w-7xl">
             <header className="text-center mb-12">
@@ -206,7 +206,7 @@ const AgencySections = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-1 bg-white">
+      <section className="py-6 lg:py-8 bg-white">
         <MotionWrapper>
           <div className="container mx-auto px-4 max-w-7xl">
             <header className="text-center mb-16">
@@ -223,7 +223,7 @@ const AgencySections = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-6 bg-white">
+      <section className="py-12 bg-white">
         <MotionWrapper>
           <div className="container mx-auto px-4 max-w-7xl">
             <header className="text-center mb-12">
