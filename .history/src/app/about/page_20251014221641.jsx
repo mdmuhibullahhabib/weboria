@@ -120,7 +120,7 @@ export default function AboutPage() {
 
         <Mission />
 
-        {/* Core Values */}
+        {/* 🟩 Core Values */}
         <section className="py-16 bg-gradient-to-b from-white via-gray-50 to-white relative">
           <SectionHeader mainText="WHY" subText="CHOOSE US" />
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
@@ -141,7 +141,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Stats */}
+        {/* 🟦 Stats */}
         <section className="md:py-6 py-4 bg-gradient-to-b from-white via-gray-50 to-white">
           <div className="max-w-7xl mx-auto px-6 text-center">
             <motion.h2
@@ -179,7 +179,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Team */}
+        {/* 🟣 Team */}
         <section className="py-16 bg-white">
           <SectionHeader mainText="MEET OUR" subText="EXPERT TEAM" />
           <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 px-6">
@@ -203,7 +203,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* 🟧 CTA */}
         <motion.section
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

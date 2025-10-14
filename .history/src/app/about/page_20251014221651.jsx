@@ -203,7 +203,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* 🟧 CTA */}
         <motion.section
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}

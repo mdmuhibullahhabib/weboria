@@ -179,7 +179,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Team */}
+        {/* 🟣 Team */}
         <section className="py-16 bg-white">
           <SectionHeader mainText="MEET OUR" subText="EXPERT TEAM" />
           <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 px-6">
@@ -203,7 +203,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* CTA */}
+        {/* 🟧 CTA */}
         <motion.section
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
