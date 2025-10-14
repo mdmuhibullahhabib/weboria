@@ -121,7 +121,7 @@ export default function AboutPage() {
         <Mission />
 
         {/* Core Values */}
-        <section className="lg:py-6 py-4 bg-gradient-to-b from-white via-gray-50 to-white relative">
+        <section className="lg:py-6 py-5 bg-gradient-to-b from-white via-gray-50 to-white relative">
           <SectionHeader mainText="WHY" subText="CHOOSE US" />
           <div className="max-w-7xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-8 px-6">
             {coreValues.map((value, i) => (
