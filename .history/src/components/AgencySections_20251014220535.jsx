@@ -223,7 +223,7 @@ const AgencySections = () => {
       </section>
 
       {/* FAQ Section */}
-      <section className=" py-1 lg:py-4 bg-white">
+      <section className=" py-lg:py-6 bg-white">
         <MotionWrapper>
           <div className="container mx-auto px-4 max-w-7xl">
             <header className="text-center mb-12">
